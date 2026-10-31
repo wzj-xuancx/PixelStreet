@@ -4,7 +4,7 @@
 
 > **当前是开发中的 Beta，游戏代码版本为 0.19.0，不是正式发布版。** 玩法、数值、界面和存档格式仍可能调整。请使用独立试玩档，不要把重要进度作为唯一副本。仓库不包含玩家存档、安装包或开发者个人环境。
 
-[本轮与历史更新](CHANGELOG.md) · [后续开发计划](ROADMAP.md) · [参与共建](CONTRIBUTING.md) · [资源体积与优化](docs/assets-size-report.md) · [实际验证范围](docs/verification.md)
+[本轮与历史更新](CHANGELOG.md) · [后续开发计划](ROADMAP.md) · [参与共建](CONTRIBUTING.md) · [资源体积与优化](docs/assets-size-report.md) · [实际验证范围](docs/verification.md) · [Beta 已知问题](docs/beta-known-issues.md)
 
 ## 已有内容
 
