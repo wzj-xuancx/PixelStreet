@@ -52,7 +52,7 @@ THE SOFTWARE.
 
 作者 0x72（Robert）；官方来源 https://0x72.itch.io/dungeontileset-ii ，美术资产采用 CC0 1.0（https://creativecommons.org/publicdomain/zero/1.0/），页面注明未使用生成式 AI。原始 ZIP 经官方下载流程免费取得，没有支付或捐赠。ZIP 内没有独立 LICENSE；项目保存官方页面快照、来源及完整 CC0 文本 `licenses/0x72-DungeonTilesetII-CC0-1.0.txt`。页面另列的 MIT 是代码许可，本项目没有导入该作者代码。
 
-原包、原图、原帧表与 SHA-256 在 `vendor/0x72-dungeon-ii/` 和 `provenance.json`；运行图 `assets/dungeon/0x72_DungeonTilesetII_v1.7.png` 与原图逐字节一致。只做帧索引、裁切、翻转、色调和现成门片组合，不重绘像素。取原包的骑士、小恶魔、兽人、恶魔首领、石墙/地板/柱、箱子、尖刺、武器、魔泉和石阶；回旋使用投斧、法术/符文使用宝石裁片。动作及适配限制见 `docs/dungeon-art.md`。没有采用评论区扩展。
+原包、原图、原帧表与 SHA-256 在 `vendor/0x72-dungeon-ii/` 和 `provenance.json`；运行图 `assets/dungeon/0x72_DungeonTilesetII_v1.7.png` 与原图逐字节一致。只做帧索引、裁切、翻转、色调和现成门片组合，不重绘像素。取原包的骑士、小恶魔、兽人、恶魔首领、石墙/地板/柱、箱子、尖刺、武器、魔泉和石阶；回旋使用投斧、法术/符文使用宝石裁片。动作及适配限制见 `vendor/0x72-dungeon-ii/provenance.json` 与随包的来源记录。没有采用评论区扩展。
 
 ## Kenney RPG Audio 1.0 / Impact Sounds 1.0
 
@@ -66,4 +66,4 @@ THE SOFTWARE.
 
 ## 0.6.0原创像素美术
 
-assets/camp-060/*.png：根据用户2026-10-23明确绘画授权，通过内置image_gen生成的原创游戏背景/地图与遗物图集，不来自第三方游戏。逐文件SHA-256、提示词、工具模式与源输出路径见assets/camp-060/provenance.json及prompts.json、camp-prompt.json、relic-prompt.json。未调用付费外部API，未购买素材。原0x72 CC0人物精灵与MIT图标许可保持原记录。
+assets/camp-060/*：根据用户2026-10-23明确绘画授权，通过内置 image_gen 生成的原创游戏背景、地图与遗物图集，不来自第三方游戏。原始 PNG 来源、提示词、工具模式与源输出路径见 assets/camp-060/provenance.json 及 prompts.json、camp-prompt.json、relic-prompt.json；当前 WebP 运行文件见 assets/optimization-manifest.json。未调用付费外部 API，未购买素材。原 0x72 CC0 人物精灵与 MIT 图标许可保持原记录。

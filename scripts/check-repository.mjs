@@ -54,6 +54,12 @@ for(const file of files.filter(f=>f.includes(`${path.sep}renderer${path.sep}`)&&
 for(const key of ['frontier-map','glow-trail','crystal-ravine','old-sanctuary','outpost','event-cache','event-caravan']){
   if(!fs.existsSync(path.join(root,'assets/expedition-071',key+'.webp')))issues.push(`Missing expedition scene: ${key}`);
 }
+for(const key of ['moss','moon','star','wind','snow','camp','world','relics']){
+  if(!fs.existsSync(path.join(root,'assets/camp-060',key+'.webp')))issues.push(`Missing camp scene: ${key}`);
+}
+for(const key of ['heartwood','tidevault','starbell','honeyglass','auroranest']){
+  if(!fs.existsSync(path.join(root,'assets/bonds-070',key+'.webp')))issues.push(`Missing secret scene: ${key}`);
+}
 for(const required of ['README.md','CHANGELOG.md','ROADMAP.md','CONTRIBUTING.md','package-lock.json','docs/third-party-notices.md','docs/approved-0190/preserved-bottom-baseline.json']){
   if(!fs.existsSync(path.join(root,required)))issues.push(`Missing repository file: ${required}`);
 }
