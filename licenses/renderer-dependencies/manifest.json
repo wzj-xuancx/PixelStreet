@@ -1,0 +1,101 @@
+{
+  "date": "2026-10-31",
+  "scope": "License texts copied from exact installed PixiJS dependency tree; not a legal completeness guarantee.",
+  "packages": [
+    {
+      "name": "pixi.js",
+      "version": "8.22.0",
+      "declaredLicense": "MIT",
+      "files": [
+        "licenses/renderer-dependencies/pixi.js-8.22.0-LICENSE"
+      ]
+    },
+    {
+      "name": "@pixi/colord",
+      "version": "2.9.6",
+      "declaredLicense": "MIT",
+      "files": [],
+      "status": "Upstream package has no standalone license text; must verify before binary redistribution."
+    },
+    {
+      "name": "@types/earcut",
+      "version": "3.0.0",
+      "declaredLicense": "MIT",
+      "files": [
+        "licenses/renderer-dependencies/@types__earcut-3.0.0-LICENSE"
+      ]
+    },
+    {
+      "name": "@webgpu/types",
+      "version": "0.1.74",
+      "declaredLicense": "BSD-3-Clause",
+      "files": [
+        "licenses/renderer-dependencies/@webgpu__types-0.1.74-LICENSE"
+      ]
+    },
+    {
+      "name": "@xmldom/xmldom",
+      "version": "0.8.15",
+      "declaredLicense": "MIT",
+      "files": [
+        "licenses/renderer-dependencies/@xmldom__xmldom-0.8.15-LICENSE"
+      ]
+    },
+    {
+      "name": "earcut",
+      "version": "3.2.4",
+      "declaredLicense": "ISC",
+      "files": [
+        "licenses/renderer-dependencies/earcut-3.2.4-LICENSE"
+      ]
+    },
+    {
+      "name": "eventemitter3",
+      "version": "5.0.4",
+      "declaredLicense": "MIT",
+      "files": [
+        "licenses/renderer-dependencies/eventemitter3-5.0.4-LICENSE"
+      ]
+    },
+    {
+      "name": "gifuct-js",
+      "version": "2.1.2",
+      "declaredLicense": "MIT",
+      "files": [
+        "licenses/renderer-dependencies/gifuct-js-2.1.2-LICENSE"
+      ]
+    },
+    {
+      "name": "js-binary-schema-parser",
+      "version": "2.0.3",
+      "declaredLicense": "MIT",
+      "files": [
+        "licenses/renderer-dependencies/js-binary-schema-parser-2.0.3-LICENSE"
+      ]
+    },
+    {
+      "name": "ismobilejs",
+      "version": "1.1.1",
+      "declaredLicense": "MIT",
+      "files": [
+        "licenses/renderer-dependencies/ismobilejs-1.1.1-LICENSE"
+      ]
+    },
+    {
+      "name": "parse-svg-path",
+      "version": "0.2.0",
+      "declaredLicense": "MIT",
+      "files": [
+        "licenses/renderer-dependencies/parse-svg-path-0.2.0-LICENSE"
+      ]
+    },
+    {
+      "name": "tiny-lru",
+      "version": "11.4.7",
+      "declaredLicense": "BSD-3-Clause",
+      "files": [
+        "licenses/renderer-dependencies/tiny-lru-11.4.7-LICENSE"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "generator": "built-in image_gen",
+  "assets": [
+    {
+      "path": "assets/tower-0130/tower-interior.png",
+      "sha256": "92b0ef10a5954082234d32980f13c46c59c201b5908da6efb378b0795ff466aa",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "alpha": null,
+      "source": "[local-source-redacted]"
+    },
+    {
+      "path": "assets/tower-0130/tower-building.png",
+      "sha256": "ef3ee20ffe5604879fc15948ff16629200a182337eaf6b6b717fd89bc592b3a1",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        254
+      ],
+      "source": "[local-source-redacted]"
+    }
+  ],
+  "source_metadata_scope": "Original PNG provenance before Beta repository optimization, not current WebP byte hashes. See assets/optimization-manifest.json for the runtime file mapping and hashes. Original PNGs are retained outside this repository."
+}

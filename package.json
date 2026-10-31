@@ -1,0 +1,105 @@
+{
+  "name": "pixel-street",
+  "productName": "PixelStreet 0.19.0",
+  "version": "0.19.0",
+  "private": true,
+  "description": "PixelStreet 0.19.0 · 行囊制作与野外同行",
+  "author": "PixelStreet project",
+  "license": "UNLICENSED",
+  "main": "dist/main.cjs",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "art": "node scripts/generate-art.mjs",
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc --noEmit",
+    "check:repo": "node scripts/check-repository.mjs",
+    "test": "npm run build && node --test dist/tests/*.test.cjs",
+    "start": "electron .",
+    "dev": "npm run build && electron .",
+    "dev:server": "node dist/server.cjs",
+    "test:desktop": "electron dist/native-smoke.cjs",
+    "package:mac": "npm run build && electron-builder --mac dir --arm64 --publish never",
+    "package:win": "npm run build && electron-builder --win dir --x64 --publish never",
+    "test:solo:desktop": "electron dist/native-loop.cjs",
+    "release:mac": "npm run typecheck && npm run build && node scripts/build-app-0190.mjs"
+  },
+  "devDependencies": {
+    "electron": "44.5.1",
+    "electron-builder": "26.15.3",
+    "typescript": "5.9.3",
+    "esbuild": "0.25.12",
+    "@types/node": "22.20.4",
+    "pixi.js": "8.22.0"
+  },
+  "build": {
+    "appId": "org.pixelstreet.camp0190",
+    "productName": "PixelStreet 0.19.0",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/main.cjs",
+      "dist/preload.cjs",
+      "dist/renderer/**/*",
+      "!dist/renderer/foundation-probe.js",
+      "!dist/renderer/foundation-probe.html",
+      "!dist/renderer/foundation-probe.css",
+      "package.json",
+      "docs/third-party-notices.md"
+    ],
+    "mac": {
+      "target": [
+        {
+          "target": "dir",
+          "arch": [
+            "arm64"
+          ]
+        }
+      ],
+      "category": "public.app-category.games",
+      "identity": "-",
+      "hardenedRuntime": false,
+      "extendInfo": {
+        "NSLocalNetworkUsageDescription": "与同一局域网或已有组网中的好友连接房间，共同冒险。"
+      }
+    },
+    "win": {
+      "target": [
+        {
+          "target": "dir",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "publish": null,
+    "extraResources": [
+      {
+        "from": "licenses",
+        "to": "licenses",
+        "filter": [
+          "**/*"
+        ]
+      },
+      {
+        "from": "dist/game-worker.cjs",
+        "to": "game-worker.cjs"
+      },
+      {
+        "from": "dist/action-worker.cjs",
+        "to": "action-worker.cjs"
+      },
+      {
+        "from": "dist/dungeon-worker.cjs",
+        "to": "dungeon-worker.cjs"
+      },
+      {
+        "from": "dist/party-field-worker.cjs",
+        "to": "party-field-worker.cjs"
+      }
+    ]
+  }
+}

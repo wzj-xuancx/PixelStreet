@@ -1,0 +1,7 @@
+Use case: stylized-concept.
+Asset type: production-ready transparent pixel-art character walk sprite sheet for a cozy fantasy shop game.
+Primary request: one sprite sheet with EXACTLY 4 columns and 3 rows of evenly sized cells, 1536 by 1152 pixels. Each cell 384 by 384. All background truly transparent. 12 full-body sprites total, aligned to the same baseline in every cell and with at least 55 pixels padding to every cell edge. No borders, ground, labels or text.
+Row 1 (4 walk-cycle frames): a friendly young forest courier in a moss-green hood, brown trousers and boots, small satchel.
+Row 2 (4 walk-cycle frames): a kind camp medic in a muted plum cloak and cream tunic, medicine satchel, brown boots.
+Row 3 (4 walk-cycle frames): a cheerful traveling merchant in a warm brown vest, cream shirt and cap, leather shoulder bag.
+Each row is the SAME character in four distinct, consistent successive walking poses: left foot forward, passing pose, right foot forward, passing pose. All characters three-quarter side view facing left. Keep head, torso, costume, scale, face and position stable through the four frames; movement is in legs and arms. Characters approximately 260 pixels tall. Polished densely detailed handcrafted pixel-art, crisp deliberate clusters, warm gentle outlines, charming faces, matching a richly painted pixel bakery; not crude low-resolution stick sprites, not photorealism or 3D. Transparent around every silhouette; no panels or backdrop. Intended to animate in steps(4), no scene illustration.

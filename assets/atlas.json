@@ -1,0 +1,285 @@
+{
+  "tileSize": 16,
+  "image": "atlas.png",
+  "frames": {
+    "shop-bakery": {
+      "x": 0,
+      "y": 0,
+      "w": 112,
+      "h": 88,
+      "anchor": [
+        56,
+        88
+      ]
+    },
+    "shop-alchemy": {
+      "x": 120,
+      "y": 0,
+      "w": 112,
+      "h": 88,
+      "anchor": [
+        56,
+        88
+      ]
+    },
+    "interior": {
+      "x": 240,
+      "y": 0,
+      "w": 112,
+      "h": 88,
+      "anchor": [
+        56,
+        88
+      ]
+    },
+    "player-idle-0": {
+      "x": 0,
+      "y": 96,
+      "w": 24,
+      "h": 32,
+      "anchor": [
+        12,
+        31
+      ]
+    },
+    "player-walk-0": {
+      "x": 32,
+      "y": 96,
+      "w": 24,
+      "h": 32,
+      "anchor": [
+        12,
+        31
+      ]
+    },
+    "player-walk-1": {
+      "x": 64,
+      "y": 96,
+      "w": 24,
+      "h": 32,
+      "anchor": [
+        12,
+        31
+      ]
+    },
+    "player-walk-2": {
+      "x": 96,
+      "y": 96,
+      "w": 24,
+      "h": 32,
+      "anchor": [
+        12,
+        31
+      ]
+    },
+    "player-walk-3": {
+      "x": 128,
+      "y": 96,
+      "w": 24,
+      "h": 32,
+      "anchor": [
+        12,
+        31
+      ]
+    },
+    "slime-idle-0": {
+      "x": 160,
+      "y": 96,
+      "w": 24,
+      "h": 16,
+      "anchor": [
+        12,
+        14
+      ]
+    },
+    "slime-idle-1": {
+      "x": 192,
+      "y": 96,
+      "w": 24,
+      "h": 16,
+      "anchor": [
+        12,
+        14
+      ]
+    },
+    "slime-idle-2": {
+      "x": 224,
+      "y": 96,
+      "w": 24,
+      "h": 16,
+      "anchor": [
+        12,
+        14
+      ]
+    },
+    "slime-idle-3": {
+      "x": 256,
+      "y": 96,
+      "w": 24,
+      "h": 16,
+      "anchor": [
+        12,
+        14
+      ]
+    },
+    "ground": {
+      "x": 296,
+      "y": 96,
+      "w": 16,
+      "h": 16,
+      "anchor": [
+        8,
+        8
+      ]
+    },
+    "interior-bakery": {
+      "x": 0,
+      "y": 136,
+      "w": 112,
+      "h": 88,
+      "anchor": [
+        56,
+        88
+      ]
+    },
+    "interior-alchemy": {
+      "x": 120,
+      "y": 136,
+      "w": 112,
+      "h": 88,
+      "anchor": [
+        56,
+        88
+      ]
+    },
+    "keeper": {
+      "x": 240,
+      "y": 136,
+      "w": 24,
+      "h": 32,
+      "anchor": [
+        12,
+        31
+      ]
+    },
+    "field-crystal": {
+      "x": 280,
+      "y": 136,
+      "w": 48,
+      "h": 72,
+      "anchor": [
+        24,
+        72
+      ]
+    },
+    "portal-0": {
+      "x": 0,
+      "y": 224,
+      "w": 64,
+      "h": 80,
+      "anchor": [
+        32,
+        80
+      ]
+    },
+    "enemy-0": {
+      "x": 0,
+      "y": 312,
+      "w": 24,
+      "h": 16,
+      "anchor": [
+        12,
+        14
+      ]
+    },
+    "portal-1": {
+      "x": 72,
+      "y": 224,
+      "w": 64,
+      "h": 80,
+      "anchor": [
+        32,
+        80
+      ]
+    },
+    "enemy-1": {
+      "x": 32,
+      "y": 312,
+      "w": 24,
+      "h": 16,
+      "anchor": [
+        12,
+        14
+      ]
+    },
+    "portal-2": {
+      "x": 144,
+      "y": 224,
+      "w": 64,
+      "h": 80,
+      "anchor": [
+        32,
+        80
+      ]
+    },
+    "enemy-2": {
+      "x": 64,
+      "y": 312,
+      "w": 24,
+      "h": 16,
+      "anchor": [
+        12,
+        14
+      ]
+    },
+    "portal-3": {
+      "x": 216,
+      "y": 224,
+      "w": 64,
+      "h": 80,
+      "anchor": [
+        32,
+        80
+      ]
+    },
+    "enemy-3": {
+      "x": 96,
+      "y": 312,
+      "w": 24,
+      "h": 16,
+      "anchor": [
+        12,
+        14
+      ]
+    }
+  },
+  "animations": {
+    "portal": [
+      "portal-0",
+      "portal-1",
+      "portal-2",
+      "portal-3"
+    ],
+    "enemy": [
+      "enemy-0",
+      "enemy-1",
+      "enemy-2",
+      "enemy-3"
+    ],
+    "player-idle": [
+      "player-idle-0"
+    ],
+    "player-walk": [
+      "player-walk-0",
+      "player-walk-1",
+      "player-walk-2",
+      "player-walk-3"
+    ],
+    "slime-idle": [
+      "slime-idle-0",
+      "slime-idle-1",
+      "slime-idle-2",
+      "slime-idle-3"
+    ]
+  }
+}

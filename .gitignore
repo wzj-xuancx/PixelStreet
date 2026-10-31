@@ -1,0 +1,46 @@
+# Dependencies and generated builds
+node_modules
+/node_modules/
+/dist/
+/release/
+/build/
+/coverage/
+*.tsbuildinfo
+
+# Local development and internal evidence
+/.superpowers/
+/work/
+/docs/evidence/
+/docs/superpowers/
+/.vscode/
+/.idea/
+.DS_Store
+*.log
+*.jsonl
+*.tmp
+
+# Credentials and local settings
+.env
+.env.*
+!.env.example
+.npmrc
+
+# Runtime data (test fixtures are kept under tests/)
+/PixelStreetCamp/
+/playtest-data/
+/solo/
+/user-data/
+profile.json
+profile.json.bak
+profile.v7-before-migration.json
+identity.json
+
+# Built applications and installation archives
+*.app/
+*.dmg
+*.exe
+*.msi
+*.AppImage
+/PixelStreet*.zip
+
+# Third-party source archives under vendor/ are intentional.

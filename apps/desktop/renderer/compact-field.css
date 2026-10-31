@@ -1,0 +1,82 @@
+/* 0.12.2 legacy field work surfaces; no scene, map, kitchen or gameplay changes. */
+.casual #cPanel-garden > .cw-page-heading { margin: 0 0 5px; min-height: 24px; }
+.casual #cPanel-garden > .cw-page-heading h2 { font-size: 18px; }
+.casual #cPanel-garden .cw-garden-land { padding: 7px; }
+.casual #cPanel-garden .cw-garden-sign { min-height: 44px; padding: 4px 7px; margin: 0 0 6px; gap: 8px; flex-wrap: nowrap; }
+.casual #cPanel-garden .cw-garden-sign > h3 { min-width: 0; flex: 0 0 auto; font-size: 18px; }
+.casual #cPanel-garden .cw-garden-sign > p { order: initial; flex: 1; margin: 0; font-size: 16px; }
+.casual #cPanel-garden .cw-garden-sign > button { min-height: 44px; padding: 5px 8px; }
+/* The selected seed is already marked on its card and in each empty plot. */
+.casual #cPanel-garden .cw-counter-head { display: none; }
+.casual #cPanel-garden .c-crop-picker { display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: 5px; margin: 0 0 7px; }
+.casual #cPanel-garden .c-crop-picker > button { display: grid; grid-template-columns: 32px minmax(0,1fr); align-items: center; justify-items: start; gap: 1px 3px; padding: 4px; min-height: 74px; text-align: left; }
+.casual #cPanel-garden .c-crop-picker .cw-crop { grid-row: 1/3; width: 32px; height: 32px; }
+.casual #cPanel-garden .c-crop-picker strong { font-size: 16px; line-height: 1.25; white-space: normal; }
+.casual #cPanel-garden .c-crop-picker span:not(.cw-crop) { display: block; font-size: 16px; line-height: 1.25; text-align: left; }
+.casual #cPanel-garden .c-crop-picker > button > span:last-child { grid-column: 1/-1; }
+.casual #cPanel-garden .c-crop-picker svg { display: inline-block; width: 15px; height: 15px; vertical-align: middle; }
+.casual #cPanel-garden .c-plots { gap: 7px; }
+.casual #cPanel-garden .c-plot { display: grid; grid-template-columns: 1fr; gap: 3px; padding: 6px; box-shadow: none; }
+.casual #cPanel-garden .c-plot-number { position: absolute; top: 5px; left: 7px; font-size: 16px; line-height: 1.3; z-index: 1; }
+.casual #cPanel-garden .cw-soil { height: 48px; margin: 0; border-width: 2px; box-shadow: none; border-radius: 8px; }
+.casual #cPanel-garden .cw-plot-crop { width: 48px; height: 48px; margin: 0; }
+.casual #cPanel-garden .cw-plot-marker { bottom: 2px; left: auto; right: 3px; transform: none; padding: 1px 4px; font-size: 16px; line-height: 1.3; }
+.casual #cPanel-garden .cw-plot-label { min-height: 0; }
+.casual #cPanel-garden .cw-plot-label h3 { font-size: 17px; line-height: 1.3; margin: 0; }
+.casual #cPanel-garden .cw-plot-label p { font-size: 16px; line-height: 1.3; margin: 2px 0 0; }
+.casual #cPanel-garden .c-plot progress { height: 7px; margin: 2px 0; }
+.casual #cPanel-garden .c-plot button { min-height: 44px; padding: 5px 7px; font-size: 16px; }
+.casual #cPanel-garden > .c-materials { margin: 7px 0 0; gap: 5px; }
+.casual #cPanel-garden > .c-materials > span { padding: 3px 6px; gap: 4px; }
+.casual #cPanel-garden > .c-materials .cw-crop { width: 28px; height: 28px; }
+
+/* Put repair decisions directly beneath the existing growth navigation.
+   Retain the growth story, gift and roadmap on the same native scrolling page. */
+.casual #cPanel-camp:has(#lifeOldCamp:not([hidden])) { display: flex; flex-direction: column; }
+.casual #cPanel-camp:has(#lifeOldCamp:not([hidden])) > #lifeUi { display: contents; }
+.casual #cPanel-camp:has(#lifeOldCamp:not([hidden])) > #lifeUi > .life-tabs { order: 0; }
+.casual #cPanel-camp:has(#lifeOldCamp:not([hidden])) > #lifeOldCamp { order: 1; }
+.casual #cPanel-camp:has(#lifeOldCamp:not([hidden])) > #lifeUi > #lifePanel-growth { display: flex; flex-direction: column; order: 2; }
+.casual #cPanel-camp:has(#lifeOldCamp:not([hidden])) #lifePanel-growth > .life-gift-counter { order: 0; }
+.casual #cPanel-camp:has(#lifeOldCamp:not([hidden])) #lifePanel-growth > .life-growth-hero { order: 1; }
+.casual #cPanel-camp:has(#lifeOldCamp:not([hidden])) #lifePanel-growth > .life-roadmap { order: 2; }
+.casual #lifeOldCamp > .c-section-title { margin: 0 0 6px; }
+.casual #lifeOldCamp > .c-section-title h2 { font-size: 18px; }
+.casual #lifeOldCamp .c-buildings { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 7px; margin: 0; }
+.casual #lifeOldCamp .c-building { gap: 0; border-radius: 7px; }
+.casual #lifeOldCamp .cw-building-art { height: 52px; border-bottom-width: 2px; }
+.casual #lifeOldCamp .cw-building-art > .inner-art { width: 64px; height: 52px; }
+.casual #lifeOldCamp .cw-building-plaque { padding: 6px; gap: 4px; }
+.casual #lifeOldCamp .cw-building-plaque h3 { margin: 0; font-size: 17px; line-height: 1.3; }
+.casual #lifeOldCamp .cw-level-pips { gap: 4px; }
+.casual #lifeOldCamp .cw-level-pips i { height: 6px; }
+.casual #lifeOldCamp .cw-building-plaque .c-building-effect { min-height: 0; margin: 0; font-size: 16px; line-height: 1.35; }
+.casual #lifeOldCamp .cw-building-plaque .c-prize { min-height: 0; margin: auto 0 0; padding: 4px; font-size: 16px; line-height: 1.35; }
+.casual #lifeOldCamp .cw-building-plaque button { min-height: 44px; font-size: 16px; padding: 5px 7px; }
+.casual #lifeOldCamp > #cCampBonus { margin: 6px 0; font-size: 16px; line-height: 1.35; }
+
+/* Fifteen permanent relics form three short shelves; the repair stays beside
+   the selection. No inner scrolling or clipped cost/effect text. */
+.casual #cArchivePermanent .c-relic-summary { display: flex; flex-wrap: wrap; gap: 3px 10px; margin: 0 0 6px; padding: 4px 7px; font-size: 16px; line-height: 1.35; }
+.casual #cArchivePermanent .cw-museum { grid-template-columns: minmax(0,1.65fr) minmax(225px,1fr); gap: 8px; }
+.casual #cArchivePermanent .cw-relic-cabinet { grid-template-columns: repeat(5,minmax(0,1fr)); gap: 4px; padding: 5px; border-width: 1px; box-shadow: none; }
+.casual #cArchivePermanent .cw-relic-cabinet > button { padding: 4px 2px; gap: 2px; min-height: 84px; }
+.casual #cArchivePermanent .cw-relic-cabinet .c-relic-art { width: 32px; height: 32px; }
+.casual #cArchivePermanent .cw-relic-cabinet strong { font-size: 16px; line-height: 1.25; overflow-wrap: anywhere; }
+.casual #cArchivePermanent .cw-relic-cabinet > button > span:last-child { font-size: 16px; line-height: 1.25; }
+.casual #cArchivePermanent .cw-relic-focus { position: static; overflow: visible; }
+.casual #cArchivePermanent .cw-relic-focus .c-relic { padding: 8px; gap: 5px; }
+.casual #cArchivePermanent .cw-relic-pedestal { height: 70px; border-bottom-width: 2px; }
+.casual #cArchivePermanent .cw-relic-pedestal .c-relic-art { width: 64px; height: 64px; }
+.casual #cArchivePermanent .cw-relic-focus h2 { font-size: 20px; line-height: 1.35; margin: 3px 0; }
+.casual #cArchivePermanent .cw-relic-focus .c-subtle { font-size: 16px; line-height: 1.35; margin: 4px 0; }
+.casual #cArchivePermanent .cw-relic-focus .c-prize { font-size: 16px; line-height: 1.35; }
+.casual #cArchivePermanent .cw-relic-focus button { min-height: 44px; font-size: 16px; padding: 5px 8px; }
+@media (max-width:650px) {
+ .casual #cPanel-garden .c-crop-picker { grid-template-columns: repeat(3,minmax(0,1fr)); }
+ .casual #cPanel-garden .c-plots,.casual #lifeOldCamp .c-buildings { grid-template-columns: 1fr; }
+ .casual #cArchivePermanent .cw-museum { grid-template-columns: 1fr; }
+}
+/* A retained status notice belongs after the growth page, not between its
+   navigation and repair cards when the wrapper has display:contents. */
+.casual #cPanel-camp:has(#lifeOldCamp:not([hidden])) > #lifeUi > .life-notice { order: 3; }

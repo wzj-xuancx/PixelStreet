@@ -1,0 +1,691 @@
+{
+  "tower": [
+    {
+      "id": 1,
+      "title": "街角第一步",
+      "goal": "成为补给店学徒",
+      "detail": "走进补给店，点击店员应聘。免费获赠的面粉足够完成试餐。",
+      "target": "supply-job",
+      "metric": "job",
+      "required": 1,
+      "reward": {
+        "coins": 3,
+        "flour": 2
+      }
+    },
+    {
+      "id": 2,
+      "title": "第一炉香气",
+      "goal": "累计制作1份基础餐点",
+      "detail": "在补给店制作1份旅行口粮，等待炉火完成。",
+      "target": "supply-craft",
+      "metric": "crafted",
+      "required": 1,
+      "reward": {
+        "coins": 3
+      }
+    },
+    {
+      "id": 3,
+      "title": "挂上小围裙",
+      "goal": "正式任职补给店",
+      "detail": "把做好的1份旅行口粮交给店员完成试餐。",
+      "target": "supply-job",
+      "metric": "keeper",
+      "required": 1,
+      "reward": {
+        "coins": 4,
+        "flour": 2
+      }
+    },
+    {
+      "id": 4,
+      "title": "第一位顾客",
+      "goal": "累计售出1件物品",
+      "detail": "把做好的餐点放上普通货架并开店，等待实际成交。旅商收购不计入本层。",
+      "target": "supply-manage",
+      "metric": "sold",
+      "required": 1,
+      "reward": {
+        "coins": 5
+      }
+    },
+    {
+      "id": 5,
+      "title": "林间脚印",
+      "goal": "伙伴累计探索1个遭遇",
+      "detail": "地牢之门内选择苔光庭院，开始悠闲漫游。关掉面板也会继续。",
+      "target": "dungeon",
+      "metric": "rooms",
+      "required": 1,
+      "reward": {
+        "coins": 5
+      }
+    },
+    {
+      "id": 6,
+      "title": "装进旅行袋",
+      "goal": "营地累计获得5点经验",
+      "detail": "探索后点击领取战利品，把经验收入营地。成就塔不发放经验。",
+      "target": "dungeon",
+      "metric": "xp",
+      "required": 5,
+      "reward": {
+        "coins": 5,
+        "ore": 1
+      }
+    },
+    {
+      "id": 7,
+      "title": "庭院纪念",
+      "goal": "完成1趟苔光庭院",
+      "detail": "让伙伴走完整趟六个遭遇，找到古树守护者。",
+      "target": "dungeon",
+      "metric": "firstClear",
+      "required": 1,
+      "reward": {
+        "coins": 8,
+        "biscuit": 2
+      }
+    },
+    {
+      "id": 8,
+      "title": "一起长大",
+      "goal": "任一伙伴达到Lv2",
+      "detail": "赠送两份莓果饼，或在伙伴生活里完成两次陪伴，即可从Lv1升至Lv2。",
+      "target": "companions",
+      "metric": "buddyLevel",
+      "required": 2,
+      "reward": {
+        "coins": 8
+      }
+    },
+    {
+      "id": 9,
+      "title": "泥土的回礼",
+      "goal": "累计收获1次作物",
+      "detail": "花圃种一份晨露草，成熟后点击收获；作物不会枯萎。",
+      "target": "garden",
+      "metric": "harvests",
+      "required": 1,
+      "reward": {
+        "coins": 8
+      }
+    },
+    {
+      "id": 10,
+      "title": "篝火小厨",
+      "goal": "累计制作1份营地料理",
+      "detail": "用2份晨露草安排一份花草茶，等料理完成。",
+      "target": "kitchen",
+      "metric": "cooked",
+      "required": 1,
+      "reward": {
+        "coins": 8
+      }
+    },
+    {
+      "id": 11,
+      "title": "工坊新手",
+      "goal": "累计完成1件特色调配品",
+      "detail": "补给特色餐盒或炼金调配任选其一，完成1份即可。",
+      "target": "alchemy-craft",
+      "metric": "atelierMade",
+      "required": 1,
+      "reward": {
+        "coins": 10,
+        "ore": 1
+      }
+    },
+    {
+      "id": 12,
+      "title": "守信的小店",
+      "goal": "完成1份经营委托",
+      "detail": "补给店或特色工坊接取并交付一份委托。先看清材料与回报。",
+      "target": "supply-orders",
+      "metric": "orders",
+      "required": 1,
+      "reward": {
+        "coins": 10
+      }
+    },
+    {
+      "id": 13,
+      "title": "新朋友的灯",
+      "goal": "邀请第2位伙伴",
+      "detail": "完成庭院后，用积攒的金币与月纹石邀请提灯旅人，或其他伙伴。",
+      "target": "companions",
+      "metric": "recruits",
+      "required": 1,
+      "reward": {
+        "coins": 10,
+        "ore": 1
+      }
+    },
+    {
+      "id": 14,
+      "title": "月泉来客",
+      "goal": "完成1趟月泉矿洞",
+      "detail": "前往第二个地区完成一趟普通探索，不需要选择更深难度。",
+      "target": "dungeon",
+      "metric": "secondClear",
+      "required": 1,
+      "reward": {
+        "coins": 12
+      }
+    },
+    {
+      "id": 15,
+      "title": "让篝火更暖",
+      "goal": "完成1级营地建筑",
+      "detail": "在营地选择旅人小屋、篝火厨房或观星收藏室，完成一级建设。",
+      "target": "camp-growth",
+      "metric": "buildings",
+      "required": 1,
+      "reward": {
+        "coins": 12,
+        "ore": 1
+      }
+    },
+    {
+      "id": 16,
+      "title": "同行专长",
+      "goal": "任一伙伴完成一阶培养",
+      "detail": "伙伴同行3趟并达到Lv2后，选一条培养路线，备好所列材料再培养。",
+      "target": "companions",
+      "metric": "training",
+      "required": 1,
+      "reward": {
+        "coins": 12,
+        "biscuit": 1
+      }
+    },
+    {
+      "id": 17,
+      "title": "收藏家的抽屉",
+      "goal": "发现3件不同永久遗物",
+      "detail": "普通探索每地前三趟各发现一件永久遗物，无需装备。前往第三地区也会补充收藏。",
+      "target": "collection",
+      "metric": "relics",
+      "required": 3,
+      "reward": {
+        "coins": 15,
+        "ore": 1
+      }
+    },
+    {
+      "id": 18,
+      "title": "星光更远处",
+      "goal": "完成1趟星落遗迹",
+      "detail": "星落遗迹普通探索1趟；首次完成也会发现该地区永久遗物，计入第17层收藏。",
+      "target": "dungeon",
+      "metric": "thirdClear",
+      "required": 1,
+      "reward": {
+        "coins": 15
+      }
+    },
+    {
+      "id": 19,
+      "title": "自己的小生意",
+      "goal": "累计获得100金币",
+      "detail": "经营收款、探索与原有赠礼均计入。花掉金币不会倒退，塔奖励不计入。",
+      "target": "ledger",
+      "metric": "earned",
+      "required": 100,
+      "reward": {
+        "coins": 15
+      }
+    },
+    {
+      "id": 20,
+      "title": "村落灯火",
+      "goal": "完成1阶段村落建设",
+      "detail": "经营手账中为林间茶座搭好第一段木台，让营地留下自己的变化。",
+      "target": "village-projects",
+      "metric": "projects",
+      "required": 1,
+      "reward": {
+        "coins": 20,
+        "ore": 1
+      }
+    }
+  ],
+  "masteryIds": [
+    "paired-shelves",
+    "price-choice",
+    "two-recipes",
+    "ready-six",
+    "two-builds",
+    "moss-guardian"
+  ],
+  "masteryGoals": {
+    "paired-shelves": {
+      "name": "双麦徽记",
+      "line": "business",
+      "goal": "双货架各售出一份",
+      "detail": "两种商品同时陈列时，旅行口粮和魔晶餐各实际售出一份。"
+    },
+    "price-choice": {
+      "name": "天平徽记",
+      "line": "business",
+      "goal": "同商品快卖与高价成交",
+      "detail": "同一种商品分别选择快卖、高价，并等待真实成交。"
+    },
+    "two-recipes": {
+      "name": "商会印章",
+      "line": "business",
+      "goal": "交付两种配方委托",
+      "detail": "在补给店接取并交付旅行口粮、魔晶餐两种委托。"
+    },
+    "ready-six": {
+      "name": "行路者徽记",
+      "line": "idle",
+      "goal": "六格装备齐备获胜",
+      "detail": "出发时人物六格装备齐备，赢下一场挂机遭遇。"
+    },
+    "two-builds": {
+      "name": "双途徽记",
+      "line": "idle",
+      "goal": "冰印连招与采集获胜",
+      "detail": "一趟戴蓝石坠饰实际引爆冰印后获胜；另一趟戴叶纹胸针，在野外采集路线获胜。"
+    },
+    "moss-guardian": {
+      "name": "苔光守护徽记",
+      "line": "idle",
+      "goal": "苔团子整装深入获胜",
+      "detail": "苔团子三格装备齐备，携菌菇汤，在裂晶洞口或更深地区的增强远征中获胜。"
+    }
+  },
+  "projects": {
+    "teahouse": {
+      "name": "林间茶座",
+      "stages": [
+        "木台初搭",
+        "暖茶长桌",
+        "萤灯茶庭"
+      ],
+      "benefit": "每阶使常客回礼增加2金币"
+    },
+    "greenhouse": {
+      "name": "萤光温室",
+      "stages": [
+        "育苗棚架",
+        "萤光花房",
+        "四季温室"
+      ],
+      "benefit": "每阶使常客回礼增加1月纹石"
+    },
+    "market": {
+      "name": "旅人集市",
+      "stages": [
+        "旅人货摊",
+        "林间小街",
+        "星灯集市"
+      ],
+      "benefit": "每阶使常客回礼增加3金币"
+    }
+  },
+  "commissions": [
+    {
+      "station": "supply",
+      "revision": 0,
+      "slot": 0,
+      "expected": {
+        "good": "picnic",
+        "count": 4,
+        "coins": 160,
+        "revision": 0,
+        "accepted": false
+      }
+    },
+    {
+      "station": "supply",
+      "revision": 0,
+      "slot": 1,
+      "expected": {
+        "good": "picnic",
+        "count": 5,
+        "coins": 200,
+        "revision": 0,
+        "accepted": false
+      }
+    },
+    {
+      "station": "supply",
+      "revision": 0,
+      "slot": 2,
+      "expected": {
+        "good": "picnic",
+        "count": 2,
+        "coins": 80,
+        "revision": 0,
+        "accepted": false
+      }
+    },
+    {
+      "station": "supply",
+      "revision": 1,
+      "slot": 0,
+      "expected": {
+        "good": "stew",
+        "count": 3,
+        "coins": 143,
+        "revision": 1,
+        "accepted": false
+      }
+    },
+    {
+      "station": "supply",
+      "revision": 1,
+      "slot": 1,
+      "expected": {
+        "good": "picnic",
+        "count": 2,
+        "coins": 80,
+        "revision": 1,
+        "accepted": false
+      }
+    },
+    {
+      "station": "supply",
+      "revision": 1,
+      "slot": 2,
+      "expected": {
+        "good": "stew",
+        "count": 5,
+        "coins": 238,
+        "revision": 1,
+        "accepted": false
+      }
+    },
+    {
+      "station": "supply",
+      "revision": 2,
+      "slot": 0,
+      "expected": {
+        "good": "picnic",
+        "count": 2,
+        "coins": 80,
+        "revision": 2,
+        "accepted": false
+      }
+    },
+    {
+      "station": "supply",
+      "revision": 2,
+      "slot": 1,
+      "expected": {
+        "good": "stew",
+        "count": 3,
+        "coins": 143,
+        "revision": 2,
+        "accepted": false
+      }
+    },
+    {
+      "station": "supply",
+      "revision": 2,
+      "slot": 2,
+      "expected": {
+        "good": "picnic",
+        "count": 4,
+        "coins": 160,
+        "revision": 2,
+        "accepted": false
+      }
+    },
+    {
+      "station": "supply",
+      "revision": 5,
+      "slot": 0,
+      "expected": {
+        "good": "stew",
+        "count": 3,
+        "coins": 143,
+        "revision": 5,
+        "accepted": false
+      }
+    },
+    {
+      "station": "supply",
+      "revision": 5,
+      "slot": 1,
+      "expected": {
+        "good": "picnic",
+        "count": 2,
+        "coins": 80,
+        "revision": 5,
+        "accepted": false
+      }
+    },
+    {
+      "station": "supply",
+      "revision": 5,
+      "slot": 2,
+      "expected": {
+        "good": "stew",
+        "count": 5,
+        "coins": 238,
+        "revision": 5,
+        "accepted": false
+      }
+    },
+    {
+      "station": "supply",
+      "revision": 20,
+      "slot": 0,
+      "expected": {
+        "good": "picnic",
+        "count": 4,
+        "coins": 160,
+        "revision": 20,
+        "accepted": false
+      }
+    },
+    {
+      "station": "supply",
+      "revision": 20,
+      "slot": 1,
+      "expected": {
+        "good": "stew",
+        "count": 5,
+        "coins": 238,
+        "revision": 20,
+        "accepted": false
+      }
+    },
+    {
+      "station": "supply",
+      "revision": 20,
+      "slot": 2,
+      "expected": {
+        "good": "picnic",
+        "count": 2,
+        "coins": 80,
+        "revision": 20,
+        "accepted": false
+      }
+    },
+    {
+      "station": "alchemy",
+      "revision": 0,
+      "slot": 0,
+      "expected": {
+        "good": "ink",
+        "count": 4,
+        "coins": 120,
+        "revision": 0,
+        "accepted": false
+      }
+    },
+    {
+      "station": "alchemy",
+      "revision": 0,
+      "slot": 1,
+      "expected": {
+        "good": "ingot",
+        "count": 5,
+        "coins": 225,
+        "revision": 0,
+        "accepted": false
+      }
+    },
+    {
+      "station": "alchemy",
+      "revision": 0,
+      "slot": 2,
+      "expected": {
+        "good": "ingot",
+        "count": 2,
+        "coins": 90,
+        "revision": 0,
+        "accepted": false
+      }
+    },
+    {
+      "station": "alchemy",
+      "revision": 1,
+      "slot": 0,
+      "expected": {
+        "good": "ink",
+        "count": 3,
+        "coins": 90,
+        "revision": 1,
+        "accepted": false
+      }
+    },
+    {
+      "station": "alchemy",
+      "revision": 1,
+      "slot": 1,
+      "expected": {
+        "good": "dew",
+        "count": 2,
+        "coins": 45,
+        "revision": 1,
+        "accepted": false
+      }
+    },
+    {
+      "station": "alchemy",
+      "revision": 1,
+      "slot": 2,
+      "expected": {
+        "good": "nectar",
+        "count": 5,
+        "coins": 188,
+        "revision": 1,
+        "accepted": false
+      }
+    },
+    {
+      "station": "alchemy",
+      "revision": 2,
+      "slot": 0,
+      "expected": {
+        "good": "ink",
+        "count": 2,
+        "coins": 60,
+        "revision": 2,
+        "accepted": false
+      }
+    },
+    {
+      "station": "alchemy",
+      "revision": 2,
+      "slot": 1,
+      "expected": {
+        "good": "nectar",
+        "count": 3,
+        "coins": 113,
+        "revision": 2,
+        "accepted": false
+      }
+    },
+    {
+      "station": "alchemy",
+      "revision": 2,
+      "slot": 2,
+      "expected": {
+        "good": "nectar",
+        "count": 4,
+        "coins": 150,
+        "revision": 2,
+        "accepted": false
+      }
+    },
+    {
+      "station": "alchemy",
+      "revision": 5,
+      "slot": 0,
+      "expected": {
+        "good": "incense",
+        "count": 3,
+        "coins": 158,
+        "revision": 5,
+        "accepted": false
+      }
+    },
+    {
+      "station": "alchemy",
+      "revision": 5,
+      "slot": 1,
+      "expected": {
+        "good": "incense",
+        "count": 2,
+        "coins": 105,
+        "revision": 5,
+        "accepted": false
+      }
+    },
+    {
+      "station": "alchemy",
+      "revision": 5,
+      "slot": 2,
+      "expected": {
+        "good": "incense",
+        "count": 5,
+        "coins": 263,
+        "revision": 5,
+        "accepted": false
+      }
+    },
+    {
+      "station": "alchemy",
+      "revision": 20,
+      "slot": 0,
+      "expected": {
+        "good": "ink",
+        "count": 4,
+        "coins": 120,
+        "revision": 20,
+        "accepted": false
+      }
+    },
+    {
+      "station": "alchemy",
+      "revision": 20,
+      "slot": 1,
+      "expected": {
+        "good": "ink",
+        "count": 5,
+        "coins": 150,
+        "revision": 20,
+        "accepted": false
+      }
+    },
+    {
+      "station": "alchemy",
+      "revision": 20,
+      "slot": 2,
+      "expected": {
+        "good": "ink",
+        "count": 2,
+        "coins": 60,
+        "revision": 20,
+        "accepted": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+body[data-field-adventure=true] #chapterChip,body[data-field-adventure=true] #fieldInfo,body[data-field-adventure=true] #placeSigns,body[data-field-adventure=true] #shopSigns,body[data-field-adventure=true] #towerEntrance{display:none!important}
+#fieldHud{position:absolute;inset:2px 146px auto 8px;height:44px;pointer-events:none;font-size:16px;line-height:24px;z-index:10;display:flex;align-items:flex-start;justify-content:space-between;gap:8px}
+#fieldHud[hidden],#fieldModeMenu[hidden],#fieldOreHint[hidden],#fieldEntryIssue[hidden]{display:none!important}
+#fieldStatus{padding:2px 8px;background:#203533dd;color:#e6ecd9;border:1px solid #8ca39460;border-radius:6px;white-space:nowrap;pointer-events:none}
+#fieldMode,#fieldModeMenu button,#fieldEntryIssue button{font:inherit;font-size:16px;min-height:44px;min-width:44px;padding:7px 12px;pointer-events:auto;cursor:pointer;background:#223b3bed;color:#e8e6ce;border:1px solid #9cb3a5;border-radius:6px}
+#fieldMode{margin-left:auto;white-space:nowrap}
+#fieldModeMenu{display:flex;position:absolute;right:0;top:0;gap:4px;background:#192c2bf5;border-radius:6px;pointer-events:auto}
+#fieldModeMenu button[aria-pressed=true]{background:#496650;border-color:#e0d9a5;box-shadow:inset 0 0 0 1px #e0d9a5}
+#fieldMode:hover,#fieldModeMenu button:hover,#fieldEntryIssue button:hover{background:#567266;color:#fff5c8;border-color:#f2d99a;filter:brightness(1.12)}
+#fieldOreHint{position:absolute;pointer-events:none;z-index:11;border-radius:5px;background:#253a35ed;color:#f1e8c7;padding:0 6px;font-size:16px;line-height:24px;white-space:nowrap}
+#fieldEntryIssue{position:absolute;inset:2px 146px auto auto;max-width:calc(100% - 155px);height:44px;display:flex;align-items:center;gap:8px;z-index:14;background:#293c36f5;color:#f5dfbe;font-size:16px;line-height:22px;border-radius:6px;padding-left:8px}
+#fieldEffects{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:9}.field-damage{position:absolute;font-size:16px;color:#fff0bf;text-shadow:0 1px #29302d;animation:field-damage .4s ease-out forwards;pointer-events:none}@keyframes field-damage{to{transform:translateY(-10px);opacity:0}}
+body[data-field-adventure=true] #stage canvas{cursor:inherit}
+body[data-field-adventure=true] #stage{background-image:none!important;background-color:#182a2b}
+
+#fieldStatus svg{width:16px;height:16px;vertical-align:-2px;margin-right:3px}body[data-field-adventure=true] #hud{opacity:1}
+#openExpeditionSetup{min-height:44px;font-size:16px;line-height:24px;margin-top:6px}
+
+/* Independent compact boss readout; existing status/mode/toolbar positions stay fixed. */
+#fieldBoss{position:absolute;top:2px;left:50%;transform:translateX(-50%);width:190px;max-width:24vw;padding:1px 7px 4px;background:#273a37e8;color:#f3e7cb;border:1px solid #a8bbaa80;border-radius:5px;pointer-events:none;z-index:10;font-size:16px;line-height:18px;white-space:nowrap;text-align:center}#fieldBoss[hidden]{display:none!important}#fieldBoss progress{display:block;width:100%;height:4px;accent-color:#bfcf9a}
+
+.field-personal-loot{position:absolute;display:flex;gap:6px;font-size:16px;line-height:24px;color:#edf0d6;background:#243d34e8;border-radius:5px;padding:2px 6px;pointer-events:none}.field-personal-loot>span{display:flex;gap:3px;align-items:center}.field-personal-loot img,.field-personal-loot svg,.field-personal-loot .inventory-art{width:22px;height:22px;image-rendering:pixelated}

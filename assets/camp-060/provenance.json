@@ -1,0 +1,87 @@
+{
+  "tool": "built-in image_gen",
+  "user_authorization": "2026-10-23: 多画像素图、地图和内容，自行决定游戏设计",
+  "assets": [
+    {
+      "id": "world",
+      "file": "assets/camp-060/world.png",
+      "sha256": "9983078564f826617708e4dd3a7dd8973eeed82f6ae4c03bf098ff751cf51f3d",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generated_source": "[local-source-redacted]"
+    },
+    {
+      "id": "moss",
+      "file": "assets/camp-060/moss.png",
+      "sha256": "021ea3a1d19d628e88d555d9682dd98d410f2de670b1cc40cc814ec18bf3e1e6",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generated_source": "[local-source-redacted]"
+    },
+    {
+      "id": "moon",
+      "file": "assets/camp-060/moon.png",
+      "sha256": "2e8e5fad9cfb85296d1dd049742d32673714e4d3709e658dd9428bd398431153",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generated_source": "[local-source-redacted]"
+    },
+    {
+      "id": "star",
+      "file": "assets/camp-060/star.png",
+      "sha256": "a06deefa8279e78afb6adb653550a2cac92d0e0398506e50d0802b66f8f612eb",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generated_source": "[local-source-redacted]"
+    },
+    {
+      "id": "wind",
+      "file": "assets/camp-060/wind.png",
+      "sha256": "9c180ba4808e57e96ecea72bd01258f5ce615eeb0c4d35d034b85fb290cb3e23",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generated_source": "[local-source-redacted]"
+    },
+    {
+      "id": "snow",
+      "file": "assets/camp-060/snow.png",
+      "sha256": "f2a07a4b30990f277700b506712beb328abc3de254ee750f0f30bd74f943cd06",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generated_source": "[local-source-redacted]"
+    },
+    {
+      "id": "relics",
+      "file": "assets/camp-060/relics.png",
+      "sha256": "a0a6b0d1fb680840a013b3027b39027862cdf5b07c4333a354a4d06913c130d1",
+      "dimensions": [
+        971,
+        1619
+      ],
+      "generated_source": "[local-source-redacted]"
+    },
+    {
+      "id": "camp",
+      "file": "assets/camp-060/camp.png",
+      "sha256": "dd357830ea6a5d4b9a92cb8c2694a5ad4ea6a8349bf7b27776c3537b14aafc47",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generated_source": "[local-source-redacted]"
+    }
+  ],
+  "source_metadata_scope": "Original PNG provenance before Beta repository optimization, not current WebP byte hashes. See assets/optimization-manifest.json for the runtime file mapping and hashes. Original PNGs are retained outside this repository."
+}

@@ -1,0 +1,158 @@
+{
+  "repository": "https://github.com/ant-design/ant-design-icons",
+  "commit": "7f2516ac91226d2b41f93b35cb5197c8d94f7189",
+  "license": "MIT",
+  "files": [
+    {
+      "file": "arrow-down.svg",
+      "source": "https://raw.githubusercontent.com/ant-design/ant-design-icons/7f2516ac91226d2b41f93b35cb5197c8d94f7189/packages/icons-svg/svg/outlined/arrow-down.svg",
+      "sha256": "f3eb76cb13842c1859d4535b97b08af136c6bfc1ab2ad392070552394dd780e9"
+    },
+    {
+      "file": "close.svg",
+      "source": "https://raw.githubusercontent.com/ant-design/ant-design-icons/7f2516ac91226d2b41f93b35cb5197c8d94f7189/packages/icons-svg/svg/outlined/close.svg",
+      "sha256": "34b813eb580a390c9a2cadad9a30a9726777aea77972af3bdfd863bafd49994d"
+    },
+    {
+      "file": "download.svg",
+      "source": "https://raw.githubusercontent.com/ant-design/ant-design-icons/7f2516ac91226d2b41f93b35cb5197c8d94f7189/packages/icons-svg/svg/outlined/download.svg",
+      "sha256": "749c98873f6e9fe106d66149631c5092aa2a7a5975fdb5a1fb1eb62d37907cc8"
+    },
+    {
+      "file": "eye-invisible.svg",
+      "source": "https://raw.githubusercontent.com/ant-design/ant-design-icons/7f2516ac91226d2b41f93b35cb5197c8d94f7189/packages/icons-svg/svg/outlined/eye-invisible.svg",
+      "sha256": "bf8fed8cc9998113dab5b8679921bac5d2c7609737af0b59bee90e2f1663d8df"
+    },
+    {
+      "file": "home.svg",
+      "source": "https://raw.githubusercontent.com/ant-design/ant-design-icons/7f2516ac91226d2b41f93b35cb5197c8d94f7189/packages/icons-svg/svg/outlined/home.svg",
+      "sha256": "4cbf3b2a5e6b7af19fd39309804193ed385b7beb6efbab23ce2b420c2a4aceec"
+    },
+    {
+      "file": "left.svg",
+      "source": "https://raw.githubusercontent.com/ant-design/ant-design-icons/7f2516ac91226d2b41f93b35cb5197c8d94f7189/packages/icons-svg/svg/outlined/left.svg",
+      "sha256": "ad57185c76c87cde35f2df54c70ad5367000b01c9857971abed7a9d7f8fff088"
+    },
+    {
+      "file": "message.svg",
+      "source": "https://raw.githubusercontent.com/ant-design/ant-design-icons/7f2516ac91226d2b41f93b35cb5197c8d94f7189/packages/icons-svg/svg/outlined/message.svg",
+      "sha256": "e0a207006eb7e1ff1df0543ed3b0ba886a90285a4a8955cbc2255b8053190b31"
+    },
+    {
+      "file": "redo.svg",
+      "source": "https://raw.githubusercontent.com/ant-design/ant-design-icons/7f2516ac91226d2b41f93b35cb5197c8d94f7189/packages/icons-svg/svg/outlined/redo.svg",
+      "sha256": "d466c8f54af2d94e0443e5975d87e2066308ddfa08d4f2ed2e5576f6fc0cabd9"
+    },
+    {
+      "file": "save.svg",
+      "source": "https://raw.githubusercontent.com/ant-design/ant-design-icons/7f2516ac91226d2b41f93b35cb5197c8d94f7189/packages/icons-svg/svg/outlined/save.svg",
+      "sha256": "e60afa5469cbf96460f004682f6b6dd621531b9c2593e9a6bbc14ee6936070da"
+    },
+    {
+      "file": "send.svg",
+      "source": "https://raw.githubusercontent.com/ant-design/ant-design-icons/7f2516ac91226d2b41f93b35cb5197c8d94f7189/packages/icons-svg/svg/outlined/send.svg",
+      "sha256": "80c5f6c25eead5c907d590b67ed1a1a0c30260d489125f2bdb7500b2a49ec6fa"
+    },
+    {
+      "file": "setting.svg",
+      "source": "https://raw.githubusercontent.com/ant-design/ant-design-icons/7f2516ac91226d2b41f93b35cb5197c8d94f7189/packages/icons-svg/svg/outlined/setting.svg",
+      "sha256": "316539db1b23299b57bc4cc60b2a739e7ee54b5663737934691162c152122930"
+    },
+    {
+      "file": "upload.svg",
+      "source": "https://raw.githubusercontent.com/ant-design/ant-design-icons/7f2516ac91226d2b41f93b35cb5197c8d94f7189/packages/icons-svg/svg/outlined/upload.svg",
+      "sha256": "c826c65f14e4f5216708101b8f106ed5cf181d2e39bf4c2ad09726b1732fd9e9"
+    },
+    {
+      "file": "clock-circle.svg",
+      "source": "https://raw.githubusercontent.com/ant-design/ant-design-icons/7f2516ac91226d2b41f93b35cb5197c8d94f7189/packages/icons-svg/svg/outlined/clock-circle.svg",
+      "sha256": "d53d7c6f1b756766c1b27763252e2df3160a1d463a2862c4278bbc0760e37b99"
+    },
+    {
+      "file": "gold.svg",
+      "source": "https://raw.githubusercontent.com/ant-design/ant-design-icons/7f2516ac91226d2b41f93b35cb5197c8d94f7189/packages/icons-svg/svg/outlined/gold.svg",
+      "sha256": "e2a96cb82209700c1df2e2b149693dd1310a5e52f696a7e4d69c89772fa0787a"
+    },
+    {
+      "file": "inbox.svg",
+      "source": "https://raw.githubusercontent.com/ant-design/ant-design-icons/7f2516ac91226d2b41f93b35cb5197c8d94f7189/packages/icons-svg/svg/outlined/inbox.svg",
+      "sha256": "7f229f705c8a4b634af1455a4787930512f92b38e8bebb949edbf7d81523545f"
+    },
+    {
+      "file": "team.svg",
+      "source": "https://raw.githubusercontent.com/ant-design/ant-design-icons/7f2516ac91226d2b41f93b35cb5197c8d94f7189/packages/icons-svg/svg/outlined/team.svg",
+      "sha256": "c857c7504cb8f9fde4bd2370f521ba6a64b119c3714ad2082a075c69d34d0e25"
+    },
+    {
+      "file": "check.svg",
+      "source": "https://raw.githubusercontent.com/ant-design/ant-design-icons/7f2516ac91226d2b41f93b35cb5197c8d94f7189/packages/icons-svg/svg/outlined/check.svg",
+      "sha256": "1fa2ba37760d16fcafc66adecddd71acd4a3cb450cd687596ff9a3c1b9882798"
+    },
+    {
+      "file": "plus.svg",
+      "source": "https://raw.githubusercontent.com/ant-design/ant-design-icons/7f2516ac91226d2b41f93b35cb5197c8d94f7189/packages/icons-svg/svg/outlined/plus.svg",
+      "sha256": "7941b0e679a43e40ca3a1d05f088934c341cebfceee744d5d6d2f87f83b7bb1d"
+    },
+    {
+      "file": "minus.svg",
+      "source": "https://raw.githubusercontent.com/ant-design/ant-design-icons/7f2516ac91226d2b41f93b35cb5197c8d94f7189/packages/icons-svg/svg/outlined/minus.svg",
+      "sha256": "1941d7e4bfc07a09ef29065823905cf479d5f1fc73a55ece4507ac4145d53b6c"
+    },
+    {
+      "file": "gift.svg",
+      "source": "https://raw.githubusercontent.com/ant-design/ant-design-icons/7f2516ac91226d2b41f93b35cb5197c8d94f7189/packages/icons-svg/svg/outlined/gift.svg",
+      "sha256": "37ec04f91e15bceaaba31dd0279b3814298dc096af7ffd62f061d91b251e1496"
+    },
+    {
+      "file": "container.svg",
+      "source": "https://raw.githubusercontent.com/ant-design/ant-design-icons/7f2516ac91226d2b41f93b35cb5197c8d94f7189/packages/icons-svg/svg/outlined/container.svg",
+      "sha256": "5c1a8e6357bf19bd69ef9cdc99d572d95c3617a8e0acfd81cff6c69eb4883c3d"
+    },
+    {
+      "file": "coffee.svg",
+      "source": "https://raw.githubusercontent.com/ant-design/ant-design-icons/7f2516ac91226d2b41f93b35cb5197c8d94f7189/packages/icons-svg/svg/outlined/coffee.svg",
+      "sha256": "8ea43f7ae2d02137dc4d28c55fd605ccada5f4f0a2657892f1bba518287dca67"
+    },
+    {
+      "file": "experiment.svg",
+      "source": "https://raw.githubusercontent.com/ant-design/ant-design-icons/7f2516ac91226d2b41f93b35cb5197c8d94f7189/packages/icons-svg/svg/outlined/experiment.svg",
+      "sha256": "e348624d41a6b3241cf27eb1161131d27116f6ac044298b0726bdc210833d9da"
+    },
+    {
+      "file": "thunderbolt.svg",
+      "source": "https://raw.githubusercontent.com/ant-design/ant-design-icons/7f2516ac91226d2b41f93b35cb5197c8d94f7189/packages/icons-svg/svg/outlined/thunderbolt.svg",
+      "sha256": "404791194677f69436748588a9bad921a36611bec73c5946e0cc9bc482529d93"
+    },
+    {
+      "file": "appstore.svg",
+      "source": "https://raw.githubusercontent.com/ant-design/ant-design-icons/7f2516ac91226d2b41f93b35cb5197c8d94f7189/packages/icons-svg/svg/outlined/appstore.svg",
+      "sha256": "2cce2bccec8495ebd1d6823d320161267d88795f42326c91d610002ba209caa0"
+    },
+    {
+      "file": "filter.svg",
+      "source": "https://raw.githubusercontent.com/ant-design/ant-design-icons/7f2516ac91226d2b41f93b35cb5197c8d94f7189/packages/icons-svg/svg/outlined/filter.svg",
+      "sha256": "8181ade81b291c980429f4b6d9c6a7926e83a3244b1fd0095ad27a36bd180417"
+    },
+    {
+      "file": "drag.svg",
+      "source": "https://raw.githubusercontent.com/ant-design/ant-design-icons/7f2516ac91226d2b41f93b35cb5197c8d94f7189/packages/icons-svg/svg/outlined/drag.svg",
+      "sha256": "fb36b95100f786608c900dcd22501ac03cca6085e27933a9153cf604a2f2bd7e"
+    },
+    {
+      "file": "question-circle.svg",
+      "source": "https://raw.githubusercontent.com/ant-design/ant-design-icons/7f2516ac91226d2b41f93b35cb5197c8d94f7189/packages/icons-svg/svg/outlined/question-circle.svg",
+      "sha256": "4d8dfe13f97ca9b6624f8d4012efb796f79308c8c1832f50117895efbf4d0df1"
+    },
+    {
+      "file": "fire.svg",
+      "source": "https://raw.githubusercontent.com/ant-design/ant-design-icons/7f2516ac91226d2b41f93b35cb5197c8d94f7189/packages/icons-svg/svg/outlined/fire.svg",
+      "sha256": "c60c7a2bb47ea2e8af4395d6f102e94ae3292b90a89e021326b5c479ebd9eb58"
+    },
+    {
+      "file": "arrow-right.svg",
+      "source": "https://raw.githubusercontent.com/ant-design/ant-design-icons/7f2516ac91226d2b41f93b35cb5197c8d94f7189/packages/icons-svg/svg/outlined/arrow-right.svg",
+      "sha256": "9e81c52cda6afb725456bfc690aea3762e924ecb99330b27c77123a59b52fc15"
+    }
+  ],
+  "licenseSHA256": "5d367fb0a07340571542eb4ee8eb1add62d37b71bad6786a57c2e9a86bf76c70"
+}

@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "playbackVerified": false,
+  "selectionNote": "Licensed impact samples; kill is a short body-fall impact, not a recorded character death vocal. Audible quality remains unverified during hidden tests.",
+  "sounds": {
+    "swing": {
+      "file": "swing.ogg",
+      "sha256": "4cd96dc630bed9840c15f1dd2306da2cc56a4da26a5d3f1a03c5a7265ac5e54f",
+      "bytes": 15532,
+      "original": "Audio/knifeSlice.ogg",
+      "author": "Kenney Vleugels (Kenney.nl)",
+      "url": "https://kenney.nl/assets/rpg-audio",
+      "downloadUrl": "https://kenney.nl/media/pages/assets/rpg-audio/8e99002d76-1677590336/kenney_rpg-audio.zip",
+      "archiveSha256": "6dbeaf8544da958d8f2adcb4a4a4b76c1ade34a05f8ab9edccd327da7375f38b",
+      "license": "CC0-1.0"
+    },
+    "hit": {
+      "file": "hit.ogg",
+      "sha256": "33b5e6e37c6e9d54e07bf5a89b12c76e879f40c1ea83cdd82714df1d6f9fec6d",
+      "bytes": 7651,
+      "original": "Audio/impactMetal_light_000.ogg",
+      "author": "Kenney Vleugels (Kenney.nl)",
+      "url": "https://kenney.nl/assets/impact-sounds",
+      "downloadUrl": "https://kenney.nl/media/pages/assets/impact-sounds/87b4ddecda-1677589768/kenney_impact-sounds.zip",
+      "archiveSha256": "029d734af1582474edf3a694d1b0cebc97c1c152f2f39fa34d4c2bafc5de77f8",
+      "license": "CC0-1.0"
+    },
+    "heavy": {
+      "file": "heavy.ogg",
+      "sha256": "e07045693e4a2b3d165c424e3dab4c781d9ff8880a386880ac89a51315d7f831",
+      "bytes": 6110,
+      "original": "Audio/impactMetal_heavy_000.ogg",
+      "author": "Kenney Vleugels (Kenney.nl)",
+      "url": "https://kenney.nl/assets/impact-sounds",
+      "downloadUrl": "https://kenney.nl/media/pages/assets/impact-sounds/87b4ddecda-1677589768/kenney_impact-sounds.zip",
+      "archiveSha256": "029d734af1582474edf3a694d1b0cebc97c1c152f2f39fa34d4c2bafc5de77f8",
+      "license": "CC0-1.0"
+    },
+    "block": {
+      "file": "block.ogg",
+      "sha256": "a96f879fec0864a8938e0c745b6996a6c5679c16a234ce31a01cc995e8401003",
+      "bytes": 7117,
+      "original": "Audio/impactMetal_medium_000.ogg",
+      "author": "Kenney Vleugels (Kenney.nl)",
+      "url": "https://kenney.nl/assets/impact-sounds",
+      "downloadUrl": "https://kenney.nl/media/pages/assets/impact-sounds/87b4ddecda-1677589768/kenney_impact-sounds.zip",
+      "archiveSha256": "029d734af1582474edf3a694d1b0cebc97c1c152f2f39fa34d4c2bafc5de77f8",
+      "license": "CC0-1.0"
+    },
+    "fist": {
+      "file": "fist.ogg",
+      "sha256": "486988aa2d6440ffc4c62a0e8ccf3c23673ba84424bd4723378d451b7255eb5c",
+      "bytes": 8800,
+      "original": "Audio/impactPunch_medium_000.ogg",
+      "author": "Kenney Vleugels (Kenney.nl)",
+      "url": "https://kenney.nl/assets/impact-sounds",
+      "downloadUrl": "https://kenney.nl/media/pages/assets/impact-sounds/87b4ddecda-1677589768/kenney_impact-sounds.zip",
+      "archiveSha256": "029d734af1582474edf3a694d1b0cebc97c1c152f2f39fa34d4c2bafc5de77f8",
+      "license": "CC0-1.0"
+    },
+    "kill": {
+      "file": "kill.ogg",
+      "sha256": "15ff82332f342c30e469215539e1cc57e11b221aa2cf7e11e811d313a9927f3d",
+      "bytes": 6233,
+      "original": "Audio/impactWood_heavy_000.ogg",
+      "author": "Kenney Vleugels (Kenney.nl)",
+      "url": "https://kenney.nl/assets/impact-sounds",
+      "downloadUrl": "https://kenney.nl/media/pages/assets/impact-sounds/87b4ddecda-1677589768/kenney_impact-sounds.zip",
+      "archiveSha256": "029d734af1582474edf3a694d1b0cebc97c1c152f2f39fa34d4c2bafc5de77f8",
+      "license": "CC0-1.0"
+    },
+    "hurt": {
+      "file": "hurt.ogg",
+      "sha256": "e71d23abcc3f10d9d6bc9615b2a431fff70b12333a5fcdd9964457564ace4349",
+      "bytes": 8701,
+      "original": "Audio/impactPunch_medium_001.ogg",
+      "author": "Kenney Vleugels (Kenney.nl)",
+      "url": "https://kenney.nl/assets/impact-sounds",
+      "downloadUrl": "https://kenney.nl/media/pages/assets/impact-sounds/87b4ddecda-1677589768/kenney_impact-sounds.zip",
+      "archiveSha256": "029d734af1582474edf3a694d1b0cebc97c1c152f2f39fa34d4c2bafc5de77f8",
+      "license": "CC0-1.0"
+    },
+    "dot": {
+      "file": "dot.ogg",
+      "sha256": "f0e982611e97512fee5f777986b67e8b435434b601f94992ec044f7e89fb5acb",
+      "bytes": 5827,
+      "original": "Audio/impactGeneric_light_000.ogg",
+      "author": "Kenney Vleugels (Kenney.nl)",
+      "url": "https://kenney.nl/assets/impact-sounds",
+      "downloadUrl": "https://kenney.nl/media/pages/assets/impact-sounds/87b4ddecda-1677589768/kenney_impact-sounds.zip",
+      "archiveSha256": "029d734af1582474edf3a694d1b0cebc97c1c152f2f39fa34d4c2bafc5de77f8",
+      "license": "CC0-1.0"
+    }
+  }
+}

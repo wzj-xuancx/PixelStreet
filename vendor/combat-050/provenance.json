@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-22",
+  "classification": "Inspected real pixels; no generated artwork. Source filenames retained even when mislabeled.",
+  "sources": {
+    "scythe": {
+      "file": "scythe-original.png",
+      "width": 16,
+      "height": 32,
+      "sha256": "7e1e304f93f7f02cd3b2011a4d1a1303c0574235ddf98d36f981fa6601ec4a98",
+      "author": "screaming mandrake",
+      "url": "https://screaming-mandrake.itch.io/medival-weapon-pxlart",
+      "license": "CC0-1.0",
+      "originalPath": "screaming-mandrake-small_shield.png",
+      "archiveSha256": null,
+      "notes": "Author small_shield.png is visibly a scythe; not assigned from filename."
+    },
+    "glove": {
+      "file": "glove-original.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "445a5ba47afd05c6fac481e4bb5bd569999c70ca2a67cafcfe527e14a0fff467",
+      "author": "AntumDeluge; source image glove_01 by 7Soul1",
+      "url": "https://opengameart.org/content/cc0-hand-wear-icons",
+      "license": "CC0-1.0",
+      "originalPath": "extracted/cc0-hand-wear-7soul1-glove_01.png",
+      "archiveSha256": "e623c2ebb34a29e2137c215e880bfc0c9c8edba4275411cbb9ca40083aed9478",
+      "notes": "Original PNG copied unchanged; rectangles are metadata only."
+    },
+    "chain": {
+      "file": "chain-original.png",
+      "width": 320,
+      "height": 320,
+      "sha256": "6d978970274721d606f7584b516dcdb7327c2dec21a2b0f6a707e3e7e2ea42f1",
+      "author": "GabeChHe (Gabe Hess)",
+      "url": "https://opengameart.org/content/pixel-weapons",
+      "license": "CC0-1.0",
+      "originalPath": "extracted/oga-pixel-weapons-flail.png",
+      "archiveSha256": "4795f567ff36528245a8215bc6fdf90889abdef5cf4d4e24a348ef59deccbd7b",
+      "notes": "Original PNG copied unchanged; rectangles are metadata only."
+    },
+    "shield": {
+      "file": "shield-original.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "3e06268fe17d7615b32a2de19a4acaf5cd7f6723e0cb96663dacf63cbefb9ae9",
+      "author": "AntumDeluge; source shield set by 7Soul1",
+      "url": "https://opengameart.org/content/cc0-shield-icons",
+      "license": "CC0-1.0",
+      "originalPath": "extracted/cc0-shield-7soul1-E_Metal04.png",
+      "archiveSha256": "4b147ca891337c830c6b76093df3001e3d6968cb0eaeda041e441fded1c0c4c1",
+      "notes": "Original PNG copied unchanged; rectangles are metadata only."
+    }
+  },
+  "archives": [
+    {
+      "file": "cc0-hand-wear-7soul1.zip",
+      "sha256": "e623c2ebb34a29e2137c215e880bfc0c9c8edba4275411cbb9ca40083aed9478"
+    },
+    {
+      "file": "cc0-shield-7soul1.zip",
+      "sha256": "4b147ca891337c830c6b76093df3001e3d6968cb0eaeda041e441fded1c0c4c1"
+    },
+    {
+      "file": "pixel-weapons-oga.zip",
+      "sha256": "4795f567ff36528245a8215bc6fdf90889abdef5cf4d4e24a348ef59deccbd7b"
+    }
+  ]
+}

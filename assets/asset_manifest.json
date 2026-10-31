@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "project": "PixelStreet",
+  "originalSource": "Original procedural pixel art created specifically for PixelStreet; no third-party source assets used.",
+  "author": "PixelStreet project (procedural pixel art)",
+  "generatedBy": "scripts/generate-art.mjs",
+  "rebuild": "node scripts/generate-art.mjs",
+  "license": "Original project artwork; no third-party artwork is included.",
+  "dimensions": {
+    "atlas": [
+      352,
+      336
+    ],
+    "shop": [
+      112,
+      88
+    ],
+    "interior": [
+      112,
+      88
+    ],
+    "interiorBakery": [
+      112,
+      88
+    ],
+    "interiorAlchemy": [
+      112,
+      88
+    ],
+    "character": [
+      24,
+      32
+    ],
+    "slime": [
+      24,
+      16
+    ],
+    "ground": [
+      16,
+      16
+    ],
+    "sampleLogical": [
+      224,
+      96
+    ],
+    "sampleRendered": [
+      448,
+      192
+    ]
+  },
+  "sha256": {
+    "atlas.png": "35add6ee5b86dd0db11ecdb0a8995dbb543fc6a39dc4a3c96da81cd7d6505cbb",
+    "art-sample.png": "f4de2af3ee8b6cfc01ce5e5f717c9e72db041ae6f5b58ec6d19e6166d7ce8723",
+    "art-sample-1x.png": "784ad3b85c9598cbf4241140029f7afa81ce3365159625de49940f53e4d148a4"
+  }
+}

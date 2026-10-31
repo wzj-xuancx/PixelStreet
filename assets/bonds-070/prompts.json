@@ -1,0 +1,45 @@
+{
+  "tool": "built-in image_gen",
+  "prompts": [
+    {
+      "key": "companions",
+      "transparent": true,
+      "prompt": "Use case: stylized-concept. Asset type: original polished 2D pixel art for a cozy idle fantasy exploration game. True crisp pixel clusters and clean retro RPG silhouettes, richly detailed but readable, beautiful restrained colors, no blur, no painterly strokes or photorealism. No text, letters, numbers, HUD, watermark or decorative border. A perfectly regular 3 by 3 contact sheet of NINE distinct full-body friendly companion characters, each centered in one equal square cell with ample identical transparent margins and no overlap. Transparent background, no floors, no boxes, no shadows extending beyond the character. Front three-quarter facing right, cohesive chunky pixel art, expressive eyes, charming collectible game mascots. Row 1: a round moss-green slime with tiny leaves; a stout hooded human traveler carrying a brass lantern; a friendly green forest guardian in leaf armor. Row 2: an orange small fox with a glowing lantern-like tail; an elegant tiny moon-antler deer with pale blue flowers; a cheerful brown river otter wearing a little blue scarf and carrying a shell. Row 3: a cream owl with star markings and a small purple scholar cape; a chubby honey bear wearing a tiny apron and carrying a honey pot; a graceful pale turquoise snowbird with frost feathers. Each fills about 70 percent of its cell. Exactly nine subjects in exact row order, uniform 3-column 3-row grid, no accessories crossing cells. Square overall atlas."
+    },
+    {
+      "key": "rarities",
+      "transparent": false,
+      "prompt": "Use case: stylized-concept. Asset type: original polished 2D pixel art for a cozy idle fantasy exploration game. True crisp pixel clusters and clean retro RPG silhouettes, richly detailed but readable, beautiful restrained colors, no blur, no painterly strokes or photorealism. No text, letters, numbers, HUD, watermark or decorative border. Production relic inventory atlas, EXACTLY 3 columns by 5 rows of equal square cells, 15 centered distinct objects with generous identical margins. Flat dark forest-green background #162d28, no dividing lines, no extra objects crossing cells. Row 1: dew-leaf golden key; ancient acorn seed with a tiny sprout; glass jar with fireflies. Row 2: tidal blue hourglass; silver moon-spring vial; seashell coin purse. Row 3: brass star spectacles; ornate silver-page spellbook; blue celestial prism. Row 4: amber honey jar; golden wheat wreath badge; wooden flower flute. Row 5: small frost silver bell; aurora-feather quill; snow-crystal crown. Cohesive detailed pixel-object icons, all unique readable silhouettes. Portrait sheet width:height 3:5."
+    },
+    {
+      "key": "training",
+      "transparent": false,
+      "prompt": "Use case: stylized-concept. Asset type: original polished 2D pixel art for a cozy idle fantasy exploration game. True crisp pixel clusters and clean retro RPG silhouettes, richly detailed but readable, beautiful restrained colors, no blur, no painterly strokes or photorealism. No text, letters, numbers, HUD, watermark or decorative border.  Landscape 3:2 framing, slightly elevated side-on RPG scenic view. A broad walking path occupies the lower third for small character sprites. Trees and architecture frame the edges; clear foreground and layered distant scenery. Primary request: a beautiful woodland companion training garden next to a cozy camp, warm morning light. A mossy agility log and small wooden hurdles on the left, a tiny outdoor reading nook with books and star charts at the center, a rustic preparation table with forage baskets and hanging herbs on the right. Flower beds, handwoven bunting, a tree hollow, stepping stones and a soft green meadow. No characters. Inviting, lovingly tended, sage green and golden cream palette."
+    },
+    {
+      "key": "heartwood",
+      "transparent": false,
+      "prompt": "Use case: stylized-concept. Asset type: original polished 2D pixel art for a cozy idle fantasy exploration game. True crisp pixel clusters and clean retro RPG silhouettes, richly detailed but readable, beautiful restrained colors, no blur, no painterly strokes or photorealism. No text, letters, numbers, HUD, watermark or decorative border.  Landscape 3:2 framing, slightly elevated side-on RPG scenic view. A broad walking path occupies the lower third for small character sprites. Trees and architecture frame the edges; clear foreground and layered distant scenery. Primary request: a hidden sanctuary inside an enormous ancient tree, cathedral-like hollow trunk with looping roots and a round opening to the sunlit forest, a small luminous green seed floating above a moss stone altar, streams curling around the roots, glowing fireflies and tiny mushrooms. Jewel green, amber light, peaceful secret garden atmosphere. No characters."
+    },
+    {
+      "key": "tidevault",
+      "transparent": false,
+      "prompt": "Use case: stylized-concept. Asset type: original polished 2D pixel art for a cozy idle fantasy exploration game. True crisp pixel clusters and clean retro RPG silhouettes, richly detailed but readable, beautiful restrained colors, no blur, no painterly strokes or photorealism. No text, letters, numbers, HUD, watermark or decorative border.  Landscape 3:2 framing, slightly elevated side-on RPG scenic view. A broad walking path occupies the lower third for small character sprites. Trees and architecture frame the edges; clear foreground and layered distant scenery. Primary request: a secret tidal treasury inside a blue crystal cave, an ancient shell-shaped arch framing a glowing moonstone fountain, shallow clear turquoise water, pearl shells, weathered brass chests, a little stone bridge and hanging mining lanterns. Broad dry stone path in the lower third. Quiet aqua and cobalt with warm lantern gold. No characters."
+    },
+    {
+      "key": "starbell",
+      "transparent": false,
+      "prompt": "Use case: stylized-concept. Asset type: original polished 2D pixel art for a cozy idle fantasy exploration game. True crisp pixel clusters and clean retro RPG silhouettes, richly detailed but readable, beautiful restrained colors, no blur, no painterly strokes or photorealism. No text, letters, numbers, HUD, watermark or decorative border.  Landscape 3:2 framing, slightly elevated side-on RPG scenic view. A broad walking path occupies the lower third for small character sprites. Trees and architecture frame the edges; clear foreground and layered distant scenery. Primary request: a secret floating observatory courtyard at violet dusk, a giant ornate bronze star bell suspended between ruined marble arches, small celestial instruments, lilac climbing flowers, a pool reflecting a dense starry sky, distant floating islands. A pale tiled walking path in the lower third. Deep lavender, antique gold and cream, wondrous peaceful mood. No characters."
+    },
+    {
+      "key": "honeyglass",
+      "transparent": false,
+      "prompt": "Use case: stylized-concept. Asset type: original polished 2D pixel art for a cozy idle fantasy exploration game. True crisp pixel clusters and clean retro RPG silhouettes, richly detailed but readable, beautiful restrained colors, no blur, no painterly strokes or photorealism. No text, letters, numbers, HUD, watermark or decorative border.  Landscape 3:2 framing, slightly elevated side-on RPG scenic view. A broad walking path occupies the lower third for small character sprites. Trees and architecture frame the edges; clear foreground and layered distant scenery. Primary request: a hidden sunlit fantasy greenhouse beyond golden wheat fields, tall arched panes glowing amber, huge flowering vines, honeycomb-shaped windows, pumpkin beds, beehives, copper watering cans, a tiny stream and rustic wind ornaments. A wide warm brick path in the foreground. Golden honey, soft green and warm cream, joyful abundant atmosphere. No characters."
+    },
+    {
+      "key": "auroranest",
+      "transparent": false,
+      "prompt": "Use case: stylized-concept. Asset type: original polished 2D pixel art for a cozy idle fantasy exploration game. True crisp pixel clusters and clean retro RPG silhouettes, richly detailed but readable, beautiful restrained colors, no blur, no painterly strokes or photorealism. No text, letters, numbers, HUD, watermark or decorative border.  Landscape 3:2 framing, slightly elevated side-on RPG scenic view. A broad walking path occupies the lower third for small character sprites. Trees and architecture frame the edges; clear foreground and layered distant scenery. Primary request: a tranquil secret sanctuary high in snowy mountains, an enormous crystal-feather nest cradled by snow-covered stone arches, a warm lantern pavilion, snow-laden firs and a frozen turquoise stream, luminous aurora ribbons over distant peaks. A broad snow-dusted stone path in the lower third. Frost turquoise, soft violet, pearl white and a few warm gold lanterns. No characters."
+    }
+  ]
+}

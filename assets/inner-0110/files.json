@@ -1,0 +1,20 @@
+[
+  {
+    "file": "workshop-objects.png",
+    "sha256": "7470ec375eb1c14a5c9cf6d493d78201d4dff7e9175b105a652ee022c73b6a58",
+    "bytes": 1672754,
+    "width": 1254,
+    "height": 1254,
+    "pngColorType": 6,
+    "alphaChannel": true
+  },
+  {
+    "file": "food-goods.png",
+    "sha256": "e24aabea164ba03e6e8045debe74709211553d0145a6bc6cf4d9cbfb0de8add0",
+    "bytes": 2111820,
+    "width": 1254,
+    "height": 1254,
+    "pngColorType": 6,
+    "alphaChannel": true
+  }
+]

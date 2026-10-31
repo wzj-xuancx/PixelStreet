@@ -1,0 +1,125 @@
+{
+  "tool": "built-in image_gen",
+  "assets": [
+    {
+      "id": "supply-room",
+      "file": "assets/living-0100/supply-room.png",
+      "source": "[local-source-redacted]",
+      "editTarget": "assets/atelier-080/supply.png",
+      "sha256": "8a29a9ff11652146905ce3c8b3bacbc4af523054d4a9e78155327f86e3f36cfc",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "selected": true,
+      "promptFile": "supply-room-prompt.txt"
+    },
+    {
+      "id": "people",
+      "file": "assets/living-0100/people.png",
+      "source": "[local-source-redacted]",
+      "sha256": "3c8ba292626f874d5b324aaeb97f5d3a7599b6a72a31fad1451432baa0026124",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "layout": "4 columns by 3 rows; row courier/medic/merchant, four walking poses; CSS crops only",
+      "selected": true,
+      "promptFile": "people-prompt.txt"
+    },
+    {
+      "id": "props",
+      "file": "assets/living-0100/props.png",
+      "source": "[local-source-redacted]",
+      "sha256": "6a4f8b54fbfcb13ed3c23423beb0175ce82ca1dd7adca21596dd11f43970b556",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "layout": "3 columns by 2 rows; flour, gel, ration / crystal, cashbox, ledger; CSS crops only",
+      "selected": true,
+      "promptFile": "props-prompt.txt"
+    },
+    {
+      "id": "alchemy-room",
+      "file": "assets/living-0100/alchemy-room.png",
+      "source": "[local-source-redacted]",
+      "editTargets": [
+        "assets/atelier-080/alchemy.png",
+        "assets/living-0100/supply-room.png"
+      ],
+      "sha256": "7b4f49563b96bb3e5244b8f5b466cb02dde0818903d6748da450802d6b601f0d",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "selected": true
+    },
+    {
+      "id": "alchemy-goods",
+      "file": "assets/living-0100/alchemy-goods.png",
+      "source": "[local-source-redacted]",
+      "editTargets": [
+        "assets/atelier-080/goods-v2.png"
+      ],
+      "sha256": "f551aed641d97ec25862d98687564c683868793ad8dc552c3e95af038d12b334",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "selected": true
+    },
+    {
+      "file": "assets/living-0100/camp-empty.png",
+      "source": "[local-source-redacted]",
+      "editTarget": "assets/camp-060/camp.png",
+      "selected": true,
+      "sha256": "ff89b57d68d1462c384448ea43e51ade98e9537548af6ed43ba9fdc938d6d057",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "pngColorType": 2,
+      "id": "camp-empty",
+      "promptFile": "camp-empty-prompt.txt"
+    },
+    {
+      "file": "assets/living-0100/crops-transparent.png",
+      "source": "[local-source-redacted]",
+      "editTarget": "work/living-0100/camp-stage/assets/crops.png",
+      "selected": true,
+      "sha256": "7acd530273bc5517af5d28808d3556529b9634bc96c2afcddbaa26cb1f268583",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "pngColorType": 6,
+      "id": "crops-transparent",
+      "promptFile": "crops-transparent-prompt.txt"
+    }
+  ],
+  "reuse": [
+    {
+      "path": "assets/camp-060/world.png",
+      "sha256": "9983078564f826617708e4dd3a7dd8973eeed82f6ae4c03bf098ff751cf51f3d"
+    },
+    {
+      "path": "assets/bonds-070/companions-v2.png",
+      "sha256": "a3f6380e52e018113a46214a43a85832c6795d3e9db955bf65ca589e50a17368"
+    },
+    {
+      "path": "assets/living-0100/people.png",
+      "sha256": "3c8ba292626f874d5b324aaeb97f5d3a7599b6a72a31fad1451432baa0026124"
+    },
+    {
+      "path": "assets/dungeon/0x72_DungeonTilesetII_v1.7.png",
+      "sha256": "b222e563f9006e609cb0a5ec99878b7ef9a92953de3abf4cf2ae9d2aff1355d2"
+    }
+  ],
+  "rejectedDraft": {
+    "file": "work/living-0100/camp-stage/assets/crops.png",
+    "reason": "Original retained in staging; transparent revision selected for game.",
+    "sha256": "865433cd5dc395669340bba8c071837e1a3154c9331c94fd6651a0a6ccf29a02"
+  },
+  "source_metadata_scope": "Original PNG provenance before Beta repository optimization, not current WebP byte hashes. See assets/optimization-manifest.json for the runtime file mapping and hashes. Original PNGs are retained outside this repository."
+}

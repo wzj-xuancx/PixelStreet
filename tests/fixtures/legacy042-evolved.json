@@ -1,0 +1,797 @@
+{
+  "provenance": {
+    "scope": "Genuine frozen 0.4.2 constructor and transactions; doorway positioning/HP-zero are explicitly historical fixture construction, not normal route evidence",
+    "seed": 0,
+    "source": "outputs/PixelStreet-0.4.2/packages/dungeon-core",
+    "hashes": {
+      "index.ts": "ff0d60d205f8d664e6b485802a136d4caee829c166fa26373a7c7a7f9bec889b",
+      "types.ts": "f932e37f19d5d61a854a3bd4c9812f9f7c90beaa21a7fa261afe850f10837c5a",
+      "build.ts": "6d7ebe89c9f86e32ad94f949a1dabfc42df825b8a2aee47d65c380a7e3d0fc33",
+      "map.ts": "2f36061b825361f51b6574a90ed4c62018e91b7e139215d5f95b78fdbd9451d6",
+      "foundation.ts": "33bd55f2fa4f654555a748740abc5fd3c9a4aa891b0639faaa3af62becc0e17a"
+    }
+  },
+  "run": {
+    "version": 3,
+    "runId": "dungeon-0",
+    "seed": 0,
+    "rng": 200709875,
+    "elapsedMs": 2150.0000000000027,
+    "tick": 129,
+    "phase": "exploring",
+    "paused": false,
+    "currentRoom": "altar",
+    "rooms": [
+      {
+        "id": "entrance",
+        "kind": "entrance",
+        "gridX": 0,
+        "gridY": 0,
+        "width": 384,
+        "height": 288,
+        "visited": true,
+        "cleared": false,
+        "doors": [
+          {
+            "to": "crossroads",
+            "side": "N"
+          }
+        ],
+        "locked": false,
+        "wave": 0,
+        "totalWaves": 0,
+        "nextWaveAt": 0,
+        "layoutId": "entrance-3",
+        "encounterSeed": 3846814071,
+        "lootSeed": 1960048212,
+        "encounterStarted": false,
+        "restUsed": false,
+        "merchantStock": [],
+        "eventUsed": false,
+        "altarUsed": false,
+        "eliteRuneClaimed": false,
+        "obstacles": [],
+        "enemies": [],
+        "ground": [],
+        "traps": [],
+        "chestOpened": true
+      },
+      {
+        "id": "crossroads",
+        "kind": "event",
+        "gridX": 0,
+        "gridY": -1,
+        "width": 456,
+        "height": 312,
+        "visited": true,
+        "cleared": false,
+        "doors": [
+          {
+            "to": "entrance",
+            "side": "S"
+          },
+          {
+            "to": "battle-a",
+            "side": "W"
+          },
+          {
+            "to": "spring",
+            "side": "N"
+          }
+        ],
+        "locked": false,
+        "wave": 0,
+        "totalWaves": 0,
+        "nextWaveAt": 0,
+        "layoutId": "event-3",
+        "encounterSeed": 1803732990,
+        "lootSeed": 878931147,
+        "encounterStarted": false,
+        "restUsed": false,
+        "merchantStock": [],
+        "eventUsed": false,
+        "altarUsed": false,
+        "eliteRuneClaimed": false,
+        "obstacles": [],
+        "enemies": [],
+        "ground": [],
+        "traps": [],
+        "chestOpened": false
+      },
+      {
+        "id": "battle-a",
+        "kind": "combat",
+        "gridX": -1,
+        "gridY": -1,
+        "width": 456,
+        "height": 360,
+        "visited": true,
+        "cleared": true,
+        "doors": [
+          {
+            "to": "crossroads",
+            "side": "E"
+          },
+          {
+            "to": "battle-b",
+            "side": "N"
+          },
+          {
+            "to": "treasure",
+            "side": "S"
+          },
+          {
+            "to": "elite",
+            "side": "W"
+          }
+        ],
+        "locked": false,
+        "wave": 2,
+        "totalWaves": 2,
+        "nextWaveAt": 0,
+        "layoutId": "combat-3",
+        "encounterSeed": 1321330853,
+        "lootSeed": 79958458,
+        "encounterStarted": true,
+        "restUsed": false,
+        "merchantStock": [],
+        "eventUsed": false,
+        "altarUsed": false,
+        "eliteRuneClaimed": false,
+        "obstacles": [
+          {
+            "id": "obstacle-battle-a-0",
+            "x": 89,
+            "y": 281,
+            "width": 40,
+            "height": 28,
+            "kind": "pillar",
+            "hp": 100
+          },
+          {
+            "id": "obstacle-battle-a-1",
+            "x": 327,
+            "y": 281,
+            "width": 40,
+            "height": 28,
+            "kind": "pillar",
+            "hp": 100
+          },
+          {
+            "id": "crate-battle-a-0",
+            "x": 97,
+            "y": 53,
+            "width": 24,
+            "height": 24,
+            "kind": "crate",
+            "hp": 24
+          },
+          {
+            "id": "crate-battle-a-1",
+            "x": 335,
+            "y": 53,
+            "width": 24,
+            "height": 24,
+            "kind": "crate",
+            "hp": 24
+          }
+        ],
+        "enemies": [],
+        "ground": [],
+        "traps": [
+          {
+            "id": "trap-battle-a",
+            "x": 228,
+            "y": 180,
+            "radius": 22,
+            "state": "idle",
+            "stateUntil": 1833.3333333333333,
+            "hit": false
+          }
+        ],
+        "chestOpened": false
+      },
+      {
+        "id": "battle-b",
+        "kind": "combat",
+        "gridX": -1,
+        "gridY": -2,
+        "width": 456,
+        "height": 336,
+        "visited": true,
+        "cleared": true,
+        "doors": [
+          {
+            "to": "battle-a",
+            "side": "S"
+          },
+          {
+            "to": "altar",
+            "side": "W"
+          },
+          {
+            "to": "merchant",
+            "side": "N"
+          }
+        ],
+        "locked": false,
+        "wave": 2,
+        "totalWaves": 2,
+        "nextWaveAt": 0,
+        "layoutId": "combat-1",
+        "encounterSeed": 2755899536,
+        "lootSeed": 425709045,
+        "encounterStarted": true,
+        "restUsed": false,
+        "merchantStock": [],
+        "eventUsed": false,
+        "altarUsed": false,
+        "eliteRuneClaimed": false,
+        "obstacles": [
+          {
+            "id": "obstacle-battle-b-0",
+            "x": 89,
+            "y": 262,
+            "width": 40,
+            "height": 28,
+            "kind": "pillar",
+            "hp": 100
+          },
+          {
+            "id": "obstacle-battle-b-1",
+            "x": 327,
+            "y": 46,
+            "width": 40,
+            "height": 28,
+            "kind": "pillar",
+            "hp": 100
+          },
+          {
+            "id": "crate-battle-b-0",
+            "x": 97,
+            "y": 48,
+            "width": 24,
+            "height": 24,
+            "kind": "crate",
+            "hp": 24
+          },
+          {
+            "id": "crate-battle-b-1",
+            "x": 335,
+            "y": 264,
+            "width": 24,
+            "height": 24,
+            "kind": "crate",
+            "hp": 24
+          }
+        ],
+        "enemies": [],
+        "ground": [],
+        "traps": [
+          {
+            "id": "trap-battle-b",
+            "x": 319.2,
+            "y": 168,
+            "radius": 22,
+            "state": "idle",
+            "stateUntil": 2899.999999999999,
+            "hit": false
+          }
+        ],
+        "chestOpened": false
+      },
+      {
+        "id": "altar",
+        "kind": "altar",
+        "gridX": -2,
+        "gridY": -2,
+        "width": 408,
+        "height": 312,
+        "visited": true,
+        "cleared": false,
+        "doors": [
+          {
+            "to": "battle-b",
+            "side": "E"
+          },
+          {
+            "to": "depth-a",
+            "side": "N"
+          }
+        ],
+        "locked": false,
+        "wave": 0,
+        "totalWaves": 0,
+        "nextWaveAt": 0,
+        "layoutId": "altar-3",
+        "encounterSeed": 2233686035,
+        "lootSeed": 3135424528,
+        "encounterStarted": false,
+        "restUsed": false,
+        "merchantStock": [],
+        "eventUsed": false,
+        "altarUsed": true,
+        "eliteRuneClaimed": false,
+        "obstacles": [],
+        "enemies": [],
+        "ground": [],
+        "traps": [],
+        "chestOpened": false
+      },
+      {
+        "id": "depth-a",
+        "kind": "combat",
+        "gridX": -2,
+        "gridY": -3,
+        "width": 480,
+        "height": 384,
+        "visited": false,
+        "cleared": false,
+        "doors": [
+          {
+            "to": "altar",
+            "side": "S"
+          },
+          {
+            "to": "depth-b",
+            "side": "N"
+          }
+        ],
+        "locked": false,
+        "wave": 0,
+        "totalWaves": 2,
+        "nextWaveAt": 0,
+        "layoutId": "combat-0",
+        "encounterSeed": 105092536,
+        "lootSeed": 4024114125,
+        "encounterStarted": false,
+        "restUsed": false,
+        "merchantStock": [],
+        "eventUsed": false,
+        "altarUsed": false,
+        "eliteRuneClaimed": false,
+        "obstacles": [
+          {
+            "id": "obstacle-depth-a-0",
+            "x": 95,
+            "y": 55,
+            "width": 40,
+            "height": 28,
+            "kind": "pillar",
+            "hp": 100
+          },
+          {
+            "id": "obstacle-depth-a-1",
+            "x": 345,
+            "y": 301,
+            "width": 40,
+            "height": 28,
+            "kind": "pillar",
+            "hp": 100
+          },
+          {
+            "id": "crate-depth-a-0",
+            "x": 353,
+            "y": 57,
+            "width": 24,
+            "height": 24,
+            "kind": "crate",
+            "hp": 24
+          },
+          {
+            "id": "crate-depth-a-1",
+            "x": 103,
+            "y": 303,
+            "width": 24,
+            "height": 24,
+            "kind": "crate",
+            "hp": 24
+          }
+        ],
+        "enemies": [],
+        "ground": [],
+        "traps": [
+          {
+            "id": "trap-depth-a",
+            "x": 144,
+            "y": 192,
+            "radius": 22,
+            "state": "idle",
+            "stateUntil": 2547,
+            "hit": false
+          }
+        ],
+        "chestOpened": false
+      },
+      {
+        "id": "depth-b",
+        "kind": "combat",
+        "gridX": -2,
+        "gridY": -4,
+        "width": 552,
+        "height": 384,
+        "visited": false,
+        "cleared": false,
+        "doors": [
+          {
+            "to": "depth-a",
+            "side": "S"
+          },
+          {
+            "to": "boss",
+            "side": "N"
+          }
+        ],
+        "locked": false,
+        "wave": 0,
+        "totalWaves": 2,
+        "nextWaveAt": 0,
+        "layoutId": "combat-3",
+        "encounterSeed": 369082989,
+        "lootSeed": 2615962066,
+        "encounterStarted": false,
+        "restUsed": false,
+        "merchantStock": [],
+        "eventUsed": false,
+        "altarUsed": false,
+        "eliteRuneClaimed": false,
+        "obstacles": [
+          {
+            "id": "obstacle-depth-b-0",
+            "x": 112,
+            "y": 301,
+            "width": 40,
+            "height": 28,
+            "kind": "pillar",
+            "hp": 100
+          },
+          {
+            "id": "obstacle-depth-b-1",
+            "x": 400,
+            "y": 301,
+            "width": 40,
+            "height": 28,
+            "kind": "pillar",
+            "hp": 100
+          },
+          {
+            "id": "crate-depth-b-0",
+            "x": 120,
+            "y": 57,
+            "width": 24,
+            "height": 24,
+            "kind": "crate",
+            "hp": 24
+          },
+          {
+            "id": "crate-depth-b-1",
+            "x": 408,
+            "y": 57,
+            "width": 24,
+            "height": 24,
+            "kind": "crate",
+            "hp": 24
+          }
+        ],
+        "enemies": [],
+        "ground": [],
+        "traps": [
+          {
+            "id": "trap-depth-b",
+            "x": 386.4,
+            "y": 192,
+            "radius": 22,
+            "state": "idle",
+            "stateUntil": 2522,
+            "hit": false
+          }
+        ],
+        "chestOpened": false
+      },
+      {
+        "id": "boss",
+        "kind": "boss",
+        "gridX": -2,
+        "gridY": -5,
+        "width": 600,
+        "height": 432,
+        "visited": false,
+        "cleared": false,
+        "doors": [
+          {
+            "to": "depth-b",
+            "side": "S"
+          }
+        ],
+        "locked": false,
+        "wave": 0,
+        "totalWaves": 1,
+        "nextWaveAt": 0,
+        "layoutId": "boss-0",
+        "encounterSeed": 3495153944,
+        "lootSeed": 629765805,
+        "encounterStarted": false,
+        "restUsed": false,
+        "merchantStock": [],
+        "eventUsed": false,
+        "altarUsed": false,
+        "eliteRuneClaimed": false,
+        "obstacles": [],
+        "enemies": [],
+        "ground": [],
+        "traps": [],
+        "chestOpened": false
+      },
+      {
+        "id": "spring",
+        "kind": "rest",
+        "gridX": 0,
+        "gridY": -2,
+        "width": 384,
+        "height": 288,
+        "visited": false,
+        "cleared": false,
+        "doors": [
+          {
+            "to": "crossroads",
+            "side": "S"
+          }
+        ],
+        "locked": false,
+        "wave": 0,
+        "totalWaves": 0,
+        "nextWaveAt": 0,
+        "layoutId": "rest-3",
+        "encounterSeed": 1782787320,
+        "lootSeed": 2246685453,
+        "encounterStarted": false,
+        "restUsed": false,
+        "merchantStock": [],
+        "eventUsed": false,
+        "altarUsed": false,
+        "eliteRuneClaimed": false,
+        "obstacles": [],
+        "enemies": [],
+        "ground": [],
+        "traps": [],
+        "chestOpened": false
+      },
+      {
+        "id": "treasure",
+        "kind": "chest",
+        "gridX": -1,
+        "gridY": 0,
+        "width": 432,
+        "height": 336,
+        "visited": false,
+        "cleared": false,
+        "doors": [
+          {
+            "to": "battle-a",
+            "side": "N"
+          }
+        ],
+        "locked": false,
+        "wave": 0,
+        "totalWaves": 0,
+        "nextWaveAt": 0,
+        "layoutId": "chest-1",
+        "encounterSeed": 3674943184,
+        "lootSeed": 859196468,
+        "encounterStarted": false,
+        "restUsed": false,
+        "merchantStock": [],
+        "eventUsed": false,
+        "altarUsed": false,
+        "eliteRuneClaimed": false,
+        "obstacles": [],
+        "enemies": [],
+        "ground": [],
+        "traps": [],
+        "chestOpened": false
+      },
+      {
+        "id": "merchant",
+        "kind": "shop",
+        "gridX": -1,
+        "gridY": -3,
+        "width": 432,
+        "height": 312,
+        "visited": false,
+        "cleared": false,
+        "doors": [
+          {
+            "to": "battle-b",
+            "side": "S"
+          }
+        ],
+        "locked": false,
+        "wave": 0,
+        "totalWaves": 0,
+        "nextWaveAt": 0,
+        "layoutId": "shop-3",
+        "encounterSeed": 2263040573,
+        "lootSeed": 1642871426,
+        "encounterStarted": false,
+        "restUsed": false,
+        "merchantStock": [
+          {
+            "id": "offer-merchant-0",
+            "weapon": {
+              "id": "weapon-merchant-stock-0",
+              "kind": "frost",
+              "level": 1,
+              "evolved": false
+            },
+            "price": 12,
+            "sold": false
+          },
+          {
+            "id": "offer-merchant-1",
+            "weapon": {
+              "id": "weapon-merchant-stock-1",
+              "kind": "lightning",
+              "level": 1,
+              "evolved": false
+            },
+            "price": 9,
+            "sold": false
+          }
+        ],
+        "eventUsed": false,
+        "altarUsed": false,
+        "eliteRuneClaimed": false,
+        "obstacles": [],
+        "enemies": [],
+        "ground": [],
+        "traps": [],
+        "chestOpened": false
+      },
+      {
+        "id": "elite",
+        "kind": "elite",
+        "gridX": -2,
+        "gridY": -1,
+        "width": 504,
+        "height": 360,
+        "visited": false,
+        "cleared": false,
+        "doors": [
+          {
+            "to": "battle-a",
+            "side": "E"
+          }
+        ],
+        "locked": false,
+        "wave": 0,
+        "totalWaves": 2,
+        "nextWaveAt": 0,
+        "layoutId": "elite-1",
+        "encounterSeed": 156567264,
+        "lootSeed": 942977765,
+        "encounterStarted": false,
+        "restUsed": false,
+        "merchantStock": [],
+        "eventUsed": false,
+        "altarUsed": false,
+        "eliteRuneClaimed": false,
+        "obstacles": [
+          {
+            "id": "obstacle-elite-0",
+            "x": 101,
+            "y": 281,
+            "width": 40,
+            "height": 28,
+            "kind": "pillar",
+            "hp": 100
+          },
+          {
+            "id": "obstacle-elite-1",
+            "x": 363,
+            "y": 51,
+            "width": 40,
+            "height": 28,
+            "kind": "pillar",
+            "hp": 100
+          },
+          {
+            "id": "crate-elite-0",
+            "x": 109,
+            "y": 53,
+            "width": 24,
+            "height": 24,
+            "kind": "crate",
+            "hp": 24
+          },
+          {
+            "id": "crate-elite-1",
+            "x": 371,
+            "y": 283,
+            "width": 24,
+            "height": 24,
+            "kind": "crate",
+            "hp": 24
+          }
+        ],
+        "enemies": [],
+        "ground": [],
+        "traps": [
+          {
+            "id": "trap-elite",
+            "x": 252,
+            "y": 259.2,
+            "radius": 22,
+            "state": "idle",
+            "stateUntil": 2651,
+            "hit": false
+          }
+        ],
+        "chestOpened": false
+      }
+    ],
+    "player": {
+      "x": 204,
+      "y": 156,
+      "hp": 100,
+      "maxHp": 100,
+      "shield": 40,
+      "maxShield": 40,
+      "shieldDelayUntil": 0,
+      "moveX": 0,
+      "moveY": 0,
+      "aimX": 35,
+      "aimY": 168,
+      "firing": false,
+      "dashUntil": 0,
+      "dashReady": 0,
+      "dashX": 1,
+      "dashY": 0,
+      "skillReady": 0,
+      "wardUntil": 0,
+      "attackReady": 0,
+      "chargeStarted": null,
+      "weaponSlots": [
+        {
+          "id": "weapon-entrance-starter",
+          "kind": "fire",
+          "level": 5,
+          "evolved": true
+        },
+        null
+      ],
+      "activeSlot": 0,
+      "traits": [
+        "cinder-burst"
+      ],
+      "runes": [],
+      "damageRank": 4,
+      "hasteRank": 0
+    },
+    "projectiles": [],
+    "effects": [
+      {
+        "id": "fx-64",
+        "kind": "evolve",
+        "x": 204,
+        "y": 156,
+        "radius": 80,
+        "angle": 0,
+        "targetX": 204,
+        "targetY": 156,
+        "expiresAt": 2850.0000000000027
+      }
+    ],
+    "level": 6,
+    "essence": 4,
+    "reforgesLeft": 1,
+    "zones": [],
+    "reward": {
+      "coins": 82,
+      "xp": 123
+    },
+    "notice": "进阶完成：流星",
+    "choices": [],
+    "sequence": 64,
+    "revision": 5
+  }
+}

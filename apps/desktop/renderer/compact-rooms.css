@@ -1,0 +1,277 @@
+/* 0.12.2: compact room furniture. Keep real-size type and targets; spend the
+   height on decisions rather than repeated headings and oversized plinths. */
+body:is([data-popup=shop],[data-popup=alchemy]) .popover-content {
+  padding: 10px 14px;
+}
+body:is([data-popup=shop],[data-popup=alchemy]) .popover-content > header {
+  min-height: 44px;
+  margin: 0 0 5px;
+  padding: 0 0 5px;
+}
+body:is([data-popup=shop],[data-popup=alchemy]) .popover-content > header h1 { font-size: 20px; }
+body:is([data-popup=shop],[data-popup=alchemy]) #roomWorkspace:not([hidden]) {
+  display: grid;
+  grid-template-columns: 148px minmax(0,1fr);
+  column-gap: 8px;
+  align-items: start;
+}
+body:is([data-popup=shop],[data-popup=alchemy]) .ls-workspace-head {
+  min-height: 44px;
+  margin: 0 0 6px;
+  padding: 0;
+  border: 0;
+  gap: 5px;
+}
+body:is([data-popup=shop],[data-popup=alchemy]) .ls-workspace-head strong { display: none; }
+body:is([data-popup=shop],[data-popup=alchemy]) .ls-workspace-head .game-button { font-size: 16px; }
+body:is([data-popup=shop],[data-popup=alchemy]) .ls-workspace .life-switch {
+  display: flex;
+  gap: 5px;
+  margin: 0 0 6px;
+  min-width: 0;
+}
+body:is([data-popup=shop],[data-popup=alchemy]) .ls-workspace .life-switch button {
+  flex: 1;
+  min-width: 0;
+  min-height: 44px;
+  padding: 4px 5px;
+  gap: 4px;
+  font-size: 16px;
+  line-height: 1.3;
+  white-space: normal;
+}
+body:is([data-popup=shop],[data-popup=alchemy]) .ls-workspace .life-switch .inner-art { width: 28px; height: 28px; flex: 0 0 28px; }
+body:is([data-popup=shop],[data-popup=alchemy]) #roomWorkspace > :is(#lifeRegular,#lifePanel,#roomVillagePanel) { grid-column: 1/-1; min-width: 0; }
+.trade-workspace { line-height: 1.4; }
+.trade-workspace .tw-wallet { padding: 3px 2px 6px; gap: 10px; }
+.trade-workspace :is(.shop-tabs,.a-tabs) { margin: 6px 0 8px !important; gap: 6px; }
+.trade-workspace button[data-pi-control] {
+  min-height: 44px;
+  gap: 5px;
+  padding: 5px 8px !important;
+  font-size: 16px !important;
+  line-height: 1.35;
+}
+.trade-workspace button[data-pi-control]::before { width: 28px; height: 28px; }
+.trade-workspace button[data-pi-control=place] {
+  flex-direction: row;
+  min-height: 48px;
+  padding: 5px 6px !important;
+  gap: 5px;
+}
+.trade-workspace button[data-pi-control=place]::before { width: 32px; height: 32px; }
+.trade-workspace .business-section { margin-top: 8px; padding-bottom: 0; }
+.trade-workspace .tw-market-heading { gap: 8px; margin: 0 0 8px; padding: 0 0 5px; }
+.trade-workspace .tw-merchant { width: 44px; height: 44px; }
+.trade-workspace .tw-market-heading h2 { font-size: 18px !important; }
+.trade-workspace .tw-market-heading p { margin: 0; font-size: 16px; }
+
+/* Four goods stay together. Artwork remains pixel sharp at 56px; each card
+   has one purchase/sale row and, where offered, a separate full-width bulk row. */
+.trade-workspace #shopPanelSupply .tw-market-grid {
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 8px;
+  margin-top: 0;
+  align-items: stretch;
+}
+.trade-workspace #shopPanelSupply .tw-market-good {
+  display: grid;
+  grid-template-columns: 56px minmax(0,1fr);
+  grid-template-rows: auto auto auto auto auto;
+  gap: 0 8px;
+  padding: 6px 8px !important;
+  text-align: left;
+  align-content: start;
+  align-items: center;
+}
+.trade-workspace #shopPanelSupply .tw-goods-plinth {
+  grid-column: 1;
+  grid-row: 1/4;
+  border-bottom-width: 3px;
+  width: 56px;
+  align-self: start;
+}
+.trade-workspace #shopPanelSupply .tw-goods-plinth > .ls-item-art { width: 56px; height: 56px; }
+.trade-workspace #shopPanelSupply .tw-market-good > h2 { grid-column: 2; font-size: 18px !important; margin: 0 !important; line-height: 1.35; }
+.trade-workspace #shopPanelSupply .tw-stock-label { grid-column: 2; font-size: 16px; }
+.trade-workspace #shopPanelSupply .tw-price-tag {
+  grid-column: 2;
+  padding: 3px 5px;
+  margin: 3px 0 0 !important;
+  font-size: 16px;
+  line-height: 1.35;
+}
+.trade-workspace #shopPanelSupply .business-actions {
+  grid-column: 1/-1;
+  margin: 6px 0 0;
+  gap: 6px;
+}
+.trade-workspace #shopPanelSupply .business-actions > button[data-pi-control=object] {
+  flex-direction: row;
+  min-height: 44px;
+  padding: 5px 7px !important;
+  gap: 4px;
+}
+.trade-workspace #shopPanelSupply .business-actions > button::before { width: 26px; height: 26px; }
+
+/* Ordinary recipes and the batch desk fit beside their actual requirements. */
+.trade-workspace .ls-recipe-grid { gap: 8px; }
+.trade-workspace .ls-recipe-card { padding: 9px; }
+.trade-workspace .ls-recipe-title { margin: 0 0 5px; gap: 8px; justify-content: flex-start; }
+.trade-workspace .ls-recipe-title .ls-item-art { width: 56px; height: 56px; }
+.trade-workspace .ls-recipe-title h2 { font-size: 18px !important; }
+.trade-workspace .ls-recipe-material { min-height: 56px; gap: 5px; padding: 5px 0; }
+.trade-workspace .tw-ingredient { min-width: 0; padding: 4px 6px; gap: 5px; }
+.trade-workspace .tw-ingredient > :is(.ls-item-art,.tw-material-art) { width: 32px; height: 32px; }
+.trade-workspace .tw-ingredient :is(b,strong) { font-size: 16px; }
+.trade-workspace .ls-recipe-metrics { padding: 6px 0; gap: 6px; }
+.trade-workspace .ls-recipe-actions { gap: 5px; }
+.trade-workspace .ls-recipe-actions > button[data-pi-control=object] { flex-direction: row; min-height: 44px; padding: 5px !important; gap: 4px; }
+.trade-workspace .ls-recipe-actions > button::before { width: 28px; height: 28px; }
+.trade-workspace .tw-production-desk { margin-top: 10px; padding-top: 8px; }
+.trade-workspace .business-heading { margin-bottom: 6px; }
+.trade-workspace .tw-batch-workbench { grid-template-columns: 64px minmax(0,1fr); gap: 8px; padding: 8px; }
+.trade-workspace .tw-batch-goods > .ls-item-art { width: 56px; height: 56px; }
+.trade-workspace .tw-batch-goods > .ls-item-art + span { margin: -16px 0 0; }
+.trade-workspace .tw-batch-controls > .business-note { line-height: 1.4; margin: 5px 0; }
+.trade-workspace .tw-batch-controls .business-actions { margin-top: 5px; }
+.trade-workspace .tw-empty-tray { padding: 9px; margin: 7px 0; }
+.trade-workspace .tw-queue { margin-top: 7px; gap: 6px; }
+.trade-workspace .tw-queue-card { padding: 6px 8px; gap: 8px; }
+.trade-workspace .tw-queue-card > :is(.ls-item-art,.a-good-art) { width: 40px; height: 40px; }
+
+/* A short catalogue leaves the selected formula, ingredients, time and commit
+   action on the first screen. Six recipes use a two-column compact catalogue. */
+.trade-workspace .tw-atelier-layout { grid-template-columns: 180px minmax(0,1fr); gap: 10px; }
+.trade-workspace .tw-recipe-catalog {
+  display: grid !important;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  align-content: start;
+  gap: 6px;
+  padding-right: 8px;
+}
+.trade-workspace .tw-recipe-catalog > .game-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  gap: 2px;
+  min-height: 112px;
+  padding: 5px 3px !important;
+}
+.trade-workspace .tw-recipe-catalog .a-good-art { width: 44px; height: 44px; }
+.trade-workspace .tw-recipe-catalog :is(strong,button > span:last-child) { font-size: 16px; line-height: 1.25; }
+.trade-workspace .tw-selected { margin: 0 0 7px !important; }
+.trade-workspace .tw-selected h2 { font-size: 20px !important; margin: 0 0 3px !important; }
+.trade-workspace .tw-selected p { margin: 2px 0; line-height: 1.4; }
+.trade-workspace .tw-workbench { grid-template-columns: 64px minmax(0,1fr); gap: 8px; padding: 8px; }
+.trade-workspace .tw-platter { padding: 2px 0 0; }
+.trade-workspace .tw-platter > .tw-hero-art { width: 64px; height: 64px; }
+.trade-workspace .tw-platter-label { margin-top: 4px; font-size: 16px; text-align: center; }
+.trade-workspace .tw-ingredient-tray { gap: 5px; }
+.trade-workspace .tw-ingredient-tray > .tw-ingredient { padding: 4px; gap: 3px; font-size: 16px; }
+.trade-workspace .tw-ingredient-tray > .tw-ingredient > :is(.ls-item-art,.tw-material-art) { width: 28px; height: 28px; }
+.trade-workspace .tw-time-board { margin-top: 5px; padding-top: 5px; gap: 5px; }
+.trade-workspace .tw-time-board > span:first-child { font-size: 23px; }
+.trade-workspace :is(.a-quantities,.a-actions) { margin-top: 6px; gap: 5px; }
+.trade-workspace .a-quantities > button { padding: 5px !important; }
+.trade-workspace .tw-recipe-tools .a-actions > button[data-pi-control] { min-height: 44px; padding: 5px 7px !important; }
+.trade-workspace .a-reason { margin: 5px 0 0; line-height: 1.4; }
+.trade-workspace .a-heading { margin: 10px 0 6px; }
+.trade-workspace .tw-market { padding: 8px; margin-top: 10px; }
+.trade-workspace .tw-market > summary { min-height: 44px; padding: 8px; box-sizing: border-box; }
+.trade-workspace .tw-market .tw-market-grid { grid-template-columns: repeat(2,minmax(0,1fr)); margin-top: 8px; gap: 8px; }
+.trade-workspace .tw-market .tw-market-good > :is(.ls-item-art,.tw-material-art) { width: 48px; height: 48px; }
+
+/* Stock, three prices and cash collection form one compact sales surface. */
+.trade-workspace .tw-shelf-display { grid-template-columns: 110px minmax(0,1fr); gap: 8px; padding: 8px; }
+.trade-workspace .tw-display-good { padding-bottom: 5px; border-bottom-width: 3px; }
+.trade-workspace .tw-display-good > .a-good-art { width: 64px; height: 64px; }
+.trade-workspace .tw-display-good p { margin: 4px 0; font-size: 16px; }
+.trade-workspace .tw-display-good > span:last-child { font-size: 16px; }
+.trade-workspace .tw-sale-controls .a-prices { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 5px; }
+.trade-workspace .tw-sale-controls .a-prices > button[data-pi-control] { flex-direction: column; min-height: 78px; padding: 5px !important; gap: 2px; }
+.trade-workspace .tw-sale-controls .a-prices > button::before { width: 24px; height: 24px; }
+.trade-workspace .tw-sale-controls .a-actions > button { min-width: 0; flex-basis: 0; flex-direction: row; padding: 5px !important; gap: 3px; }
+.trade-workspace .tw-sale-controls .a-actions > button::before { width: 24px; height: 24px; }
+.trade-workspace .tw-sale-controls > p { margin: 5px 0 0; }
+.trade-workspace .tw-cashdesk { margin: 8px 0; padding: 7px 9px; gap: 6px; font-size: 16px !important; }
+.trade-workspace .tw-cashdesk > button[data-pi-control] { min-width: 0; min-height: 44px; }
+.trade-workspace .tw-cashdesk > span:not(.ls-item-art) { min-width: 90px; }
+.trade-workspace .tw-ordinary-shelves { gap: 8px; }
+.trade-workspace .tw-ordinary-shelf { padding: 9px !important; margin: 0; }
+.trade-workspace .tw-shelf-item { gap: 7px; padding-bottom: 5px; border-bottom-width: 3px; }
+.trade-workspace .tw-shelf-item > .ls-item-art { width: 48px; height: 48px; }
+.trade-workspace .tw-shelf-item > strong { font-size: 18px; }
+.trade-workspace .tw-shelf-item > span:last-child { font-size: 16px; }
+.trade-workspace .shelf-prices { gap: 5px; margin-top: 6px; }
+.trade-workspace .shelf-prices button[data-pi-control] { flex-direction: column; min-height: 76px; gap: 1px; padding: 5px 3px !important; }
+.trade-workspace .shelf-prices button::before { width: 24px; height: 24px; }
+.trade-workspace .shelf-prices span { margin-top: 0; }
+.trade-workspace .tw-ordinary-shelf .business-actions { gap: 5px; margin-top: 6px; }
+.trade-workspace .tw-ordinary-shelf .business-actions > button[data-pi-control] { flex-direction: row; min-height: 44px; gap: 3px; padding: 5px 3px !important; }
+.trade-workspace .tw-ordinary-shelf .business-actions > button::before { width: 24px; height: 24px; }
+.trade-workspace .tw-ordinary-shelf .business-note { margin: 5px 0 0; }
+.trade-workspace .tw-counter-operations { gap: 8px; margin: 10px 0; }
+.trade-workspace .tw-signboard { padding: 9px; gap: 6px; }
+.trade-workspace .tw-signboard > .shop-item > .ls-item-art { width: 48px; height: 48px; }
+.trade-workspace .tw-facility-grid { gap: 8px; }
+.trade-workspace .tw-facility { padding: 9px !important; gap: 6px; }
+.trade-workspace .tw-facility > button[data-pi-control] { flex-direction: row; min-height: 64px; padding: 6px !important; }
+.trade-workspace .tw-facility > button[data-pi-control]::before { width: 64px; height: 48px; }
+.trade-workspace .tw-facility p { margin: 4px 0; }
+.trade-workspace .tw-dialogue { grid-template-columns: 64px minmax(0,1fr); padding: 9px !important; gap: 7px; }
+.trade-workspace .tw-portrait { width: 60px; height: 76px; margin: 0; }
+.trade-workspace .tw-dialogue-body { padding: 9px; }
+.trade-workspace .tw-request { padding: 5px 0; gap: 6px; }
+.trade-workspace .tw-request > :is(.ls-item-art,.a-good-art) { width: 48px; height: 48px; }
+.trade-workspace .tw-dialogue-body .tw-reward { margin: 5px 0 !important; }
+.trade-workspace .tw-dialogue-body :is(.business-actions,.a-actions) { margin: 6px 0 0; }
+.trade-workspace .tw-open-book { margin-top: 12px; }
+.trade-workspace .tw-book-page { padding: 10px; }
+.trade-workspace .tw-book-page > .ls-item-art { width: 56px; height: 56px; }
+
+@media (min-width: 950px) {
+  .trade-workspace .tw-atelier-layout { grid-template-columns: 230px minmax(0,1fr); }
+  .trade-workspace .tw-recipe-catalog > .game-button { flex-direction: row; flex-wrap: wrap; min-height: 100px; }
+  .trade-workspace .tw-recipe-catalog > .game-button > span:last-child { flex-basis: 100%; }
+  .trade-workspace .tw-workbench { grid-template-columns: 80px minmax(0,1fr); }
+  .trade-workspace .tw-platter > .tw-hero-art { width: 72px; height: 72px; }
+}
+@media (max-width: 650px) {
+  body:is([data-popup=shop],[data-popup=alchemy]) #roomWorkspace:not([hidden]) { grid-template-columns: 1fr; }
+  body:is([data-popup=shop],[data-popup=alchemy]) .ls-workspace .life-switch { grid-column: 1; flex-wrap: wrap; }
+  .trade-workspace .tw-atelier-layout { grid-template-columns: 1fr; }
+  .trade-workspace .tw-recipe-catalog { grid-template-columns: repeat(3,minmax(0,1fr)); border: 0; padding: 0 0 7px; }
+  .trade-workspace .tw-recipe-catalog > .game-button { min-height: 104px; }
+  .trade-workspace #shopPanelSupply .tw-market-grid { grid-template-columns: 1fr; }
+}
+/* Explicitly outrank the earlier narrow-room navigation and shelf rules. */
+body:is([data-popup=shop],[data-popup=alchemy]) .popover-content > header .icon-button { font-size: 20px; }
+.trade-workspace .shop-tabs > button[data-pi-control=place] { min-height: 48px; }
+.trade-workspace .shop-tabs > button[data-pi-control=place]::before { width: 32px; height: 32px; }
+.trade-workspace .business-heading > h2 { margin: 0 !important; }
+.trade-workspace .tw-ordinary-shelves { grid-template-columns: repeat(2,minmax(0,1fr)); }
+@media (max-width: 650px) {
+  .trade-workspace .tw-ordinary-shelves { grid-template-columns: 1fr; }
+}
+/* The first job is an actionable conversation strip, not another large hero.
+   Keep its requirements and primary buttons alongside the clerk. */
+.trade-workspace .tw-job-dialogue {
+  grid-template-columns: 44px minmax(0,1fr);
+  padding: 6px;
+  gap: 6px;
+  margin: 5px 0;
+}
+.trade-workspace .tw-job-clerk { width: 44px; height: 56px; }
+.trade-workspace .tw-job-bubble { display: flex; align-items: center; gap: 8px; padding: 6px; }
+.trade-workspace .tw-job-bubble h2,.trade-workspace .tw-trial-tray { display: none; }
+.trade-workspace .tw-job-bubble p { flex: 1; min-width: 0; font-size: 16px !important; line-height: 1.35; margin: 0; }
+.trade-workspace .tw-job-bubble .shop-job-actions { flex: 0 0 auto; flex-wrap: nowrap; gap: 5px; }
+.trade-workspace .tw-job-bubble .shop-job-actions > button { min-height: 44px; padding: 5px 7px !important; }
+.trade-workspace .tw-job-bubble .shop-job-actions > button::before { width: 24px; height: 24px; }
+.trade-workspace .tw-market-heading p { display: none; }
+.trade-workspace .tw-merchant { width: 32px; height: 32px; }
+/* On the initial visit the clerk is the greeting; the selected procurement tab
+   already names the goods surface directly below it. */
+.trade-workspace:has(> .tw-job-dialogue:not([hidden])) #shopPanelSupply .tw-market-heading { display: none; }

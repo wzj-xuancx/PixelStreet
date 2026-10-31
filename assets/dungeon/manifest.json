@@ -1,0 +1,1829 @@
+{
+  "schemaVersion": 2,
+  "title": "0x72 DungeonTileset II v1.7",
+  "source": {
+    "author": "0x72",
+    "url": "https://0x72.itch.io/dungeontileset-ii",
+    "version": "1.7",
+    "license": "CC0-1.0",
+    "archiveSha256": "a5b23341ebc831d7798bfb9666d864a08c079bb7aed18e3cf023a27d517c1512",
+    "imageSha256": "b222e563f9006e609cb0a5ec99878b7ef9a92953de3abf4cf2ae9d2aff1355d2",
+    "frameListSha256": "7ef0043788db7f5a28a4e2a139a7c23073874ed4d795728b7556c776e5e4b448",
+    "indexer": "scripts/index-dungeon-assets.mjs",
+    "imageTransform": "none; original PNG bytes copied unchanged"
+  },
+  "atlas": {
+    "file": "0x72_DungeonTilesetII_v1.7.png",
+    "width": 512,
+    "height": 512,
+    "frames": {
+      "tile-floor-0": {
+        "x": 16,
+        "y": 64,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          24,
+          24
+        ],
+        "anchor": [
+          0,
+          0
+        ],
+        "original": "floor_1"
+      },
+      "tile-floor-1": {
+        "x": 32,
+        "y": 64,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          24,
+          24
+        ],
+        "anchor": [
+          0,
+          0
+        ],
+        "original": "floor_2"
+      },
+      "tile-floor-2": {
+        "x": 48,
+        "y": 64,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          24,
+          24
+        ],
+        "anchor": [
+          0,
+          0
+        ],
+        "original": "floor_3"
+      },
+      "tile-floor-3": {
+        "x": 16,
+        "y": 80,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          24,
+          24
+        ],
+        "anchor": [
+          0,
+          0
+        ],
+        "original": "floor_4"
+      },
+      "tile-floor-4": {
+        "x": 32,
+        "y": 80,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          24,
+          24
+        ],
+        "anchor": [
+          0,
+          0
+        ],
+        "original": "floor_5"
+      },
+      "tile-floor-5": {
+        "x": 48,
+        "y": 80,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          24,
+          24
+        ],
+        "anchor": [
+          0,
+          0
+        ],
+        "original": "floor_6"
+      },
+      "tile-floor-6": {
+        "x": 16,
+        "y": 96,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          24,
+          24
+        ],
+        "anchor": [
+          0,
+          0
+        ],
+        "original": "floor_7"
+      },
+      "tile-floor-7": {
+        "x": 32,
+        "y": 96,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          24,
+          24
+        ],
+        "anchor": [
+          0,
+          0
+        ],
+        "original": "floor_8"
+      },
+      "wall-front": {
+        "x": 32,
+        "y": 16,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          24,
+          24
+        ],
+        "anchor": [
+          0,
+          0
+        ],
+        "original": "wall_mid"
+      },
+      "wall-top": {
+        "x": 32,
+        "y": 0,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          24,
+          24
+        ],
+        "anchor": [
+          0,
+          0
+        ],
+        "original": "wall_top_mid"
+      },
+      "wall-cap-left": {
+        "x": 16,
+        "y": 0,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          24,
+          24
+        ],
+        "anchor": [
+          0,
+          0
+        ],
+        "original": "wall_top_left"
+      },
+      "wall-cap-right": {
+        "x": 48,
+        "y": 0,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          24,
+          24
+        ],
+        "anchor": [
+          0,
+          0
+        ],
+        "original": "wall_top_right"
+      },
+      "wall-side-left": {
+        "x": 16,
+        "y": 16,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          24,
+          24
+        ],
+        "anchor": [
+          0,
+          0
+        ],
+        "original": "wall_left"
+      },
+      "wall-side-right": {
+        "x": 48,
+        "y": 16,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          24,
+          24
+        ],
+        "anchor": [
+          0,
+          0
+        ],
+        "original": "wall_right"
+      },
+      "gate-post-left": {
+        "x": 16,
+        "y": 240,
+        "width": 16,
+        "height": 32,
+        "worldSize": [
+          24,
+          48
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "original": "doors_frame_left"
+      },
+      "gate-post-right": {
+        "x": 64,
+        "y": 240,
+        "width": 16,
+        "height": 32,
+        "worldSize": [
+          24,
+          48
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "original": "doors_frame_right"
+      },
+      "gate-leaf-closed": {
+        "x": 32,
+        "y": 240,
+        "width": 32,
+        "height": 32,
+        "worldSize": [
+          48,
+          48
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "original": "doors_leaf_closed"
+      },
+      "floor-stairs": {
+        "x": 80,
+        "y": 192,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          48,
+          48
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "original": "floor_stairs"
+      },
+      "fountain-red-0": {
+        "x": 64,
+        "y": 16,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          24,
+          24
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "original": "wall_fountain_mid_red_anim_f0"
+      },
+      "fountain-blue-0": {
+        "x": 64,
+        "y": 64,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          48,
+          48
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "original": "wall_fountain_basin_blue_anim_f0"
+      },
+      "fountain-red-1": {
+        "x": 80,
+        "y": 16,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          24,
+          24
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "original": "wall_fountain_mid_red_anim_f1"
+      },
+      "fountain-blue-1": {
+        "x": 80,
+        "y": 64,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          48,
+          48
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "original": "wall_fountain_basin_blue_anim_f1"
+      },
+      "fountain-red-2": {
+        "x": 96,
+        "y": 16,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          24,
+          24
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "original": "wall_fountain_mid_red_anim_f2"
+      },
+      "fountain-blue-2": {
+        "x": 96,
+        "y": 64,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          48,
+          48
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "original": "wall_fountain_basin_blue_anim_f2"
+      },
+      "trap-idle": {
+        "x": 16,
+        "y": 192,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          24,
+          24
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "original": "floor_spikes_anim_f0"
+      },
+      "trap-warn": {
+        "x": 32,
+        "y": 192,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          24,
+          24
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "original": "floor_spikes_anim_f1"
+      },
+      "trap-active": {
+        "x": 64,
+        "y": 192,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          24,
+          24
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "original": "floor_spikes_anim_f3"
+      },
+      "trap-cooldown": {
+        "x": 16,
+        "y": 192,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          24,
+          24
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "original": "floor_spikes_anim_f0"
+      },
+      "obstacle-column": {
+        "x": 80,
+        "y": 84,
+        "width": 16,
+        "height": 35,
+        "worldSize": [
+          40,
+          87.5
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "column",
+        "originalCrop": [
+          0,
+          4,
+          16,
+          35
+        ]
+      },
+      "crate": {
+        "x": 289,
+        "y": 411,
+        "width": 14,
+        "height": 20,
+        "worldSize": [
+          24,
+          34.285714285714285
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "crate",
+        "originalCrop": [
+          1,
+          3,
+          14,
+          20
+        ]
+      },
+      "chest-closed": {
+        "x": 304,
+        "y": 416,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          32,
+          32
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "chest_full_open_anim_f0"
+      },
+      "chest-open": {
+        "x": 336,
+        "y": 400,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          32,
+          32
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "chest_empty_open_anim_f2"
+      },
+      "altar": {
+        "x": 80,
+        "y": 192,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          48,
+          48
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "original": "floor_stairs"
+      },
+      "altar-idol": {
+        "x": 80,
+        "y": 5,
+        "width": 16,
+        "height": 11,
+        "worldSize": [
+          24,
+          16.5
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "wall_fountain_top_2",
+        "originalCrop": [
+          0,
+          5,
+          16,
+          11
+        ]
+      },
+      "potion-health": {
+        "x": 288,
+        "y": 352,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          24,
+          24
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "original": "flask_red"
+      },
+      "companion-moss": {
+        "x": 16,
+        "y": 332,
+        "width": 32,
+        "height": 36,
+        "worldSize": [
+          64,
+          72
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "big_zombie_idle_anim_f0"
+      },
+      "player-idle-0": {
+        "x": 128,
+        "y": 100,
+        "width": 16,
+        "height": 28,
+        "worldSize": [
+          48,
+          84
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "knight_m_idle_anim_f0"
+      },
+      "player-run-0": {
+        "x": 192,
+        "y": 100,
+        "width": 16,
+        "height": 28,
+        "worldSize": [
+          48,
+          84
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "knight_m_run_anim_f0"
+      },
+      "enemy-imp-idle-0": {
+        "x": 368,
+        "y": 64,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          48,
+          48
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "imp_idle_anim_f0"
+      },
+      "enemy-imp-run-0": {
+        "x": 432,
+        "y": 64,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          48,
+          48
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "imp_run_anim_f0"
+      },
+      "enemy-shaman-idle-0": {
+        "x": 368,
+        "y": 201,
+        "width": 16,
+        "height": 23,
+        "worldSize": [
+          48,
+          69
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "orc_shaman_idle_anim_f0"
+      },
+      "enemy-shaman-run-0": {
+        "x": 432,
+        "y": 201,
+        "width": 16,
+        "height": 23,
+        "worldSize": [
+          48,
+          69
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "orc_shaman_run_anim_f0"
+      },
+      "enemy-orc-idle-0": {
+        "x": 368,
+        "y": 153,
+        "width": 16,
+        "height": 23,
+        "worldSize": [
+          48,
+          69
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "masked_orc_idle_anim_f0"
+      },
+      "enemy-orc-run-0": {
+        "x": 432,
+        "y": 153,
+        "width": 16,
+        "height": 23,
+        "worldSize": [
+          48,
+          69
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "masked_orc_run_anim_f0"
+      },
+      "enemy-skeleton-idle-0": {
+        "x": 368,
+        "y": 88,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          48,
+          48
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "skelet_idle_anim_f0"
+      },
+      "enemy-skeleton-run-0": {
+        "x": 432,
+        "y": 88,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          48,
+          48
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "skelet_run_anim_f0"
+      },
+      "enemy-priest-idle-0": {
+        "x": 368,
+        "y": 225,
+        "width": 16,
+        "height": 23,
+        "worldSize": [
+          48,
+          69
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "necromancer_anim_f0"
+      },
+      "boss-idle-0": {
+        "x": 16,
+        "y": 428,
+        "width": 32,
+        "height": 36,
+        "worldSize": [
+          96,
+          108
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "big_demon_idle_anim_f0"
+      },
+      "boss-run-0": {
+        "x": 144,
+        "y": 428,
+        "width": 32,
+        "height": 36,
+        "worldSize": [
+          96,
+          108
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "big_demon_run_anim_f0"
+      },
+      "merchant-0": {
+        "x": 128,
+        "y": 292,
+        "width": 16,
+        "height": 28,
+        "worldSize": [
+          40,
+          70
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "dwarf_m_idle_anim_f0"
+      },
+      "player-idle-1": {
+        "x": 144,
+        "y": 100,
+        "width": 16,
+        "height": 28,
+        "worldSize": [
+          48,
+          84
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "knight_m_idle_anim_f1"
+      },
+      "player-run-1": {
+        "x": 208,
+        "y": 100,
+        "width": 16,
+        "height": 28,
+        "worldSize": [
+          48,
+          84
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "knight_m_run_anim_f1"
+      },
+      "enemy-imp-idle-1": {
+        "x": 384,
+        "y": 64,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          48,
+          48
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "imp_idle_anim_f1"
+      },
+      "enemy-imp-run-1": {
+        "x": 448,
+        "y": 64,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          48,
+          48
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "imp_run_anim_f1"
+      },
+      "enemy-shaman-idle-1": {
+        "x": 384,
+        "y": 201,
+        "width": 16,
+        "height": 23,
+        "worldSize": [
+          48,
+          69
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "orc_shaman_idle_anim_f1"
+      },
+      "enemy-shaman-run-1": {
+        "x": 448,
+        "y": 201,
+        "width": 16,
+        "height": 23,
+        "worldSize": [
+          48,
+          69
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "orc_shaman_run_anim_f1"
+      },
+      "enemy-orc-idle-1": {
+        "x": 384,
+        "y": 153,
+        "width": 16,
+        "height": 23,
+        "worldSize": [
+          48,
+          69
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "masked_orc_idle_anim_f1"
+      },
+      "enemy-orc-run-1": {
+        "x": 448,
+        "y": 153,
+        "width": 16,
+        "height": 23,
+        "worldSize": [
+          48,
+          69
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "masked_orc_run_anim_f1"
+      },
+      "enemy-skeleton-idle-1": {
+        "x": 384,
+        "y": 88,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          48,
+          48
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "skelet_idle_anim_f1"
+      },
+      "enemy-skeleton-run-1": {
+        "x": 448,
+        "y": 88,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          48,
+          48
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "skelet_run_anim_f1"
+      },
+      "enemy-priest-idle-1": {
+        "x": 384,
+        "y": 225,
+        "width": 16,
+        "height": 23,
+        "worldSize": [
+          48,
+          69
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "necromancer_anim_f1"
+      },
+      "boss-idle-1": {
+        "x": 48,
+        "y": 428,
+        "width": 32,
+        "height": 36,
+        "worldSize": [
+          96,
+          108
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "big_demon_idle_anim_f1"
+      },
+      "boss-run-1": {
+        "x": 176,
+        "y": 428,
+        "width": 32,
+        "height": 36,
+        "worldSize": [
+          96,
+          108
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "big_demon_run_anim_f1"
+      },
+      "merchant-1": {
+        "x": 144,
+        "y": 292,
+        "width": 16,
+        "height": 28,
+        "worldSize": [
+          40,
+          70
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "dwarf_m_idle_anim_f1"
+      },
+      "player-idle-2": {
+        "x": 160,
+        "y": 100,
+        "width": 16,
+        "height": 28,
+        "worldSize": [
+          48,
+          84
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "knight_m_idle_anim_f2"
+      },
+      "player-run-2": {
+        "x": 224,
+        "y": 100,
+        "width": 16,
+        "height": 28,
+        "worldSize": [
+          48,
+          84
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "knight_m_run_anim_f2"
+      },
+      "enemy-imp-idle-2": {
+        "x": 400,
+        "y": 64,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          48,
+          48
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "imp_idle_anim_f2"
+      },
+      "enemy-imp-run-2": {
+        "x": 464,
+        "y": 64,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          48,
+          48
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "imp_run_anim_f2"
+      },
+      "enemy-shaman-idle-2": {
+        "x": 400,
+        "y": 201,
+        "width": 16,
+        "height": 23,
+        "worldSize": [
+          48,
+          69
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "orc_shaman_idle_anim_f2"
+      },
+      "enemy-shaman-run-2": {
+        "x": 464,
+        "y": 201,
+        "width": 16,
+        "height": 23,
+        "worldSize": [
+          48,
+          69
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "orc_shaman_run_anim_f2"
+      },
+      "enemy-orc-idle-2": {
+        "x": 400,
+        "y": 153,
+        "width": 16,
+        "height": 23,
+        "worldSize": [
+          48,
+          69
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "masked_orc_idle_anim_f2"
+      },
+      "enemy-orc-run-2": {
+        "x": 464,
+        "y": 153,
+        "width": 16,
+        "height": 23,
+        "worldSize": [
+          48,
+          69
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "masked_orc_run_anim_f2"
+      },
+      "enemy-skeleton-idle-2": {
+        "x": 400,
+        "y": 88,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          48,
+          48
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "skelet_idle_anim_f2"
+      },
+      "enemy-skeleton-run-2": {
+        "x": 464,
+        "y": 88,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          48,
+          48
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "skelet_run_anim_f2"
+      },
+      "enemy-priest-idle-2": {
+        "x": 400,
+        "y": 225,
+        "width": 16,
+        "height": 23,
+        "worldSize": [
+          48,
+          69
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "necromancer_anim_f2"
+      },
+      "boss-idle-2": {
+        "x": 80,
+        "y": 428,
+        "width": 32,
+        "height": 36,
+        "worldSize": [
+          96,
+          108
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "big_demon_idle_anim_f2"
+      },
+      "boss-run-2": {
+        "x": 208,
+        "y": 428,
+        "width": 32,
+        "height": 36,
+        "worldSize": [
+          96,
+          108
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "big_demon_run_anim_f2"
+      },
+      "merchant-2": {
+        "x": 160,
+        "y": 292,
+        "width": 16,
+        "height": 28,
+        "worldSize": [
+          40,
+          70
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "dwarf_m_idle_anim_f2"
+      },
+      "player-idle-3": {
+        "x": 176,
+        "y": 100,
+        "width": 16,
+        "height": 28,
+        "worldSize": [
+          48,
+          84
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "knight_m_idle_anim_f3"
+      },
+      "player-run-3": {
+        "x": 240,
+        "y": 100,
+        "width": 16,
+        "height": 28,
+        "worldSize": [
+          48,
+          84
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "knight_m_run_anim_f3"
+      },
+      "enemy-imp-idle-3": {
+        "x": 416,
+        "y": 64,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          48,
+          48
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "imp_idle_anim_f3"
+      },
+      "enemy-imp-run-3": {
+        "x": 480,
+        "y": 64,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          48,
+          48
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "imp_run_anim_f3"
+      },
+      "enemy-shaman-idle-3": {
+        "x": 416,
+        "y": 201,
+        "width": 16,
+        "height": 23,
+        "worldSize": [
+          48,
+          69
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "orc_shaman_idle_anim_f3"
+      },
+      "enemy-shaman-run-3": {
+        "x": 480,
+        "y": 201,
+        "width": 16,
+        "height": 23,
+        "worldSize": [
+          48,
+          69
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "orc_shaman_run_anim_f3"
+      },
+      "enemy-orc-idle-3": {
+        "x": 416,
+        "y": 153,
+        "width": 16,
+        "height": 23,
+        "worldSize": [
+          48,
+          69
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "masked_orc_idle_anim_f3"
+      },
+      "enemy-orc-run-3": {
+        "x": 480,
+        "y": 153,
+        "width": 16,
+        "height": 23,
+        "worldSize": [
+          48,
+          69
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "masked_orc_run_anim_f3"
+      },
+      "enemy-skeleton-idle-3": {
+        "x": 416,
+        "y": 88,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          48,
+          48
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "skelet_idle_anim_f3"
+      },
+      "enemy-skeleton-run-3": {
+        "x": 480,
+        "y": 88,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          48,
+          48
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "skelet_run_anim_f3"
+      },
+      "enemy-priest-idle-3": {
+        "x": 416,
+        "y": 225,
+        "width": 16,
+        "height": 23,
+        "worldSize": [
+          48,
+          69
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "necromancer_anim_f3"
+      },
+      "boss-idle-3": {
+        "x": 112,
+        "y": 428,
+        "width": 32,
+        "height": 36,
+        "worldSize": [
+          96,
+          108
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "big_demon_idle_anim_f3"
+      },
+      "boss-run-3": {
+        "x": 240,
+        "y": 428,
+        "width": 32,
+        "height": 36,
+        "worldSize": [
+          96,
+          108
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "big_demon_run_anim_f3"
+      },
+      "merchant-3": {
+        "x": 176,
+        "y": 292,
+        "width": 16,
+        "height": 28,
+        "worldSize": [
+          40,
+          70
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "dwarf_m_idle_anim_f3"
+      },
+      "player-hit": {
+        "x": 256,
+        "y": 100,
+        "width": 16,
+        "height": 28,
+        "worldSize": [
+          48,
+          84
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "original": "knight_m_hit_anim_f0"
+      },
+      "enemy-remains": {
+        "x": 288,
+        "y": 432,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          24,
+          24
+        ],
+        "anchor": [
+          0.5,
+          0.8
+        ],
+        "original": "skull"
+      },
+      "weapon-sword": {
+        "x": 323,
+        "y": 10,
+        "width": 10,
+        "height": 21,
+        "worldSize": [
+          15,
+          31.5
+        ],
+        "anchor": [
+          0.5,
+          0.82
+        ],
+        "original": "weapon_regular_sword"
+      },
+      "weapon-hammer": {
+        "x": 291,
+        "y": 26,
+        "width": 10,
+        "height": 37,
+        "worldSize": [
+          15,
+          55.5
+        ],
+        "anchor": [
+          0.5,
+          0.88
+        ],
+        "original": "weapon_big_hammer"
+      },
+      "weapon-spear": {
+        "x": 309,
+        "y": 161,
+        "width": 6,
+        "height": 30,
+        "worldSize": [
+          9,
+          45
+        ],
+        "anchor": [
+          0.5,
+          0.84
+        ],
+        "original": "weapon_spear"
+      },
+      "weapon-dual": {
+        "x": 293,
+        "y": 10,
+        "width": 6,
+        "height": 13,
+        "worldSize": [
+          9,
+          19.5
+        ],
+        "anchor": [
+          0.5,
+          0.82
+        ],
+        "original": "weapon_knife"
+      },
+      "weapon-chain": {
+        "x": 293,
+        "y": 10,
+        "width": 6,
+        "height": 13,
+        "worldSize": [
+          12,
+          26
+        ],
+        "anchor": [
+          0.5,
+          0.77
+        ],
+        "original": "weapon_knife"
+      },
+      "weapon-greatsword": {
+        "x": 322,
+        "y": 65,
+        "width": 12,
+        "height": 30,
+        "worldSize": [
+          18,
+          45
+        ],
+        "anchor": [
+          0.5,
+          0.86
+        ],
+        "original": "weapon_anime_sword"
+      },
+      "weapon-fire": {
+        "x": 324,
+        "y": 129,
+        "width": 8,
+        "height": 30,
+        "worldSize": [
+          12,
+          45
+        ],
+        "anchor": [
+          0.5,
+          0.82
+        ],
+        "original": "weapon_red_magic_staff"
+      },
+      "weapon-frost": {
+        "x": 289,
+        "y": 195,
+        "width": 14,
+        "height": 26,
+        "worldSize": [
+          21,
+          39
+        ],
+        "anchor": [
+          0.5,
+          0.72
+        ],
+        "original": "weapon_bow"
+      },
+      "weapon-lightning": {
+        "x": 340,
+        "y": 129,
+        "width": 8,
+        "height": 30,
+        "worldSize": [
+          12,
+          45
+        ],
+        "anchor": [
+          0.5,
+          0.82
+        ],
+        "original": "weapon_green_magic_staff",
+        "tint": 10869247
+      },
+      "weapon-boomerang": {
+        "x": 340,
+        "y": 161,
+        "width": 10,
+        "height": 14,
+        "worldSize": [
+          20,
+          28
+        ],
+        "anchor": [
+          0.5,
+          0.72
+        ],
+        "original": "weapon_throwing_axe"
+      },
+      "weapon-meteor": {
+        "x": 339,
+        "y": 10,
+        "width": 10,
+        "height": 21,
+        "worldSize": [
+          20,
+          42
+        ],
+        "anchor": [
+          0.5,
+          0.82
+        ],
+        "original": "weapon_red_gem_sword"
+      },
+      "weapon-blade-ring": {
+        "x": 288,
+        "y": 167,
+        "width": 16,
+        "height": 24,
+        "worldSize": [
+          24,
+          36
+        ],
+        "anchor": [
+          0.5,
+          0.7
+        ],
+        "original": "weapon_double_axe"
+      },
+      "rune-fire": {
+        "x": 324,
+        "y": 129,
+        "width": 8,
+        "height": 8,
+        "worldSize": [
+          24,
+          24
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "original": "weapon_red_magic_staff",
+        "originalCrop": [
+          0,
+          0,
+          8,
+          8
+        ]
+      },
+      "rune-frost": {
+        "x": 340,
+        "y": 129,
+        "width": 8,
+        "height": 8,
+        "worldSize": [
+          24,
+          24
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "original": "weapon_green_magic_staff",
+        "originalCrop": [
+          0,
+          0,
+          8,
+          8
+        ],
+        "tint": 10279423
+      },
+      "rune-lightning": {
+        "x": 340,
+        "y": 129,
+        "width": 8,
+        "height": 8,
+        "worldSize": [
+          24,
+          24
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "original": "weapon_green_magic_staff",
+        "originalCrop": [
+          0,
+          0,
+          8,
+          8
+        ],
+        "tint": 16773281
+      },
+      "rune-boomerang": {
+        "x": 340,
+        "y": 161,
+        "width": 10,
+        "height": 14,
+        "worldSize": [
+          20,
+          28
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "original": "weapon_throwing_axe"
+      },
+      "projectile-fire": {
+        "x": 324,
+        "y": 129,
+        "width": 8,
+        "height": 8,
+        "worldSize": [
+          13,
+          13
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "original": "weapon_red_magic_staff",
+        "originalCrop": [
+          0,
+          0,
+          8,
+          8
+        ],
+        "tint": 16767885
+      },
+      "projectile-frost": {
+        "x": 324,
+        "y": 202,
+        "width": 7,
+        "height": 21,
+        "worldSize": [
+          8,
+          24
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "original": "weapon_arrow",
+        "rotationOffset": 1.5707963267948966,
+        "tint": 11593471
+      },
+      "projectile-lightning": {
+        "x": 340,
+        "y": 129,
+        "width": 8,
+        "height": 8,
+        "worldSize": [
+          13,
+          13
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "original": "weapon_green_magic_staff",
+        "originalCrop": [
+          0,
+          0,
+          8,
+          8
+        ],
+        "tint": 11591679
+      },
+      "projectile-blade": {
+        "x": 340,
+        "y": 161,
+        "width": 10,
+        "height": 14,
+        "worldSize": [
+          20,
+          28
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "original": "weapon_throwing_axe"
+      },
+      "projectile-enemy": {
+        "x": 320,
+        "y": 320,
+        "width": 16,
+        "height": 16,
+        "worldSize": [
+          16,
+          16
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "original": "bomb_f2",
+        "tint": 16749202
+      },
+      "effect-impact": {
+        "x": 324,
+        "y": 129,
+        "width": 8,
+        "height": 8,
+        "worldSize": [
+          10,
+          10
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "original": "weapon_red_magic_staff",
+        "originalCrop": [
+          0,
+          0,
+          8,
+          8
+        ]
+      }
+    }
+  },
+  "limitations": [
+    "No dedicated weapon attack or character death sequence in this pack. Use original idle/run/hit plus held-weapon rotation and short fade.",
+    "No boomerang, torch, standalone altar, rune, or spell-effect set. Throwing axe, magic-fountain, stone-stairs and gem crops are documented adaptations of existing art.",
+    "Wide room gates are composed of original posts and repeated closed leaves at 1.5x; the open 120-unit passage contains no centered open-leaf texture."
+  ]
+}

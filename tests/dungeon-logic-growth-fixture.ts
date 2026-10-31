@@ -1,0 +1,5 @@
+/** Explicitly synthetic cleared-room state for unit geometry/transaction probes, never normal-route evidence. */
+import {sourceKey,grantGrowthReward,createGrowthState,hashGrowth,CHOICE_CLEAR_MILESTONES,eligibleUpgrades} from '../packages/dungeon-core';
+import type {DungeonRun} from '../packages/dungeon-core';
+export function journalFixtureClears(r:DungeonRun):void {r.combat.normalClears=r.rooms.filter(q=>q.kind==='combat'&&q.cleared).length;for(const q of r.rooms)if(q.cleared&&(q.kind==='combat'||q.kind==='elite')){const kind=q.kind==='elite'?'elite':'room';grantGrowthReward(r,sourceKey(kind,q.id),q.id,kind,kind==='elite'?14:10,q.kind==='combat'?12:0,1);}r.reward.xp=r.combat.rewardLedger.reduce((n,e)=>n+e.xp,0);}
+export function pendingFixture(r:DungeonRun,choicesTaken=0):void {r.combat.choicesTaken=choicesTaken;r.level=choicesTaken+1;const sourceId=`clear-${CHOICE_CLEAR_MILESTONES[choicesTaken]}`;r.growth=createGrowthState();r.growth.pending={sourceId,seed:hashGrowth(`${r.seed}|${sourceId}`),legacyIds:false};r.phase='upgrade';r.choices=eligibleUpgrades(r);}

@@ -1,0 +1,290 @@
+.shop-ui {
+  color: #eee6cf;
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.shop-tabs {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 6px;
+  margin: 0 0 9px;
+}
+
+.shop-tab {
+  min-width: 0;
+  min-height: 36px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.shop-tab[aria-selected="true"] {
+  color: #272d35;
+  background: #d7bc88;
+  border-color: #f2d8a8;
+  box-shadow: inset 0 0 0 1px #fff0c04d;
+}
+
+.shop-panel {
+  min-width: 0;
+}
+
+.shop-table-scroll {
+  max-height: 238px;
+  overflow: auto;
+  border: 1px solid #4a5665;
+  border-radius: 6px;
+  background: #1b2430;
+  scrollbar-width: thin;
+  scrollbar-color: #7e735f transparent;
+}
+
+.shop-table {
+  width: 100%;
+  min-width: 520px;
+  border-collapse: separate;
+  border-spacing: 0;
+  table-layout: fixed;
+  font-size: 16px;
+}
+
+.shop-col-item { width: 23%; }
+.shop-col-material { width: 30%; }
+.shop-col-time { width: 13%; }
+.shop-col-gold { width: 15%; }
+.shop-col-operation { width: 19%; }
+
+.shop-table-manage .shop-col-item { width: 20%; }
+.shop-table-manage .shop-col-material { width: 22%; }
+.shop-table-manage .shop-col-time { width: 22%; }
+.shop-table-manage .shop-col-gold { width: 18%; }
+.shop-table-manage .shop-col-operation { width: 18%; }
+
+.shop-table th,
+.shop-table td {
+  padding: 8px 5px;
+  border-bottom: 1px solid #394654;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.shop-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #d8c8a7;
+  background: #283340;
+  font-size: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.shop-table tbody tr:last-child > * {
+  border-bottom: 0;
+}
+
+.shop-table tbody th[scope="row"] {
+  font-weight: 500;
+}
+
+.shop-item,
+.shop-metric,
+.shop-material,
+.shop-rule-material {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  min-width: 0;
+}
+
+.shop-item {
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.shop-item strong {
+  overflow-wrap: anywhere;
+}
+
+.shop-icon {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  color: #e2c48e;
+}
+
+.shop-icon svg {
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+
+.shop-metric {
+  font-size: 18px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.shop-metric strong,
+.shop-material strong,
+.shop-rule-material strong {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.shop-material-cell {
+  display: table-cell;
+}
+
+.shop-material-cell .shop-material {
+  margin: 2px 4px 2px 0;
+  color: #e1d5bc;
+  white-space: nowrap;
+}
+
+.shop-material.is-missing,
+.shop-rule-material.is-missing {
+  color: #ff8b80;
+}
+
+.shop-material.is-missing .shop-icon,
+.shop-rule-material.is-missing .shop-icon {
+  color: #ff8b80;
+}
+
+.shop-no-material {
+  color: #aeb9c7;
+  font-size: 18px;
+}
+
+.shop-rule-material {
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.shop-operation-cell {
+  padding-right: 6px !important;
+}
+
+.shop-action-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 4px;
+}
+
+.shop-action {
+  min-width: 0;
+  min-height: 34px;
+  padding: 5px 6px;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.shop-table-supply .shop-action,
+.shop-table-manage .shop-action {
+  width: 100%;
+}
+
+.shop-job {
+  margin-top: 9px;
+  padding: 8px 9px 0;
+  border-top: 1px solid #465363;
+}
+
+.shop-job-heading {
+  color: #e8c996;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.shop-job-story {
+  margin: 3px 0 6px;
+  color: #d0d7dd;
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.shop-job-story:empty {
+  display: none;
+}
+
+.shop-job-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.shop-job-actions .shop-action {
+  min-height: 36px;
+  font-size: 16px;
+}
+
+.shop-live-status {
+  margin: 7px 0 0;
+  padding: 5px 8px;
+  color: #cbd8d3;
+  border-left: 2px solid #91cdb4;
+  background: #91cdb40c;
+  font-size: 16px;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.shop-live-status:empty {
+  display: none;
+}
+
+#shopLoadState {
+  color: #f2c394;
+  border-left-color: #d6a46a;
+}
+
+.shop-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.shop-wallet,.business-heading,.shop-till,.production-row,.upgrade-row{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.shop-wallet{padding:5px 2px 12px;font-size:17px;color:#ecd29f}
+.shop-wallet>span,.business-item,.shop-till>span{display:flex;align-items:center;gap:6px}
+.shop-wallet svg,.business-item svg,.shop-till svg{width:21px;height:21px;flex:0 0 auto}
+.business-section{margin:12px 0 0;padding:0 0 8px}
+.business-section h2{margin:0 0 10px;font-size:17px;color:#ecd29f}
+.business-section h2 span,.business-heading>span{font-weight:400;font-size:16px;color:#c0cbbf}
+.business-section p{margin:6px 0;font-size:16px;line-height:1.45}
+.business-note{color:#bfcbce}
+.merchant-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.merchant-item,.order-card,.shelf-card{padding:12px;border:1px solid #4e5c61;border-radius:7px;background:#1b2730}
+.business-item{flex-wrap:wrap;gap:7px;font-size:17px}
+.business-item>span{margin-left:auto;font-size:16px;color:#c0cbbf}
+.business-actions{display:flex;flex-wrap:wrap;gap:7px;margin-top:9px}
+.business-actions button{flex:1;min-height:36px}
+.batch-picker{display:flex;flex-wrap:wrap;gap:6px}
+.batch-picker button{min-height:34px;font-size:16px}
+.batch-picker button[aria-pressed=true],.shelf-prices button[aria-pressed=true]{border-color:#f2d8a8;background:#d7bc88;color:#272d35}
+.production-row,.upgrade-row{padding:10px 0;border-bottom:1px solid #42515c}
+.production-row>span{font-size:16px;line-height:1.5}
+.production-row button,.upgrade-row button{flex:0 0 auto;min-height:35px}
+.order-list{display:flex;flex-direction:column;gap:10px}
+.order-goods{font-size:18px;margin-top:10px;color:#eee6cf}
+.shop-till{padding:10px 0 14px;font-size:17px}
+.shelf-card{margin-bottom:10px}
+.shelf-prices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin-top:12px}
+.shelf-prices button{font-size:16px;min-height:58px;padding:6px 3px}
+.shelf-prices span{display:block;font-size:16px;margin-top:5px}
+.upgrade-row strong{font-size:17px}.upgrade-row>div{min-width:0}
+body[data-popup=shop] h1{font-size:18px}body[data-popup=shop] #popupError{font-size:16px}body[data-popup=shop] #jobStory{font-size:16px}

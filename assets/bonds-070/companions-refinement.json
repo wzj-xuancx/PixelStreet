@@ -1,0 +1,7 @@
+{
+  "tool": "built-in image_gen",
+  "input": "assets/bonds-070/companions.png",
+  "output": "assets/bonds-070/companions-v2.png",
+  "prompt": "Use case: precise-object-edit. Edit target: the attached transparent 3 by 3 companion sprite atlas. Preserve all NINE characters, their exact designs, row order, colors and expressive pixel art style. Change only sizing and placement: make each character 72 percent of the width AND height of its equal square cell, completely inside the cell with at least 14 percent empty transparent padding on every side. Nothing must touch a cell boundary, no tail/ears/feet may cross into another cell. Perfect regular three columns and three rows, equal square cells, square overall canvas. Keep background genuinely transparent; clean alpha edges, no colored fringe, no black background, no shadows or grid lines. No text or additional subjects.",
+  "source_metadata_scope": "Original PNG provenance before Beta repository optimization, not current WebP byte hashes. See assets/optimization-manifest.json for the runtime file mapping and hashes. Original PNGs are retained outside this repository."
+}

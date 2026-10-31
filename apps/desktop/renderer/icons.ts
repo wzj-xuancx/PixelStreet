@@ -1,0 +1,6 @@
+// Ant Design Icons: pinned MIT sources/hashes in vendor/ant-design-icons/provenance.json.
+import paths from '../../../vendor/ant-design-icons/icons.json';
+const aliases: Record<string, keyof typeof paths> = { settings:'setting',hide:'eye-invisible',home:'home',chat:'message',close:'close',send:'send',save:'save',reset:'redo',export:'upload',import:'download',left:'left',target:'arrow-down',clock:'clock-circle',gold:'gold',bag:'inbox',friends:'team',check:'check',plus:'plus',minus:'minus',flour:'container',ration:'coffee',gel:'experiment',crystal:'thunderbolt',filter:'filter',drag:'drag',guide:'question-circle',dungeon:'fire' };
+export function icon(name:string):string { return `<svg viewBox="0 0 1024 1024" fill="currentColor" aria-hidden="true">${paths[aliases[name] ?? 'setting']}</svg>`; }
+export function iconButton(id:string,name:string,label:string,classes=''):string {return `<button id="${id}" class="game-button icon-button ${classes}" type="button" data-icon="${name}" title="${label}" aria-label="${label}">${icon(name)}</button>`;}
+export function labelButton(button:HTMLElement,label:string,name?:string):void {button.dataset.tooltip=label;button.setAttribute('aria-label',label);if(name)button.innerHTML=icon(name);}

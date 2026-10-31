@@ -1,0 +1,93 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-10-24",
+  "status": "design previews, not approved runtime art",
+  "prompts": "prompts.json",
+  "assets": [
+    {
+      "file": "inventory-main-concept.png",
+      "source": "[local-source-redacted]",
+      "prompt_key": "inventoryFix",
+      "bytes": 2159373,
+      "sha256": "0799442144c43f0640f2043945e5e97eee9533027a7b650d2ac1f9798c2330ef",
+      "size": [
+        1374,
+        1145
+      ],
+      "mode": "RGB",
+      "alpha_range": null,
+      "role": "concept only; not connected to runtime"
+    },
+    {
+      "file": "inventory-interaction-concept.png",
+      "source": "[local-source-redacted]",
+      "prompt_key": "states",
+      "bytes": 2189014,
+      "sha256": "660b0ac5c5f9ccbe7aa655f31bab5275ddc9ada2d4d65db0e6d10fe262a627e8",
+      "size": [
+        1942,
+        809
+      ],
+      "mode": "RGB",
+      "alpha_range": null,
+      "role": "concept only; not connected to runtime"
+    },
+    {
+      "file": "existing-items-25-candidate.png",
+      "source": "[local-source-redacted]",
+      "prompt_key": "items",
+      "bytes": 2329245,
+      "sha256": "df82eab5cc0c573c2afef5a89d7274d1fd174b6b7234711c209809b387550850",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "role": "concept only; not connected to runtime"
+    }
+  ],
+  "discarded_preview": "Initial inventory main concept retained only in generator output; final main corrects gel/ration/magic meal/soup/dust identity.",
+  "limitations": [
+    "UI preview uses illustrative quantities/equipment and provisional character portrait.",
+    "Interaction sheet contains draft duplicate item imagery and is for state layout only.",
+    "25-icon candidate requires individual crop/padding and small-size inspection before runtime use."
+  ],
+  "style_references": [
+    {
+      "path": "[local-source-redacted]",
+      "sha256": "8a29a9ff11652146905ce3c8b3bacbc4af523054d4a9e78155327f86e3f36cfc"
+    },
+    {
+      "path": "[local-source-redacted]",
+      "sha256": "6a4f8b54fbfcb13ed3c23423beb0175ce82ca1dd7adca21596dd11f43970b556"
+    },
+    {
+      "path": "[local-source-redacted]",
+      "sha256": "7acd530273bc5517af5d28808d3556529b9634bc96c2afcddbaa26cb1f268583"
+    },
+    {
+      "path": "[local-source-redacted]",
+      "sha256": "e24aabea164ba03e6e8045debe74709211553d0145a6bc6cf4d9cbfb0de8add0"
+    },
+    {
+      "path": "[local-source-redacted]",
+      "sha256": "5c9c6061f218dd5d9889ae004b788ed5ceee8841dfe90c4ba1d04fa10b43d7fa"
+    },
+    {
+      "path": "[local-source-redacted]",
+      "sha256": "a3f6380e52e018113a46214a43a85832c6795d3e9db955bf65ca589e50a17368"
+    },
+    {
+      "path": "[local-source-redacted]",
+      "sha256": "92b0ef10a5954082234d32980f13c46c59c201b5908da6efb378b0795ff466aa"
+    },
+    {
+      "path": "[local-source-redacted]",
+      "sha256": "f4de2af3ee8b6cfc01ce5e5f717c9e72db041ae6f5b58ec6d19e6166d7ce8723"
+    }
+  ]
+}

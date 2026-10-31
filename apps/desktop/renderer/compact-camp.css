@@ -1,0 +1,433 @@
+/* 0.12.2: small illustrated choices, with the selected action in the same view.
+   Only presentation changes. Keep full text, native window scrolling and 44px targets. */
+.casual .c-shell{padding:10px 14px 0;gap:8px}
+.casual .cs-workspace{gap:7px}
+.casual .cs-workspace-head{min-height:44px;gap:8px}
+.casual .c-tabs{gap:5px;padding-bottom:7px}
+.casual .c-tabs .c-tab{min-height:48px;padding:2px 5px;flex-direction:row;gap:5px;font-size:16px}
+.casual .c-tabs .c-tab>.inner-art,.casual .c-tabs .c-tab>.b-buddy-art{width:34px;height:34px;flex-shrink:0}
+.casual .c-content{padding:0 2px 10px}
+.casual .c-header{margin-bottom:0}
+.casual .c-footer{min-height:32px}
+.casual #cCampWorkspace[data-page=village] .v-header{display:none}
+.casual #cVillageShortcut{min-height:44px;padding:1px 8px}
+.casual #cVillageShortcut .inner-art{width:36px;height:36px}
+.village-ui{line-height:1.4}
+.village-ui .v-header{min-height:30px;padding:0 2px 5px}
+.village-ui .v-header h2{font-size:20px}
+.village-ui .v-nav{gap:5px;padding:3px;margin-bottom:7px}
+.village-ui .v-nav .v-object{min-height:44px;padding:2px 6px;gap:5px;flex-direction:row}
+.village-ui .v-nav .inner-art,.village-ui .v-nav .v-sprite{width:32px;height:32px}
+.village-ui .v-panel{border-radius:9px}
+.village-ui .v-square{min-height:265px;padding:45px 12px 14px;gap:10px}
+.village-ui .v-scene-caption{top:9px;left:12px;padding:4px 8px}
+.village-ui .v-building{min-height:200px}
+.village-ui .v-project-picture{height:155px}
+.village-ui .v-project-picture .v-empty-site{width:68px;height:68px}
+.village-ui .v-plaque{min-width:0;padding:4px 7px;gap:1px}
+.village-ui .v-pips{margin-top:2px}
+.village-ui .v-room-bar{min-height:48px;padding:3px 10px;gap:8px}
+.village-ui .v-room-bar h3{font-size:18px}
+.village-ui .v-build-site{min-height:0;grid-template-columns:150px minmax(0,1fr);gap:10px;padding:10px 12px}
+.village-ui .v-build-hero{min-height:0}
+.village-ui .v-build-hero .v-sprite{width:150px;height:150px}
+.village-ui .v-blueprint{padding:7px 10px}
+.village-ui .v-blueprint>strong{padding-bottom:5px;font-size:16px}
+.village-ui .v-goal-stamps{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 10px}
+.village-ui .v-goal-stamps>span{padding:4px 0;gap:5px}
+.village-ui .v-goal-stamps .inner-art,.village-ui .v-goal-stamps .v-sprite{width:29px;height:29px}
+.village-ui .v-goal-label{gap:2px 5px}
+.village-ui .v-counter{padding:8px 12px;gap:4px 8px;grid-template-columns:minmax(85px,.5fr) minmax(190px,1fr) auto}
+.village-ui .v-counter>.v-reason{margin-top:2px!important}
+.village-ui .v-material-tray{gap:5px;margin:5px 0}
+.village-ui .v-material{padding:3px 6px;min-width:0;gap:0 4px}
+.village-ui .v-material .inner-art{width:29px;height:29px}
+.village-ui .v-material b{font-size:16px}
+.village-ui .v-action{min-height:44px;min-width:165px;margin:0;padding:3px 9px;font-size:16px}
+.village-ui .v-action .inner-art,.village-ui .v-action .v-build-action-art{width:36px;height:36px}
+.village-ui .v-reason{margin-top:4px!important;line-height:1.4}
+.village-ui .v-footer{padding:5px 2px;line-height:1.4}
+
+/* Tea guests remain visible together; a compact dining table keeps serving and gifts close. */
+.village-ui .v-regular-room{grid-template-columns:136px minmax(0,1fr);gap:8px;padding:8px}
+.village-ui .v-guest-row{gap:6px}
+.village-ui .v-guest{padding:3px;gap:0}
+.village-ui .v-guest .v-sprite{width:55px;height:55px}
+.village-ui .v-guest .v-plaque{padding:3px;line-height:1.35}
+.village-ui .v-tea-table{padding:8px 10px;border-width:2px}
+.village-ui .v-dialogue{min-height:0;gap:8px}
+.village-ui .v-dialogue .v-portrait{width:54px;height:54px}
+.village-ui .v-dialogue p{margin:3px 0}
+.village-ui .v-serving{grid-template-columns:minmax(0,1.1fr) minmax(110px,.85fr) minmax(0,1fr);gap:7px;margin-top:6px;padding-top:6px}
+.village-ui .v-request{display:grid;grid-template-columns:40px minmax(0,1fr);gap:1px 5px;text-align:left}
+.village-ui .v-request>strong{grid-column:1/-1}
+.village-ui .v-request .inner-art{grid-row:2/4;width:40px;height:40px}
+.village-ui .v-request b{margin:0;font-weight:600}
+.village-ui .v-serving-tray{min-height:74px;max-width:165px;padding:4px;border-radius:25px;gap:0}
+.village-ui .v-serving-tray .inner-art{width:40px;height:40px}
+.village-ui .v-gift-purse{gap:1px}
+.village-ui .v-gift-purse .inner-art{width:32px;height:32px}
+.village-ui .v-keepsakes{gap:6px;margin-top:7px;padding-top:6px;border-top-width:2px}
+.village-ui .v-keepsake{padding:4px;gap:1px}
+.village-ui .v-keepsake .v-sprite{width:39px;height:39px}
+.village-ui .v-keepsake>span:last-child{line-height:1.3}
+.village-ui .v-gift-detail{padding:6px 8px;margin-top:5px!important}
+
+/* Nine portraits in three rows. Art carries the character, not an oversized empty stage. */
+.village-ui .v-life-room{grid-template-columns:280px minmax(0,1fr)}
+.village-ui .v-companions{grid-template-columns:repeat(3,minmax(0,1fr));padding:7px;gap:5px;align-content:start}
+.village-ui .v-companion{padding:4px 2px;gap:1px}
+.village-ui .v-companion .inner-art{width:42px;height:42px}
+.village-ui .v-companion strong{white-space:normal;line-height:1.25}
+.village-ui .v-companion>span:last-child{font-size:16px;line-height:1.25}
+.village-ui .v-life-stage{padding:9px 10px}
+.village-ui .v-life-person{min-height:190px;padding:0}
+.village-ui .v-life-person>div{padding:5px 8px}
+.village-ui .v-life-person>.inner-art{width:100px;height:100px;left:15px;top:51px}
+.village-ui .v-person-prop{width:100px;height:100px;right:14px;top:55px}
+.village-ui .v-life-person>p{padding:6px 8px;line-height:1.4}
+.village-ui .v-life-objects{gap:5px;margin-top:7px;padding:0}
+.village-ui .v-care-object{padding:4px 2px;gap:1px}
+.village-ui .v-care-object .v-sprite{width:50px;height:50px}
+.village-ui .v-care-object strong{font-size:16px}
+.village-ui .v-care-object>span:last-child{line-height:1.25}
+.village-ui .v-life-stage>.v-reason{padding:5px 7px}
+
+/* Stations, item catalogue, batch settings and submit form one short workbench. */
+.village-ui .v-stations{gap:6px;padding:6px 10px}
+.village-ui .v-station{flex-direction:row;gap:4px;padding:2px}
+.village-ui .v-station>.inner-art{width:48px;height:42px;flex-shrink:0}
+.village-ui .v-station .v-plaque{flex:1;padding:3px 4px}
+.village-ui .v-plan-workspace .v-room-bar{padding:4px 10px;min-height:32px}
+.village-ui .v-plan-workspace>.v-room-bar{display:none}
+.village-ui .v-product-shelf{padding:5px 10px;gap:5px;border-bottom-width:3px}
+.village-ui .v-product{min-width:100px;min-height:44px;max-width:none;flex-direction:row;padding:3px 5px;gap:3px}
+.village-ui .v-product .inner-art{width:34px;height:34px;flex-shrink:0}
+.village-ui .v-product strong{font-weight:600;line-height:1.3}
+.village-ui .v-worktable{grid-template-columns:140px minmax(0,1fr);padding:7px 10px;gap:10px}
+.village-ui .v-plan-recipe{gap:2px}
+.village-ui .v-plan-recipe>.inner-art{width:62px;height:62px}
+.village-ui .v-plan-recipe h3{font-size:18px}
+.village-ui .v-production-controls{grid-template-columns:repeat(2,minmax(0,1fr));gap:5px 8px}
+.village-ui .v-choice-group>strong{margin-bottom:3px}
+.village-ui .v-choice-group>div{gap:4px}
+.village-ui .v-quantity{min-height:44px;padding:2px 5px;gap:2px}
+.village-ui .v-product-stack{width:24px;height:28px}
+.village-ui .v-product-stack .inner-art{width:24px;height:24px}
+.village-ui .v-product-stack .inner-art:last-child{left:4px;top:3px}
+.village-ui .v-reserve-art .inner-art{width:25px;height:25px}
+.village-ui .v-mode-choices{grid-column:1/-1;gap:5px}
+.village-ui .v-sign{min-height:44px;padding:2px 6px;gap:4px}
+.village-ui .v-sign .inner-art{width:30px;height:30px}
+.village-ui .v-plan-ingredients{padding:5px 10px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.village-ui .v-plan-ingredients>.v-material-tray{margin:0;flex:1}
+.village-ui .v-plan-submit{padding:3px 10px 6px;gap:8px;flex-wrap:nowrap}
+.village-ui .v-plan-submit>.v-reason{margin:0!important}
+.village-ui .v-running-plan{gap:7px;padding:6px 10px;border-top-width:2px;flex-wrap:nowrap}
+.village-ui .v-running-plan>.inner-art{width:38px;height:38px}
+.village-ui .v-running-plan p{margin-top:2px}
+.village-ui .v-plan-bottom{gap:8px;padding:5px 10px;flex-wrap:nowrap}
+.village-ui .v-manual{min-height:44px;padding:2px 7px;flex-shrink:0}
+.village-ui .v-manual .inner-art{width:28px;height:28px}
+
+/* Existing companion and collections pages use the same compact picture signs. */
+:is(.b-workspace,.life-ui) button[data-pi-control]{min-height:44px;padding:3px 7px!important;gap:4px}
+:is(.b-workspace,.life-ui) button[data-pi-control]::before{width:32px;height:32px}
+:is(.b-workspace,.life-ui) button[data-pi-control=place]{min-height:44px;flex-direction:row;padding:3px 7px!important;gap:4px}
+:is(.b-workspace,.life-ui) button[data-pi-control=place]::before{width:32px;height:32px}
+.b-workspace{line-height:1.4}
+.b-workspace .c-section-title{margin-bottom:7px}
+.b-workspace .b-buddy-layout{grid-template-columns:255px minmax(0,1fr);gap:9px}
+.b-workspace .b-roster{position:static;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;padding:6px}
+.casual .b-workspace .b-buddy-pick{padding:3px 2px;gap:1px}
+.b-workspace .b-buddy-pick .b-buddy-art{width:42px;height:42px}
+.b-workspace .b-buddy-pick>span:last-child{min-height:0;line-height:1.3}
+.b-workspace .b-buddy-detail{padding:0 10px 10px}
+.b-workspace .b-portrait-stage{height:115px;margin:0 -10px 7px;padding:6px 12px;gap:10px;justify-content:start}
+.b-workspace .b-portrait-stage .b-buddy-art.b-large{width:105px;height:105px}
+.b-workspace .b-portrait-caption{padding-bottom:10px}
+.b-workspace .b-portrait-caption h2{font-size:22px}
+.b-workspace .b-bond-strip{gap:4px}
+.b-workspace .b-bond-strip progress{height:6px}
+.b-workspace .b-detail-tabs{margin:7px 0!important;gap:5px}
+.b-workspace .b-detail-tabs>button[data-pi-control=place]{min-height:44px;flex-direction:row;gap:4px}
+.b-workspace .b-detail-tabs>button[data-pi-control=place]::before{width:30px;height:30px}
+.b-workspace .b-buddy-actions{gap:5px;margin:6px 0}
+.b-workspace .b-food-gift{gap:6px;padding:5px}
+.b-workspace .b-gift-food{width:34px;height:34px}
+.b-workspace .b-hint{margin-top:5px}
+.b-workspace .b-training-title{margin:4px 0 6px}
+.b-workspace .b-paths{grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}
+.casual .b-workspace .b-paths>button{display:flex;flex-direction:column;text-align:center;align-items:center;padding:5px 4px;gap:3px}
+.b-workspace .b-path-emblem{width:35px;height:35px;grid-row:auto}
+.b-workspace .b-rank-pips{gap:3px;margin:2px 0 0}
+.b-workspace .b-rank-pips i{width:27px;height:27px}
+.b-workspace .b-next-training{padding:6px 8px;gap:4px;margin-top:6px}
+.b-workspace .b-story-tabs{margin-bottom:6px;gap:5px}
+.b-workspace .b-dialogue{grid-template-columns:45px minmax(0,1fr);gap:8px;padding:8px}
+.b-workspace .b-dialogue .b-buddy-art{width:45px;height:45px}
+.b-workspace .b-dialogue p{margin-top:3px;line-height:1.5}
+.b-workspace .b-story-gift{margin-top:6px;gap:5px}
+.b-workspace .b-rarity-heading{gap:8px;align-items:center}
+.b-workspace .b-rarity-heading h2{font-size:22px}
+.b-workspace .b-satchel-title{margin:6px 0 5px}
+.b-workspace .b-loadout{gap:6px;margin-bottom:8px}
+.casual .b-workspace .b-loadout>button{min-height:44px;padding:3px 6px;gap:4px;flex-wrap:nowrap;text-align:left;justify-content:start}
+.b-workspace .b-loadout .b-rarity-art{width:32px;height:32px}
+.b-workspace .b-rarity-layout{grid-template-columns:minmax(0,1.25fr) minmax(275px,1fr);gap:9px}
+.b-workspace .b-rarity-grid{grid-template-columns:repeat(3,minmax(0,1fr));padding:6px;gap:5px}
+.casual .b-workspace .b-rarity-pick{padding:3px;gap:1px}
+.b-workspace .b-exhibit{padding:0;border-bottom-width:2px}
+.b-workspace .b-rarity-pick .b-rarity-art{width:36px;height:36px}
+.b-workspace .b-rarity-pick>strong,.b-workspace .b-rarity-pick>span:last-child{line-height:1.3;font-size:16px}
+.b-workspace .b-rarity-detail{position:static;padding:0 9px 9px}
+.b-workspace .b-relic-focus{display:grid;grid-template-columns:60px minmax(0,1fr);align-items:center;gap:2px 7px;padding:7px;margin:0 -9px 5px}
+.b-workspace .b-relic-focus .b-rarity-art.b-large{grid-row:1/3;width:60px;height:60px;margin:0}
+.b-workspace .b-relic-focus h2{font-size:20px}
+.b-workspace .b-rarity-detail>p{margin:5px 0;line-height:1.4}
+.b-workspace .b-rarity-detail>.b-buddy-actions>button[data-pi-control]{min-height:44px;flex:1;white-space:normal}
+.b-workspace .b-set{margin-top:7px;padding-top:6px}
+.b-workspace .b-set-pieces{gap:5px;margin-bottom:4px}
+.b-workspace .b-set-pieces .b-rarity-art{width:32px;height:32px}
+.b-workspace .b-set>p{padding:3px 0}
+.b-workspace .b-letter-picture{height:90px;min-height:90px}
+.b-workspace .b-letter-picture .b-buddy-art{width:65px;height:65px}
+.b-workspace .b-letter-paper{padding:8px 10px}
+.b-workspace .b-letter p{line-height:1.5;margin-bottom:7px}
+
+/* Existing operating book: retain controls and all amounts, reduce furniture and gaps. */
+.life-ui{line-height:1.4}
+.life-ui .life-tabs{gap:5px;margin:7px 0 9px!important}
+.life-ui .life-tabs>button[data-pi-control=place]{min-height:44px;flex-direction:row}
+.life-ui .life-tabs>button[data-pi-control=place]::before{width:30px;height:30px}
+.life-ui .life-heading{margin:6px 0;gap:7px}
+.life-ui .life-camp-scene{height:95px}
+.life-ui .life-camp-scene>span{font-size:18px;bottom:8px}
+.life-ui .life-growth{padding:5px 10px 8px}
+.life-ui .life-goal{padding:6px 8px}
+.life-ui :is(.life-gift-counter,.life-till-counter,.life-journey-card){padding:6px 9px;margin:7px 0;gap:8px}
+.life-ui .life-object{width:46px;height:46px}
+.life-ui .life-roadmap{gap:6px;margin:8px 0}
+.life-ui .life-roadmap article{padding:7px;gap:7px}
+.life-ui .life-roadmap h3{margin-bottom:3px;font-size:18px}
+.life-ui .life-milepost{width:32px;height:32px}
+.life-ui .life-stations{gap:8px}
+.life-ui .life-station-stage{height:64px;padding:5px 8px;gap:8px}
+.life-ui .life-station-stage .life-object{width:50px;height:50px}
+.life-ui .life-status{right:6px;bottom:5px;padding:1px 5px}
+.life-ui .life-station-body{padding:7px}
+.life-ui .life-mini-queue{min-height:35px;gap:6px}
+.life-ui .life-actions{margin:6px 0;gap:5px}
+.life-ui .life-actions>button{min-width:0}
+.life-ui .life-recipe-book{grid-template-columns:155px minmax(0,1fr);padding:8px;gap:9px}
+.life-ui .life-food-choices{gap:4px}
+.life-ui .life-food-choices>button{grid-template-columns:34px minmax(0,1fr);padding:4px!important;gap:1px 5px}
+.life-ui .life-food-choices .inner-art{width:34px;height:34px}
+.life-ui .life-recipe-detail{padding-left:8px}
+.life-ui .life-dish-focus{gap:8px;margin-bottom:7px}
+.life-ui .life-dish-large{width:64px;height:64px}
+.life-ui .life-dish-focus h3{font-size:20px}
+.life-ui .life-material-tray{gap:5px;padding:6px 0}
+.life-ui .life-material-tray>span{padding:3px 5px}
+.life-ui .life-material-tray .pi-tray-art{width:28px;height:28px}
+.life-ui .life-recipe-detail>.life-actions{margin-top:7px}
+.life-ui .life-recipe-detail>.life-actions>button{min-height:44px;flex-direction:row}
+.life-ui .life-recipe-detail>.life-actions>button::before{width:32px;height:32px}
+.life-ui .life-cooking-rack{padding:3px 8px}
+.life-ui .life-queue{grid-template-columns:25px 35px minmax(0,1fr) auto;gap:6px;padding:6px 0}
+.life-ui .life-queue .inner-art{width:35px;height:35px}
+.life-ui .life-queue>div>strong{margin-bottom:3px}
+.life-ui .life-plan{padding:8px;margin:8px 0}
+.life-ui .life-plan>h3{margin-bottom:7px}
+.life-ui .life-plan-goods{gap:5px}
+.life-ui .life-plan-goods>button{padding:4px;gap:4px;flex-direction:row}
+.life-ui .life-plan-goods .life-good-art{width:36px;height:36px}
+.life-ui .life-plan-tickets{gap:8px;padding:7px 0;margin:7px 0}
+.life-ui .life-plan-tickets>div>span{margin-bottom:4px}
+.life-ui .life-workplace-tabs{gap:5px;margin:7px 0}
+.life-ui .life-workplace-tabs>button[data-pi-control=place]{min-height:44px;flex-direction:row}
+.life-ui .life-workplace-tabs>button[data-pi-control=place]::before{width:34px;height:34px}
+.life-ui .life-workplaces{gap:8px;margin:8px 0}
+.life-ui .life-job{grid-template-columns:120px minmax(0,1fr)}
+.life-ui .life-job-scene{min-height:190px;padding:5px}
+.life-ui .life-job-person{width:75px;height:75px}
+.life-ui .life-job-info{padding:8px}
+.life-ui .life-job-roster{gap:4px;margin:6px 0}
+.life-ui .life-job-roster button{padding:3px;min-height:44px}
+.life-ui .life-job-roster .life-buddy{width:32px;height:32px}
+.life-ui .life-quests{gap:7px}
+.life-ui .life-quests>article{padding:8px;margin:0;gap:5px 8px}
+.life-ui .life-quests p{margin:4px 0}
+.life-ui .life-presets{gap:7px}
+.life-ui .life-preset{padding:8px;margin:7px 0}
+.life-ui .life-preset .life-buddy{width:42px;height:42px}
+.life-ui .life-preset .life-relic-art{width:30px;height:30px}
+.life-ui .life-current-crew{padding:8px}
+.life-ui .life-crew-stage .life-buddy{width:65px;height:65px}
+.life-ui .life-residents{padding:6px 0}
+.life-ui .life-residents .life-buddy{width:38px;height:38px}
+.life-ui .life-notice{margin-top:6px;padding-top:6px}
+
+/* Replace earlier large illustration rules, including their explicit atlas overrides. */
+.b-workspace .b-paths{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:5px;margin-bottom:5px}
+.casual .b-workspace .b-paths>button{display:flex!important;flex-direction:column;padding:4px!important;text-align:center!important;gap:3px}
+.b-workspace .b-path-emblem{grid-column:auto;grid-row:auto}
+.b-workspace .b-rank-pips{padding-top:4px;margin-top:2px!important;gap:3px}
+.b-workspace .b-rank-pips>i{width:25px!important;height:25px!important;min-height:25px;flex-direction:row;gap:0;border-radius:4px}
+.b-workspace .b-rank-pips>i+i::before{content:none}
+.b-workspace .b-rank-pips .pi-path-node{display:none}
+.b-workspace .b-next-training{grid-template-columns:minmax(0,1fr) auto;align-items:center}
+.b-workspace .b-next-training>button{grid-column:2;grid-row:1/3;min-width:110px;flex-direction:row}
+.b-workspace .b-next-training>button::before{width:27px;height:27px}
+.b-workspace .b-portrait-stage{height:95px}
+.b-workspace .b-portrait-stage .b-buddy-art.b-large{width:85px;height:85px}
+.b-workspace .b-rarity-heading{margin-bottom:4px}
+.b-workspace .b-rarity-detail>.b-buddy-actions{flex-direction:row}
+.b-workspace .b-rarity-detail>.b-buddy-actions>button[data-pi-control]{flex:1 1 0;gap:3px}
+.b-workspace .b-rarity-detail>.b-buddy-actions>button[data-pi-control]::before{width:27px;height:27px}
+.casual #cPanel-collection>.c-section-title{margin:0 0 5px;gap:6px}
+.casual #cPanel-collection>.c-section-title h2{font-size:18px}
+.casual .b-archive-tabs{margin-bottom:6px;gap:5px}
+.casual .b-archive-tabs>button{min-height:44px;padding:4px 10px}
+.life-ui .life-recipe-book{display:grid;grid-template-columns:155px minmax(0,1fr);align-items:start}
+.life-ui .life-food-choices{display:flex;flex-direction:column;margin-bottom:0}
+.life-ui .life-food-choices>button{display:grid;grid-template-columns:34px minmax(0,1fr);text-align:left;gap:1px 5px}
+.life-ui .life-food-choices .life-food-art.inner-art{width:34px;height:34px;grid-row:1/3}
+.life-ui .life-recipe-detail{display:block;padding:0 0 0 8px;border-top:0;border-left:1px solid #758261}
+.life-ui .life-dish-focus{flex-direction:row;justify-content:start;text-align:left}
+.life-ui .life-dish-large.inner-art{width:64px;height:64px}
+.life-ui .life-material-tray .pi-tray-art.inner-art{width:28px;height:28px}
+.life-ui .life-material-tray>span{min-width:0;padding:3px 5px;gap:4px}
+.life-ui .life-station-body>.life-actions{gap:5px}
+.life-ui .life-station-body>.life-actions>button{min-height:44px;flex-direction:row;gap:3px}
+.life-ui .life-station-body>.life-actions>button::before{width:30px;height:30px}
+.life-ui .life-station-body>.life-mini-queue{min-height:35px}
+.life-ui .life-mini-queue .inner-art{width:32px;height:32px}
+.life-ui .life-station-body>p{margin:4px 0}
+.life-ui .life-job-roster{grid-template-columns:repeat(5,minmax(0,1fr))}
+.life-ui .life-job-roster>button{flex-direction:row;gap:3px;padding:3px}
+.life-ui .life-job-info>p{margin:3px 0}
+.life-ui .life-job-info>#lifeAssign-counter,.life-ui .life-job-info>#lifeAssign-workshop,.life-ui .life-job-info>#lifeAssign-garden{margin-top:3px}
+.b-workspace .b-portrait-stage{height:64px;padding:3px 8px;gap:6px}
+.b-workspace .b-portrait-stage .b-buddy-art.b-large{width:58px;height:58px}
+.b-workspace .b-portrait-caption{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:baseline;gap:0 6px;padding:0}
+.b-workspace .b-portrait-caption .b-eyebrow{min-height:0;margin:0;font-size:16px}
+.b-workspace .b-portrait-caption h2{font-size:20px}
+.b-workspace .b-portrait-caption .c-prize{grid-column:1/-1;font-size:16px}
+.b-workspace .b-bond-strip{grid-template-columns:repeat(2,minmax(0,1fr));align-items:center;gap:3px 7px}
+.b-workspace .b-bond-strip progress{grid-column:1/-1}
+.casual .b-workspace .b-paths>button{display:grid!important;grid-template-columns:28px minmax(0,1fr);align-content:start;text-align:left!important;gap:3px 5px}
+.b-workspace .b-path-emblem{width:28px;height:28px}
+.b-workspace .b-paths>button>span:not(.b-path-emblem){grid-column:1/-1}
+.b-workspace .b-paths>button>span:not(.b-path-emblem):not(.b-rank-pips){line-height:1.3}
+.b-workspace .b-next-training{padding:5px 7px}
+.casual #cPanel-collection:not([hidden]){display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px;align-content:start}
+.casual #cPanel-collection>.c-section-title{align-self:center;margin:0;justify-content:start;gap:5px;flex-wrap:wrap}
+.casual #cPanel-collection>.b-archive-tabs{margin:0}
+.casual #cPanel-collection>:is(#cArchiveRarities,#cArchivePermanent){grid-column:1/-1}
+.b-workspace .b-rarity-heading>div:first-child{display:flex;align-items:baseline;flex-wrap:wrap;gap:0 6px}
+.b-workspace .b-rarity-heading h2{font-size:18px;margin:0}
+.b-workspace .b-rarity-heading p{line-height:1.3}
+.b-workspace .b-currencies{font-size:16px;gap:3px 8px}
+.b-workspace .b-rarity-detail .b-buddy-actions{margin:5px 0}
+.life-ui .life-stations{grid-template-columns:repeat(4,minmax(0,1fr));align-items:stretch}
+.life-ui .life-station-stage{height:65px}
+.life-ui .life-station-stage h3{padding:3px 5px;font-size:17px;margin:0}
+.life-ui .life-station-body{display:flex;flex-direction:column;padding:5px}
+.life-ui .life-station-body>.life-actions{grid-template-columns:1fr;margin-top:auto}
+.life-ui .life-station-body>.life-actions>button{padding:3px!important;gap:3px}
+.life-ui .life-station-body>.life-actions>button::before{width:25px;height:25px}
+.life-ui .life-station-body>p{line-height:1.3}
+.life-ui .life-mini-queue .inner-art{width:27px;height:27px}
+.life-ui .life-mini-queue{gap:3px;flex-wrap:wrap}
+.life-ui .life-queue-object>strong{font-size:16px;margin-left:-9px;padding:0 2px}
+/* The original camp kitchen is a separate workbench from the operating book.
+   Keep its five recipes and both cook/sell pairs together at the window's first scroll. */
+.casual #cPanel-kitchen>.cw-page-heading{gap:8px;margin:0 0 7px;align-items:center}
+.casual #cPanel-kitchen>.cw-page-heading>.life-mini{padding:4px 7px;margin:0;gap:7px;max-width:75%}
+.casual #cPanel-kitchen>.cw-page-heading .life-mini>button{min-height:44px;padding:4px 8px}
+.casual .cw-kitchen{grid-template-columns:155px minmax(0,1fr);border-radius:9px}
+.casual .cw-recipe-book{padding:8px;border-right-width:3px}
+.casual .cw-recipe-book>h3{font-size:18px;margin:0 2px 6px}
+.casual .cw-recipe-index{gap:5px}
+.casual .cw-recipe-index>button{min-height:44px;padding:4px 5px!important;gap:5px!important}
+.casual .cw-recipe-index strong{font-size:16px;line-height:1.3}
+.casual .cw-recipe-index .inner-art.cw-food-thumb{width:32px;height:32px}
+.casual .cw-cookbench{padding:9px 10px}
+.casual .cw-food-display{min-height:0;padding-bottom:7px;gap:7px;flex-wrap:nowrap}
+.casual .cw-food-display>.inner-art.cw-food-art{width:64px;height:64px}
+.casual .cw-food-display h2{font-size:20px;margin:1px 0 4px}
+.casual .cw-food-display>div>span{font-size:16px;line-height:1.4}
+.casual .cw-food-display .c-food-price{min-width:75px;font-size:20px}
+.casual .cw-food-display .c-food-price>b{font-size:20px}
+.casual .cw-food-display .c-food-price>span{font-size:16px}
+.casual .cw-cookbench .cw-ingredients{padding:7px 0;min-height:0;gap:5px}
+.casual .cw-cookbench .cw-ingredients>span{min-height:0;padding:3px 5px;gap:4px}
+.casual .cw-cookbench .cw-ingredients>span>.inner-art{width:28px;height:28px}
+.casual .cw-cookbench .cw-ingredients>span b{font-size:16px}
+.casual .cw-cookbench .cw-ingredients>.cw-food-time{margin-left:0;padding:3px;font-size:16px}
+.casual .cw-cook-actions{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:4px}
+.casual .cw-cook-actions .c-field-label{font-size:16px;margin-bottom:4px}
+.casual .cw-cook-actions .c-button-pair{gap:5px}
+.casual .cw-cook-actions button{min-height:44px;padding:4px 6px;font-size:16px}
+.casual #cPanel-kitchen .c-supplies-actions>button{min-height:44px}
+.village-ui .v-product{flex:1 1 0;min-width:0;padding:3px 4px}
+.village-ui .v-product .inner-art{width:28px;height:28px}
+.b-workspace .b-roster{grid-template-columns:repeat(2,minmax(0,1fr))}
+.casual .b-workspace .b-buddy-pick{display:grid;grid-template-columns:30px minmax(0,1fr);align-items:center;gap:1px 3px;padding:4px;text-align:left}
+.b-workspace .b-buddy-pick .b-buddy-art{width:30px;height:30px}
+.b-workspace .b-buddy-pick strong{white-space:nowrap;font-size:16px}
+.b-workspace .b-buddy-pick>span:last-child{grid-column:1/-1;line-height:1.25;min-height:0}
+.b-workspace .b-rarity-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:2px;padding:3px}
+.casual .b-workspace .b-rarity-pick{padding:2px;gap:1px}
+.b-workspace .b-rarity-pick .b-rarity-art{width:28px;height:28px}
+.b-workspace .b-exhibit{line-height:0}
+.b-workspace .b-rarity-pick>strong,.b-workspace .b-rarity-pick>span:last-child{line-height:1.2}
+
+@media(max-width:820px){
+ .casual .c-tabs .c-tab{flex-direction:row;gap:3px;padding:2px 3px;min-height:48px}
+ .casual .c-tabs .c-tab>.inner-art,.casual .c-tabs .c-tab>.b-buddy-art{width:29px;height:29px}
+ .village-ui .v-life-room{grid-template-columns:250px minmax(0,1fr)}
+ .village-ui .v-companion .inner-art{width:37px;height:37px}
+ .village-ui .v-life-person>.inner-art{left:5px;width:88px;height:88px}
+ .village-ui .v-person-prop{right:4px;width:88px;height:88px}
+ .village-ui .v-goal-stamps{grid-template-columns:1fr}
+ .village-ui .v-goal-stamps>span{padding:2px 0}
+ .village-ui .v-build-site{grid-template-columns:115px minmax(0,1fr);padding:7px 10px}
+ .village-ui .v-build-hero .v-sprite{width:115px;height:115px}
+ .village-ui .v-counter{grid-template-columns:100px minmax(170px,1fr) auto}
+ .village-ui .v-regular-room{grid-template-columns:125px minmax(0,1fr)}
+ .village-ui .v-serving{grid-template-columns:minmax(0,1fr) 120px minmax(0,.85fr)}
+ .village-ui .v-keepsake{padding:4px 3px}
+ .village-ui .v-station>.inner-art{width:37px;height:37px}
+ .village-ui .v-production-controls{gap:5px}
+ .village-ui .v-worktable{grid-template-columns:115px minmax(0,1fr)}
+ .village-ui .v-quantity{padding:2px 3px}
+ .village-ui .v-product-stack,.village-ui .v-reserve-art{display:none}
+ .b-workspace .b-buddy-layout{grid-template-columns:236px minmax(0,1fr)}
+ .b-workspace .b-buddy-pick .b-buddy-art{width:30px;height:30px}
+ .b-workspace .b-paths>button>span:not(.b-path-emblem):not(.b-rank-pips){line-height:1.3}
+ .b-workspace .b-rarity-layout{grid-template-columns:minmax(0,1fr) 290px}
+ .b-workspace .b-rarity-grid{gap:2px;padding:3px}
+ .b-workspace .b-rarity-pick .b-rarity-art{width:28px;height:28px}
+ .b-workspace .b-paths>button>span:not(.b-path-emblem):not(.b-rank-pips){font-size:16px}
+ .village-ui .v-station .v-plaque{flex-direction:row;flex-wrap:wrap;justify-content:center;gap:0 4px}
+}
+@media(max-width:620px){
+ .village-ui .v-nav .v-object{flex-direction:column}
+ .village-ui .v-life-room,.b-workspace .b-buddy-layout,.b-workspace .b-rarity-layout{grid-template-columns:1fr}
+ .village-ui .v-companions{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .village-ui .v-regular-room{grid-template-columns:1fr}
+ .village-ui .v-guest-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+ .village-ui .v-counter{grid-template-columns:1fr 1fr}
+ .village-ui .v-counter .v-action{grid-column:1/-1;grid-row:auto}
+ .village-ui .v-worktable{grid-template-columns:1fr}
+ .village-ui .v-plan-submit,.village-ui .v-plan-bottom{flex-wrap:wrap}
+ .b-workspace .b-roster{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .life-ui .life-recipe-book{grid-template-columns:1fr}
+ .casual .cw-kitchen{grid-template-columns:125px minmax(0,1fr)}
+ .casual .cw-cook-actions{grid-template-columns:1fr}
+ .life-ui .life-stations{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .casual #cPanel-collection:not([hidden]){grid-template-columns:1fr}
+ .casual #cPanel-collection>.b-archive-tabs{grid-column:1/-1}
+}

@@ -1,0 +1,31 @@
+button.game-button:not(:disabled):not([aria-disabled="true"]),
+[role="button"].game-button:not([aria-disabled="true"]){cursor:pointer!important}
+.game-button *{cursor:inherit}
+
+button.game-button:not(:disabled):not([aria-disabled="true"]):is(:hover,:focus-visible),
+[role="button"].game-button:not([aria-disabled="true"]):is(:hover,:focus-visible),
+.game-button.is-hovered:not(:disabled):not([aria-disabled="true"]){
+  outline:2px solid #c9b77d;
+  outline-offset:2px;
+  box-shadow:0 0 0 2px #c9b77d2a;
+  filter:brightness(1.1);
+}
+button.game-button:is(:active,.is-pressed):not(:disabled):not([aria-disabled="true"]),
+[role="button"].game-button:is(:active,.is-pressed):not([aria-disabled="true"]){
+  filter:brightness(.92);
+  box-shadow:inset 0 2px 4px #0006;
+}
+.game-button:focus-visible:not(:disabled):not([aria-disabled="true"]){outline:2px solid #dfc77e;outline-offset:2px}
+.game-button:is(:disabled,[aria-disabled="true"]){cursor:not-allowed!important;filter:saturate(.42);opacity:.58}
+.game-button:is(:disabled,[aria-disabled="true"]):is(:hover,:focus-visible){outline:0;box-shadow:none;filter:saturate(.42)}
+.game-button svg{width:22px;height:22px;flex:none;vertical-align:middle;pointer-events:none}
+.interaction-hint{position:fixed;z-index:10000;pointer-events:none;max-width:min(300px,calc(100vw - 16px));padding:8px 12px;border:1px solid #a28e57;border-radius:6px;background:#202831;color:#fff2cf;font:500 16px/1.45 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;box-shadow:0 3px 12px #0005;white-space:normal}
+.popover header.panel-drag{-webkit-app-region:drag;cursor:grab;user-select:none}
+.popover header.panel-drag button{-webkit-app-region:no-drag}
+.popover header.panel-drag h1{cursor:grab}
+body[data-detached="true"] .popover-shell::after{display:none}
+
+#hud{width:100px}#hud:has(#returnCamp:not([hidden])){width:100px}
+#dungeonSign span{background:#42314d;border-color:#b398cc}
+#dungeonSign.is-hovered span,#dungeonSign:focus-visible span{background:#654877;border-color:#f0ceff;box-shadow:0 0 6px #ddaaff55}
+.expedition-supply{display:flex;align-items:center;gap:9px;margin:12px 0;font-size:19px}.expedition-supply svg{width:26px;height:26px}.expedition-supply strong{margin-left:auto;font-size:22px}.expedition-party:empty{display:none}

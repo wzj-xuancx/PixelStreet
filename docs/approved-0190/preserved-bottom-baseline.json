@@ -1,0 +1,26 @@
+{
+  "base": "3c4eaccb75fe46928e48b0a3849d27761f4ec473",
+  "files": [
+    {
+      "path": "assets/atlas.png",
+      "sha256": "35add6ee5b86dd0db11ecdb0a8995dbb543fc6a39dc4a3c96da81cd7d6505cbb"
+    },
+    {
+      "path": "packages/content/sample.ts",
+      "sha256": "a59237fc879134c564d2e939331c09de7aa411096f3894411384f8fb9e7a847b"
+    },
+    {
+      "path": "packages/protocol/geometry.ts",
+      "sha256": "f17d809831461f2876d2ed3682628244ead50edc5fcdc4285fbe0e76f4aff6e6"
+    },
+    {
+      "path": "apps/desktop/renderer/field-geometry.ts",
+      "sha256": "ddca6a8f3e00dbd9ebe144ef411dbae8f525600ae0e783bc4a5d40cff74773a2"
+    },
+    {
+      "path": "apps/desktop/renderer/style.css",
+      "sha256": "880b57d4120222f0c6885c40aa0127a22a57d5d57b8357b9d47ee7e0543933ea"
+    }
+  ],
+  "note": "真实底部资源、布局数据、五档高度、世界逆变换和通用样式保持；动态共斗仅增加在既有场景中。原门语义另以原生路由验收。"
+}

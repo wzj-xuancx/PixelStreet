@@ -1,0 +1,254 @@
+{
+  "version": 1,
+  "frames": [
+    {
+      "author": "7Soul1",
+      "url": "https://opengameart.org/node/39455",
+      "license": "CC0-1.0",
+      "sha256": "d39326afa08909282ef498373140188b88567d0ee22f0214e316df17009e1232",
+      "rect": [
+        0,
+        0,
+        34,
+        34
+      ],
+      "composition": null,
+      "id": "field:bone",
+      "file": "assets/adventure-0190/candidate-bone.png",
+      "width": 34,
+      "height": 34
+    },
+    {
+      "author": "7Soul1",
+      "url": "https://opengameart.org/node/39455",
+      "license": "CC0-1.0",
+      "sha256": "c0287b8c4926ea738638a42a257846f6679c05cd4742ce4aec9ca21f90cc2808",
+      "rect": [
+        0,
+        0,
+        34,
+        34
+      ],
+      "composition": null,
+      "id": "field:curseCrystal",
+      "file": "assets/adventure-0190/candidate-crystal.png",
+      "width": 34,
+      "height": 34
+    },
+    {
+      "author": "Beast Pixels",
+      "url": "https://beast-pixels.itch.io/crafting-materials",
+      "license": "CC0-1.0",
+      "sha256": "7072016e3ea0390dbeb32441933391ff1b4b7752b1ecd9843052b546aed6720e",
+      "rect": [
+        24,
+        192,
+        24,
+        24
+      ],
+      "composition": null,
+      "id": "field:toughHide",
+      "file": "assets/adventure-0190/candidate-hide.png",
+      "width": 264,
+      "height": 264
+    },
+    {
+      "author": "7Soul1",
+      "url": "https://opengameart.org/node/39455",
+      "license": "CC0-1.0",
+      "sha256": "a48c6eeb298e0f5c18a4a30cd4d7c921e6261262a85f31271f8f3a06351b79ec",
+      "rect": [
+        0,
+        0,
+        34,
+        34
+      ],
+      "composition": null,
+      "id": "equipment:breaker-hammer",
+      "file": "assets/adventure-0190/candidate-hammer.png",
+      "width": 34,
+      "height": 34
+    },
+    {
+      "author": "7Soul1",
+      "url": "https://opengameart.org/node/39455",
+      "license": "CC0-1.0",
+      "sha256": "be7ac3727d6a168157fc339dc81a0dbabc747ce29bcfc0b3fa73794e84ab9aae",
+      "rect": [
+        0,
+        0,
+        34,
+        34
+      ],
+      "composition": null,
+      "id": "equipment:resonant-staff",
+      "file": "assets/adventure-0190/candidate-staff.png",
+      "width": 34,
+      "height": 34
+    },
+    {
+      "author": "7Soul1 / AntumDeluge",
+      "url": "https://opengameart.org/content/cc0-hand-wear-icons",
+      "license": "CC0-1.0",
+      "sha256": "445a5ba47afd05c6fac481e4bb5bd569999c70ca2a67cafcfe527e14a0fff467",
+      "rect": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "composition": null,
+      "id": "equipment:rock-gloves",
+      "file": "assets/adventure-0190/candidate-gloves.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "author": "7Soul1",
+      "url": "https://opengameart.org/node/39455",
+      "license": "CC0-1.0",
+      "sha256": "b9e1f576f82323cf444da3d0900d250264687cd7d7fba18e17369be0bfcd1ff5",
+      "rect": [
+        0,
+        0,
+        34,
+        34
+      ],
+      "composition": null,
+      "id": "equipment:echo-mirror",
+      "file": "assets/adventure-0190/candidate-mirror.png",
+      "width": 34,
+      "height": 34
+    },
+    {
+      "author": "Idylwild",
+      "url": "https://opengameart.org/content/idylwilds-armory",
+      "license": "CC0-1.0",
+      "sha256": "97d8cf6d7e9844b9f3ec6ea3ce79e98d135fb16a5bb8fc83c468de70bc7d07d8",
+      "rect": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "composition": null,
+      "id": "equipment:moss-mantle",
+      "file": "assets/adventure-0190/candidate-cape.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "author": "7Soul1",
+      "url": "https://opengameart.org/node/39455",
+      "license": "CC0-1.0",
+      "sha256": "7a0e2f6e3a90df667ca7f92f6943b5030c4625c511a3ce544c1cf0f2e617f9b7",
+      "rect": [
+        0,
+        0,
+        34,
+        34
+      ],
+      "composition": null,
+      "id": "equipment:graft-charm",
+      "file": "assets/adventure-0190/candidate-amulet.png",
+      "width": 34,
+      "height": 34
+    },
+    {
+      "author": "7Soul1",
+      "url": "https://opengameart.org/node/39455",
+      "license": "CC0-1.0",
+      "sha256": "a9fc709f22b1b6e73723c9c470dcdb428b7e199e785bf92e29216ce1da8fb944",
+      "rect": [
+        0,
+        0,
+        34,
+        34
+      ],
+      "composition": {
+        "id": "leaf"
+      },
+      "id": "atelier:herbal-bandage",
+      "file": "assets/adventure-0190/candidate-bandage.png",
+      "width": 34,
+      "height": 34
+    },
+    {
+      "author": "7Soul1",
+      "url": "https://opengameart.org/node/39455",
+      "license": "CC0-1.0",
+      "sha256": "8fbbeafadaeb50e8b9a8b1ecea256216999d74365a4c9ed2b625cc911dafb356",
+      "rect": [
+        0,
+        0,
+        34,
+        34
+      ],
+      "composition": {
+        "old": "materials:ore"
+      },
+      "id": "atelier:mining-tonic",
+      "file": "assets/adventure-0190/candidate-potion.png",
+      "width": 34,
+      "height": 34
+    },
+    {
+      "author": "7Soul1",
+      "url": "https://opengameart.org/node/39455",
+      "license": "CC0-1.0",
+      "sha256": "29c7a8cfeaa08a3be5a434928a54058af57fb6090ecbbcb897e4d9131aa1d792",
+      "rect": [
+        0,
+        0,
+        34,
+        34
+      ],
+      "composition": null,
+      "id": "field:crystal-guardian",
+      "file": "assets/adventure-0190/candidate-badge.png",
+      "width": 34,
+      "height": 34
+    },
+    {
+      "author": "7Soul1",
+      "url": "https://opengameart.org/node/39455",
+      "license": "CC0-1.0",
+      "sha256": "61f9508d3b0d5fcc906e3141c1fb6fe7846c3a075c9e89dd4a38913f7f431147",
+      "rect": [
+        0,
+        0,
+        34,
+        34
+      ],
+      "composition": null,
+      "id": "leaf",
+      "file": "assets/adventure-0190/candidate-leaf.png",
+      "width": 34,
+      "height": 34
+    }
+  ],
+  "archives": [
+    {
+      "file": "vendor/adventure-0190/496_RPG_icons.zip",
+      "author": "7Soul1 / Henrique Lazarini",
+      "license": "CC0-1.0",
+      "source_page": "https://opengameart.org/node/39455",
+      "sha256": "82167b463d20fdc2c0cb641e061503bb77816558087270e50eb66ad34cf75658"
+    },
+    {
+      "file": "vendor/adventure-0190/idylwilds_armory.zip",
+      "author": "Idylwild",
+      "license": "CC0-1.0",
+      "source_page": "https://opengameart.org/content/idylwilds-armory",
+      "sha256": "738c7559fa82f23c4cd3de8b98f4431c2a16db8a33e869c04cd3013b6ec7d2db"
+    },
+    {
+      "file": "vendor/adventure-0190/crafting_materials.zip",
+      "author": "Beast Pixels",
+      "license": "CC0-1.0",
+      "source_page": "https://beast-pixels.itch.io/crafting-materials",
+      "sha256": "82bdfffd91ef8b1573625de5125b79a057802e5e5eb99f22dcc5020d0becaf65"
+    }
+  ],
+  "note": "Approved 0190 category art; unchanged original PNG, runtime crop and corner composition only."
+}

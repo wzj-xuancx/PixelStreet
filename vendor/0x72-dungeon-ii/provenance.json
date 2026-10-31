@@ -1,0 +1,33 @@
+{
+  "schema": "pixelstreet.third-party-art.v1",
+  "author": "0x72 (Robert)",
+  "title": "16x16 DungeonTileset II",
+  "version": "1.7",
+  "sourceUrl": "https://0x72.itch.io/dungeontileset-ii",
+  "acquiredAt": "2026-10-21T09:12:58.807051+00:00",
+  "acquisition": "Official itch.io page > Download Now > No thanks, just take me to the downloads > v1.7 ZIP. No payment, login or donation.",
+  "cost": 0,
+  "license": {
+    "assets": "CC0-1.0",
+    "deed": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "legalCode": "https://creativecommons.org/publicdomain/zero/1.0/legalcode.txt",
+    "local": "licenses/0x72-DungeonTilesetII-CC0-1.0.txt",
+    "localSha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+    "licenseEvidence": "Official page assets metadata and author description; original ZIP has no separate license file. The page also lists MIT for code; we import art only."
+  },
+  "files": {
+    "0x72_DungeonTilesetII_v1.7.zip": "a5b23341ebc831d7798bfb9666d864a08c079bb7aed18e3cf023a27d517c1512",
+    "original/0x72_DungeonTilesetII_v1.7.png": "b222e563f9006e609cb0a5ec99878b7ef9a92953de3abf4cf2ae9d2aff1355d2",
+    "original/tile_list_v1.7": "7ef0043788db7f5a28a4e2a139a7c23073874ed4d795728b7556c776e5e4b448",
+    "original/README": "b1f5371992e1acb616eb242a70e7ba9181da9f3451e69e0d7b909ae6522a004b",
+    "official-page-2026-10-21.html": "133ec18f8ada3c06d0b320e1d1e76592344850106e1aaf67b7e0b88776eb7e1d"
+  },
+  "runtime": {
+    "png": "assets/dungeon/0x72_DungeonTilesetII_v1.7.png",
+    "pngMatchesOriginal": true,
+    "index": "assets/dungeon/manifest.json",
+    "indexer": "scripts/index-dungeon-assets.mjs",
+    "pixelEdits": "none; only metadata crop, tint, flip, rotation and tile composition at runtime"
+  },
+  "excluded": "No third-party comments/extensions, generative AI artwork, paid assets or runtime CDN."
+}

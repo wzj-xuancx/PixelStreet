@@ -1,0 +1,79 @@
+{
+  "source": "assets/pets-0160/pet-atlas-2x2.png",
+  "sourceSha256": "c9549a6f6ede55e31ef89689299da2b9a97e0712717bf757336a651f32dd818c",
+  "sourceWidth": 1269,
+  "sourceHeight": 1239,
+  "coordinateConvention": "Zero-based pixel bounds [left, top, rightExclusive, bottomExclusive]. Measured independently from the rendered alpha mask with alpha > 1; use these bounds instead of assuming equal-size cells.",
+  "frames": [
+    {
+      "id": "slime-portrait",
+      "type": "portrait",
+      "bounds": [
+        66,
+        245,
+        636,
+        645
+      ],
+      "containFit64px": [
+        64,
+        45
+      ]
+    },
+    {
+      "id": "moss-collar",
+      "slot": "collar",
+      "name": "探路项圈",
+      "bounds": [
+        724,
+        257,
+        1177,
+        628
+      ],
+      "containFit64px": [
+        64,
+        52
+      ]
+    },
+    {
+      "id": "leaf-guard",
+      "slot": "guard",
+      "name": "苔叶护具",
+      "bounds": [
+        77,
+        767,
+        688,
+        1132
+      ],
+      "containFit64px": [
+        64,
+        38
+      ]
+    },
+    {
+      "id": "sun-charm",
+      "slot": "charm",
+      "name": "拾光护符",
+      "bounds": [
+        791,
+        726,
+        1104,
+        1139
+      ],
+      "containFit64px": [
+        49,
+        64
+      ]
+    }
+  ],
+  "alphaNotes": {
+    "alphaExtrema": [
+      0,
+      255
+    ],
+    "nonzeroPixelsOutsideMeasuredBounds": 2646,
+    "maxAlphaOutsideMeasuredBounds": 1,
+    "note": "Transparent gaps remain visually empty. All outside-frame residue is alpha=1/255 and was preserved rather than edited."
+  },
+  "64pxAssessment": "containFit64px records calculated dimensions for each measured frame inside a 64x64 box. Main silhouettes and palette remain distinct; no separate downsampled preview was saved.",
+  "source_metadata_scope": "Original PNG provenance before Beta repository optimization, not current WebP byte hashes. See assets/optimization-manifest.json for the runtime file mapping and hashes. Original PNGs are retained outside this repository."
+}

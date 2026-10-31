@@ -1,0 +1,1042 @@
+{
+  "schemaVersion": 1,
+  "title": "PixelStreet Dungeon Pixel Art",
+  "originality": "All artwork is authored as original vector pixel art in this generator. It uses no third-party images, icons, fonts, or textures.",
+  "generator": "scripts/generate-dungeon-art.mjs",
+  "rebuild": "node scripts/generate-dungeon-art.mjs",
+  "render": {
+    "tileSize": 24,
+    "imageSmoothing": false,
+    "svgShapeRendering": "crispEdges"
+  },
+  "atlas": {
+    "file": "sprites.svg",
+    "width": 576,
+    "height": 360,
+    "columns": 8,
+    "rows": 5,
+    "cellSize": [
+      72,
+      72
+    ],
+    "frames": {
+      "tile-floor-0": {
+        "x": 0,
+        "y": 0,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          24,
+          24
+        ],
+        "anchor": [
+          0,
+          0
+        ],
+        "tags": [
+          "tile",
+          "floor",
+          "plain"
+        ]
+      },
+      "tile-floor-1": {
+        "x": 72,
+        "y": 0,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          24,
+          24
+        ],
+        "anchor": [
+          0,
+          0
+        ],
+        "tags": [
+          "tile",
+          "floor",
+          "cracked"
+        ]
+      },
+      "tile-floor-2": {
+        "x": 144,
+        "y": 0,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          24,
+          24
+        ],
+        "anchor": [
+          0,
+          0
+        ],
+        "tags": [
+          "tile",
+          "floor",
+          "moss"
+        ]
+      },
+      "tile-wall": {
+        "x": 216,
+        "y": 0,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          24,
+          24
+        ],
+        "anchor": [
+          0,
+          0
+        ],
+        "tags": [
+          "tile",
+          "wall",
+          "boundary"
+        ]
+      },
+      "door-open": {
+        "x": 288,
+        "y": 0,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          64,
+          32
+        ],
+        "anchor": [
+          0.5,
+          0.9
+        ],
+        "tags": [
+          "door",
+          "open"
+        ]
+      },
+      "door-closed": {
+        "x": 360,
+        "y": 0,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          64,
+          32
+        ],
+        "anchor": [
+          0.5,
+          0.9
+        ],
+        "tags": [
+          "door",
+          "closed",
+          "locked"
+        ]
+      },
+      "torch-0": {
+        "x": 432,
+        "y": 0,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          12,
+          24
+        ],
+        "anchor": [
+          0.5,
+          0.94
+        ],
+        "tags": [
+          "prop",
+          "torch",
+          "frame-0"
+        ]
+      },
+      "torch-1": {
+        "x": 504,
+        "y": 0,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          12,
+          24
+        ],
+        "anchor": [
+          0.5,
+          0.94
+        ],
+        "tags": [
+          "prop",
+          "torch",
+          "frame-1"
+        ]
+      },
+      "trap-idle": {
+        "x": 0,
+        "y": 72,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          24,
+          24
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "tags": [
+          "trap",
+          "idle"
+        ]
+      },
+      "trap-warn": {
+        "x": 72,
+        "y": 72,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          24,
+          24
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "tags": [
+          "trap",
+          "telegraph"
+        ]
+      },
+      "trap-active": {
+        "x": 144,
+        "y": 72,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          24,
+          24
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "tags": [
+          "trap",
+          "active"
+        ]
+      },
+      "barrel-intact": {
+        "x": 216,
+        "y": 72,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          24,
+          30
+        ],
+        "anchor": [
+          0.5,
+          0.9
+        ],
+        "tags": [
+          "prop",
+          "barrel",
+          "intact"
+        ]
+      },
+      "barrel-cracked": {
+        "x": 288,
+        "y": 72,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          24,
+          30
+        ],
+        "anchor": [
+          0.5,
+          0.9
+        ],
+        "tags": [
+          "prop",
+          "barrel",
+          "cracked"
+        ]
+      },
+      "barrel-broken": {
+        "x": 360,
+        "y": 72,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          24,
+          30
+        ],
+        "anchor": [
+          0.5,
+          0.9
+        ],
+        "tags": [
+          "prop",
+          "barrel",
+          "broken"
+        ]
+      },
+      "altar": {
+        "x": 432,
+        "y": 72,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          56,
+          56
+        ],
+        "anchor": [
+          0.5,
+          0.9
+        ],
+        "tags": [
+          "prop",
+          "altar",
+          "rune"
+        ]
+      },
+      "merchant": {
+        "x": 504,
+        "y": 72,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          32,
+          42
+        ],
+        "anchor": [
+          0.5,
+          0.9
+        ],
+        "tags": [
+          "npc",
+          "merchant"
+        ]
+      },
+      "weapon-sword": {
+        "x": 0,
+        "y": 144,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          24,
+          32
+        ],
+        "anchor": [
+          0.5,
+          0.58
+        ],
+        "tags": [
+          "weapon",
+          "sword",
+          "physical"
+        ]
+      },
+      "weapon-fire": {
+        "x": 72,
+        "y": 144,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          24,
+          32
+        ],
+        "anchor": [
+          0.5,
+          0.58
+        ],
+        "tags": [
+          "weapon",
+          "fire",
+          "staff"
+        ]
+      },
+      "weapon-frost": {
+        "x": 144,
+        "y": 144,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          24,
+          32
+        ],
+        "anchor": [
+          0.5,
+          0.58
+        ],
+        "tags": [
+          "weapon",
+          "frost",
+          "bow"
+        ]
+      },
+      "weapon-lightning": {
+        "x": 216,
+        "y": 144,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          24,
+          32
+        ],
+        "anchor": [
+          0.5,
+          0.58
+        ],
+        "tags": [
+          "weapon",
+          "lightning",
+          "staff"
+        ]
+      },
+      "weapon-boomerang": {
+        "x": 288,
+        "y": 144,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          24,
+          32
+        ],
+        "anchor": [
+          0.5,
+          0.58
+        ],
+        "tags": [
+          "weapon",
+          "boomerang",
+          "returning"
+        ]
+      },
+      "weapon-meteor": {
+        "x": 360,
+        "y": 144,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          32,
+          32
+        ],
+        "anchor": [
+          0.5,
+          0.58
+        ],
+        "tags": [
+          "weapon",
+          "fire",
+          "evolved",
+          "meteor"
+        ]
+      },
+      "weapon-blade-ring": {
+        "x": 432,
+        "y": 144,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          32,
+          32
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "tags": [
+          "weapon",
+          "boomerang",
+          "evolved",
+          "blade-ring"
+        ]
+      },
+      "rune-fire": {
+        "x": 504,
+        "y": 144,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          24,
+          24
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "tags": [
+          "rune",
+          "fire"
+        ]
+      },
+      "rune-frost": {
+        "x": 0,
+        "y": 216,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          24,
+          24
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "tags": [
+          "rune",
+          "frost"
+        ]
+      },
+      "rune-boomerang": {
+        "x": 72,
+        "y": 216,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          24,
+          24
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "tags": [
+          "rune",
+          "boomerang"
+        ]
+      },
+      "projectile-fire": {
+        "x": 144,
+        "y": 216,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          18,
+          18
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "tags": [
+          "projectile",
+          "fire"
+        ]
+      },
+      "projectile-frost": {
+        "x": 216,
+        "y": 216,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          20,
+          20
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "tags": [
+          "projectile",
+          "frost"
+        ]
+      },
+      "projectile-lightning": {
+        "x": 288,
+        "y": 216,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          18,
+          24
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "tags": [
+          "projectile",
+          "lightning"
+        ]
+      },
+      "projectile-blade": {
+        "x": 360,
+        "y": 216,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          22,
+          16
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "tags": [
+          "projectile",
+          "blade"
+        ]
+      },
+      "player-hit": {
+        "x": 432,
+        "y": 216,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          38,
+          48
+        ],
+        "anchor": [
+          0.5,
+          0.88
+        ],
+        "tags": [
+          "player",
+          "hit"
+        ]
+      },
+      "player-death-0": {
+        "x": 504,
+        "y": 216,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          38,
+          48
+        ],
+        "anchor": [
+          0.5,
+          0.88
+        ],
+        "tags": [
+          "player",
+          "death",
+          "frame-0"
+        ]
+      },
+      "player-death-1": {
+        "x": 0,
+        "y": 288,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          38,
+          48
+        ],
+        "anchor": [
+          0.5,
+          0.88
+        ],
+        "tags": [
+          "player",
+          "death",
+          "frame-1"
+        ]
+      },
+      "player-attack-0": {
+        "x": 72,
+        "y": 288,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          38,
+          48
+        ],
+        "anchor": [
+          0.5,
+          0.88
+        ],
+        "tags": [
+          "player",
+          "attack",
+          "frame-0"
+        ]
+      },
+      "player-attack-1": {
+        "x": 144,
+        "y": 288,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          38,
+          48
+        ],
+        "anchor": [
+          0.5,
+          0.88
+        ],
+        "tags": [
+          "player",
+          "attack",
+          "frame-1"
+        ]
+      },
+      "player-dash-0": {
+        "x": 216,
+        "y": 288,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          38,
+          48
+        ],
+        "anchor": [
+          0.5,
+          0.88
+        ],
+        "tags": [
+          "player",
+          "dash",
+          "frame-0"
+        ]
+      },
+      "player-dash-1": {
+        "x": 288,
+        "y": 288,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          38,
+          48
+        ],
+        "anchor": [
+          0.5,
+          0.88
+        ],
+        "tags": [
+          "player",
+          "dash",
+          "frame-1"
+        ]
+      },
+      "enemy-hit": {
+        "x": 360,
+        "y": 288,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          28,
+          28
+        ],
+        "anchor": [
+          0.5,
+          0.75
+        ],
+        "tags": [
+          "enemy",
+          "hit",
+          "generic"
+        ]
+      },
+      "enemy-death-0": {
+        "x": 432,
+        "y": 288,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          28,
+          28
+        ],
+        "anchor": [
+          0.5,
+          0.75
+        ],
+        "tags": [
+          "enemy",
+          "death",
+          "frame-0"
+        ]
+      },
+      "enemy-death-1": {
+        "x": 504,
+        "y": 288,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          28,
+          28
+        ],
+        "anchor": [
+          0.5,
+          0.75
+        ],
+        "tags": [
+          "enemy",
+          "death",
+          "frame-1"
+        ]
+      }
+    }
+  },
+  "animations": {
+    "torch": [
+      "torch-0",
+      "torch-1"
+    ],
+    "player-death": [
+      "player-death-0",
+      "player-death-1"
+    ],
+    "player-attack": [
+      "player-attack-0",
+      "player-attack-1"
+    ],
+    "player-dash": [
+      "player-dash-0",
+      "player-dash-1"
+    ],
+    "enemy-death": [
+      "enemy-death-0",
+      "enemy-death-1"
+    ]
+  },
+  "integration": {
+    "canvas": "Load sprites.svg as a local image source and use atlas.frames[id].x/y/width/height as the crop rectangle.",
+    "placement": "worldSize is expressed in 24-unit dungeon world coordinates; anchor is normalized within the 72x72 source frame.",
+    "pixels": "Use nearest-neighbor sampling and disable image smoothing. Tiles use [0,0] anchors; standing props and characters use feet/baseline anchors.",
+    "states": "Doors, traps, destructible barrels, and hit/death frames are separate explicit state frames; gameplay owns state timing."
+  }
+}

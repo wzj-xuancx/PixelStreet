@@ -1,0 +1,6 @@
+/* Small artwork does not shrink the hover/focus target. */
+.mastery-small{display:block;flex:none;object-fit:contain;max-width:none}
+.mastery-badge{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;vertical-align:middle;flex:none;border-radius:6px}
+.mastery-badge:focus-visible,.equipment-mastery-ornament:focus-visible{outline:2px solid #b49a58;outline-offset:1px}
+
+.mastery-small[width="20"]{width:20px;height:20px}.mastery-small[width="24"]{width:24px;height:24px}.mastery-small[width="32"]{width:32px;height:32px}.mastery-small[width="48"]{width:48px;height:48px}

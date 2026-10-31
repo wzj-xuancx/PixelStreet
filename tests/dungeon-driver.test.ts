@@ -1,0 +1,3 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {createDungeon} from '../packages/dungeon-core';import {navigation,walkable,lineClear,roomRoute} from './dungeon-driver';
+test('QA driver computes reachable waypoints around real room cover without mutating the run',()=>{const r=createDungeon(123),before=structuredClone(r);for(const room of r.rooms){const from={x:64,y:room.height/2},to={x:room.width-64,y:room.height/2};const p=navigation(room,from,to);assert.ok(walkable(room,p));assert.ok(lineClear(room,from,p));}assert.ok(roomRoute(r.rooms,'entrance','boss').length>2);assert.deepEqual(r,before);});

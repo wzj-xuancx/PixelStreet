@@ -1,0 +1,6 @@
+Use case: stylized-concept
+Asset type: transparent pixel-art building sprite for the bottom desktop street of a cozy fantasy idle game.
+Primary request: a beautifully crafted Achievement Tower, a small approachable stone-and-timber tower that guides travelers; an open warmly lit arched door, five stacked window landings lit with soft golden stars, moss and tiny climbing flowers, midnight teal pointed roof with a small brass star ornament, little lantern by the doorway and a slim rolled map beside it. Refined readable silhouette and rich hand-placed pixel clusters, matching a warm forest settlement with alchemy shops and purple magical portals.
+Composition: one complete isolated tower centered in a portrait 2:3 composition, front view with very slight 3/4 depth, flat ground line, broad enough base; whole roof and base visible with transparent margin on all sides. Intended to downsample to about 70x90 game pixels: strong readable shapes, crisp pixel art, nearest-neighbor appearance, avoid noisy texture.
+Palette: deep teal slate, aged cream stone, warm chestnut wood, restrained amber and pale gold light.
+Constraints: actual transparent background, no sky, no surrounding scene, no labels, no text, no lettering, no watermark, no UI, no detached props outside the silhouette. Attractive finished game sprite.

@@ -1,0 +1,164 @@
+/* Only explicit live controls receive picture affordances. No background hotspots. */
+:is(.trade-workspace,.b-workspace,.life-ui) button[data-pi-control]{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:76px;padding:8px 12px!important;font-size:16px!important;line-height:1.45;white-space:normal;cursor:pointer;isolation:isolate;border:1px solid #ac9362!important;border-radius:8px;box-shadow:inset 0 0 0 3px #211f181f,0 3px #111d1766;}
+:is(.trade-workspace,.b-workspace,.life-ui) button[data-pi-control]::before{content:"";display:block;flex:0 0 auto;width:64px;height:64px;background-repeat:no-repeat;background-position:center;background-size:contain;image-rendering:pixelated;pointer-events:none;--art-x:0%;--art-y:0%;filter:drop-shadow(0 3px 1px #13221b88)}
+:is(.trade-workspace,.b-workspace,.life-ui) button[data-pi-control]::after{content:"↗";position:absolute;right:4px;top:2px;font-size:16px;font-weight:700;line-height:1;color:#ddcf9d;pointer-events:none}
+:is(.trade-workspace,.b-workspace,.life-ui) button[data-pi-control]:enabled:hover{outline:2px solid #f2d68e;outline-offset:1px;filter:brightness(1.13)}
+:is(.trade-workspace,.b-workspace,.life-ui) button[data-pi-control]:enabled:active{transform:translateY(2px);box-shadow:inset 0 2px #11251e88}
+:is(.trade-workspace,.b-workspace,.life-ui) button[data-pi-control]:focus-visible{outline:3px solid #f4dc9e;outline-offset:2px}
+:is(.trade-workspace,.b-workspace,.life-ui) button[data-pi-control]:disabled{cursor:not-allowed;opacity:.58;filter:saturate(.4)}
+:is(.trade-workspace,.b-workspace,.life-ui) button[data-pi-control]:disabled::after{content:"·"}
+:is(.trade-workspace,.b-workspace,.life-ui) button[data-pi-control]:is([aria-selected=true],[aria-pressed=true]){border:2px solid #ffe5a3!important;box-shadow:inset 0 -4px #dabf78,0 0 0 1px #1c3028;background-color:#53634a!important;color:#fff1c2!important}
+:is(.trade-workspace,.b-workspace,.life-ui) button[data-pi-control=place]{flex-direction:column;gap:6px;min-width:0;min-height:138px;padding:10px 5px!important;text-align:center;background:linear-gradient(#24382ddd,#55432eea);font-weight:600;}
+:is(.trade-workspace,.b-workspace,.life-ui) button[data-pi-control=place]::before{width:104px;height:86px;max-width:100%;border:1px solid #c3ae7955;border-radius:6px;background-color:#14271c44}
+:is(.trade-workspace,.b-workspace,.life-ui) button[data-pi-control=place][aria-selected=true]::after{content:"◆"}
+.trade-workspace .shop-tabs{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;position:static!important;padding:0!important;margin:16px 0 24px!important;border:0!important;background:none!important}
+.trade-workspace .a-tabs{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:14px 0 20px!important}
+.trade-workspace .tw-market-good .business-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.trade-workspace .tw-market-good .business-actions+ .business-actions{grid-template-columns:1fr}
+.trade-workspace .tw-market-good button[data-pi-control=object]{flex-direction:column;gap:4px;min-width:0;padding:8px 5px!important}
+.trade-workspace .tw-market-good button[data-pi-control=object]::before{width:52px;height:52px}
+.trade-workspace :is(.a-actions,.business-actions,.ls-recipe-actions){gap:9px;flex-wrap:wrap}
+.trade-workspace :is(.a-actions,.business-actions,.ls-recipe-actions)>button[data-pi-control=object]{flex:1 1 115px}
+.trade-workspace .tw-ordinary-shelves{grid-template-columns:repeat(2,minmax(0,1fr))}
+.trade-workspace .tw-ordinary-shelf .business-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.trade-workspace .tw-ordinary-shelf .business-actions>button{flex-direction:column;padding:8px 5px!important;gap:3px;min-width:0}
+.trade-workspace :is(.shelf-prices,.a-prices) button[data-pi-control]{flex-direction:column;gap:3px;min-width:0;padding:6px 4px!important}.trade-workspace :is(.shelf-prices,.a-prices) button[data-pi-control]::before{width:48px;height:48px}
+.trade-workspace .tw-ordinary-shelf .business-actions>button::before{width:58px;height:58px}
+.trade-workspace .tw-workbench{grid-template-columns:minmax(150px,.9fr) minmax(0,1.5fr)}
+.trade-workspace .tw-platter .tw-hero-art{width:190px;height:190px;max-width:100%}
+.trade-workspace .tw-facility-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.trade-workspace .tw-facility>.tw-facility-picture{display:none}
+.trade-workspace .tw-facility>button[data-pi-control]{order:-1;flex-direction:column;min-height:156px;font-size:18px!important}
+.trade-workspace .tw-facility>button[data-pi-control]::before{width:160px;height:112px;max-width:100%;border-radius:5px}
+.trade-workspace .tw-cashdesk>.ls-item-art{display:none}
+.trade-workspace .tw-cashdesk>button[data-pi-control]{min-width:180px}
+.b-workspace .b-detail-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.b-workspace .b-detail-tabs>button[data-pi-control=place]{min-height:116px}
+.b-workspace .b-detail-tabs>button[data-pi-control=place]::before{width:76px;height:66px}
+.b-workspace .b-paths{grid-template-columns:1fr!important;gap:15px}
+.casual .b-workspace .b-paths>button{display:grid!important;grid-template-columns:76px minmax(0,1fr);gap:5px 15px;text-align:left!important;padding:14px!important;background:#243b2f;border:1px solid #a8a06c;position:relative;}
+.b-workspace .b-path-emblem{grid-column:1;grid-row:1/3;width:72px;height:72px}
+.b-workspace .b-rank-pips{grid-column:1/-1;width:100%;display:flex;justify-content:space-around;gap:20px;border-top:1px solid #80906b66;padding-top:12px;margin-top:8px!important}
+.b-workspace .b-rank-pips>i{position:relative;display:flex;flex:1;align-items:center;justify-content:center;gap:7px;width:auto!important;height:auto!important;min-height:66px;border-radius:7px;border:1px dashed #9ca16a;font-size:16px!important;background:#182c23;}
+.b-workspace .b-rank-pips>i+ i::before{content:"→";position:absolute;left:-20px;font-size:20px;color:#e4cd8e}
+.b-workspace .pi-path-node.inner-art{width:48px;height:48px;opacity:.55}
+.b-workspace .b-rank-pips[data-rank="1"]>i:nth-child(1) .pi-path-node,.b-workspace .b-rank-pips[data-rank="2"]>i:nth-child(-n+2) .pi-path-node,.b-workspace .b-rank-pips[data-rank="3"]>i .pi-path-node{opacity:1}
+.b-workspace .b-next-training{grid-template-columns:minmax(0,1fr) auto;border:1px solid #a89a63;margin-top:15px;border-radius:7px}
+.b-workspace .b-next-training>button{grid-column:2;grid-row:1/3;min-width:160px;flex-direction:column;font-size:18px!important}
+.b-workspace .b-buddy-actions>button[data-pi-control]{flex:1 1 150px;min-width:0}
+.life-ui .life-tabs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px}
+.life-ui .life-workplace-tabs>button[data-pi-control=place]{min-height:160px}
+.life-ui .life-workplace-tabs>button::before{width:150px;height:95px;max-width:100%}
+.life-ui .life-station-stage{height:165px;background-blend-mode:normal}
+.life-ui .life-station-stage>.life-object{display:none}
+.life-ui .life-station-stage h3{background:#182e24e6;padding:6px 9px;border:1px solid #b0a471;border-radius:5px}
+.life-ui .life-station-body>.life-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.life-ui .life-station-body>.life-actions>button{flex-direction:column;min-width:0;min-height:120px}
+.life-ui .life-station-body>.life-actions>button::before{width:78px;height:78px}
+.life-ui .life-material-tray>span{display:flex;align-items:center;gap:7px;padding:6px 10px;min-width:120px}
+.life-ui .life-material-tray .pi-tray-art.inner-art{width:56px;height:56px}
+.life-ui .life-material-tray strong{font-size:16px!important;line-height:1.4;font-weight:500}
+.life-ui .life-recipe-detail>.life-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.life-ui .life-recipe-detail>.life-actions>button{flex-direction:column;min-height:124px}
+.life-ui .life-recipe-detail>.life-actions>button::before{width:80px;height:80px}
+.life-ui .life-till-counter>.life-object,.life-ui .life-gift-counter>.life-object,.life-ui .life-journey-card>.life-object{display:none}
+.life-ui .life-station-body>.life-mini-queue{min-height:86px}
+.life-ui .life-mini-queue .inner-art{display:inline-block;width:64px;height:64px;border:0;padding:0;box-shadow:none;background-color:transparent}
+@media(max-width:900px){
+.trade-workspace .tw-ordinary-shelves{grid-template-columns:1fr}.trade-workspace .shop-tabs{gap:7px}.trade-workspace .shop-tabs>button[data-pi-control=place]{min-height:120px}.trade-workspace .shop-tabs>button[data-pi-control=place]::before{width:78px;height:74px}.trade-workspace .tw-workbench{grid-template-columns:135px minmax(0,1fr);gap:12px;padding:12px}.trade-workspace .tw-platter .tw-hero-art{height:135px;width:135px}.life-ui .life-tabs{grid-template-columns:repeat(5,minmax(0,1fr))}.life-ui .life-tabs>button[data-pi-control=place]{min-height:115px}.life-ui .life-tabs>button[data-pi-control=place]::before{width:76px;height:70px}.b-workspace .b-buddy-layout{grid-template-columns:190px minmax(0,1fr)}.b-workspace .b-rank-pips>i{flex-direction:column;gap:2px}.b-workspace .b-next-training{grid-template-columns:1fr}.b-workspace .b-next-training>button{grid-column:1;grid-row:auto;flex-direction:row;min-width:0}.b-workspace .b-rank-pips{gap:16px}.b-workspace .b-rank-pips>i+i::before{left:-17px}.trade-workspace .tw-facility>button[data-pi-control]::before{width:135px;height:100px}
+}
+@media(max-width:620px){.trade-workspace .shop-tabs,.life-ui .life-tabs{grid-template-columns:repeat(3,minmax(0,1fr))}.trade-workspace .tw-workbench{grid-template-columns:1fr}.trade-workspace .tw-platter{padding:0}.trade-workspace .tw-workbench .tw-platter-label{margin-top:8px}.trade-workspace .tw-facility-grid{grid-template-columns:1fr}.life-ui .life-recipe-detail>.life-actions{display:grid}.b-workspace .b-paths>button{grid-template-columns:60px minmax(0,1fr)}.b-workspace .b-path-emblem{width:56px;height:56px}}
+
+/* Shared atlas crops for persistent clickable object surfaces. */
+
+button[data-pi-control][data-pi-kind=food]::before,button[data-pi-control][data-pi-kind=good]:is([data-pi-art=picnic],[data-pi-art=stew],[data-pi-art=gift])::before,button[data-pi-control][data-pi-kind=material][data-pi-art=ore]::before{background-image:url('assets/inner-0110/food-goods.webp');background-size:300% 300%;background-position:var(--art-x) var(--art-y)}
+
+button[data-pi-control][data-pi-art=tea]::before{--art-x:0%;--art-y:0%}
+button[data-pi-control][data-pi-art=biscuit]::before{--art-x:50%;--art-y:0%}
+button[data-pi-control][data-pi-art=soup]::before{--art-x:100%;--art-y:0%}
+button[data-pi-control][data-pi-art=pie]::before{--art-x:0%;--art-y:50%}
+button[data-pi-control][data-pi-art=snowtea]::before{--art-x:50%;--art-y:50%}
+button[data-pi-control][data-pi-art=picnic]::before{--art-x:100%;--art-y:50%}
+button[data-pi-control][data-pi-art=stew]::before{--art-x:0%;--art-y:100%}
+button[data-pi-control][data-pi-art=gift]::before{--art-x:50%;--art-y:100%}
+button[data-pi-control][data-pi-art=ore]::before{--art-x:100%;--art-y:100%}
+
+button[data-pi-control][data-pi-kind=good]:is([data-pi-art=dew],[data-pi-art=ink],[data-pi-art=ingot],[data-pi-art=nectar],[data-pi-art=incense],[data-pi-art=frost])::before{background-image:url('assets/living-0100/alchemy-goods.webp');background-size:300% 300%;background-position:var(--art-x) var(--art-y)}
+
+button[data-pi-control][data-pi-art=dew]::before{--art-x:0%;--art-y:50%}
+button[data-pi-control][data-pi-art=ink]::before{--art-x:50%;--art-y:50%}
+button[data-pi-control][data-pi-art=ingot]::before{--art-x:100%;--art-y:50%}
+button[data-pi-control][data-pi-art=nectar]::before{--art-x:0%;--art-y:100%}
+button[data-pi-control][data-pi-art=incense]::before{--art-x:50%;--art-y:100%}
+button[data-pi-control][data-pi-art=frost]::before{--art-x:100%;--art-y:100%}
+
+button[data-pi-control][data-pi-kind=crop]::before,button[data-pi-control][data-pi-kind=material]:is([data-pi-art=herb],[data-pi-art=berry],[data-pi-art=mushroom],[data-pi-art=pumpkin],[data-pi-art=snowflower])::before{background-image:url('assets/living-0100/crops-transparent.webp');background-size:300% 200%;background-position:var(--art-x) var(--art-y)}
+
+button[data-pi-control][data-pi-art=herb]::before{--art-x:0%;--art-y:0%}
+button[data-pi-control][data-pi-art=berry]::before{--art-x:50%;--art-y:0%}
+button[data-pi-control][data-pi-art=mushroom]::before{--art-x:100%;--art-y:0%}
+button[data-pi-control][data-pi-art=pumpkin]::before{--art-x:0%;--art-y:100%}
+button[data-pi-control][data-pi-art=snowflower]::before{--art-x:50%;--art-y:100%}
+button[data-pi-control][data-pi-art=sprout]::before{--art-x:100%;--art-y:100%}
+
+button[data-pi-control][data-pi-kind=material]:is([data-pi-art=flour],[data-pi-art=gel],[data-pi-art=ration],[data-pi-art=crystal])::before,button[data-pi-control][data-pi-kind=object]:is([data-pi-art=cashbox],[data-pi-art=ledger])::before{background-image:url('assets/living-0100/props.webp');background-size:300% 200%;background-position:var(--art-x) var(--art-y)}
+
+button[data-pi-control][data-pi-art=flour]::before{--art-x:0%;--art-y:0%}
+button[data-pi-control][data-pi-art=gel]::before{--art-x:50%;--art-y:0%}
+button[data-pi-control][data-pi-art=ration]::before{--art-x:100%;--art-y:0%}
+button[data-pi-control][data-pi-art=crystal]::before{--art-x:0%;--art-y:100%}
+button[data-pi-control][data-pi-art=cashbox]::before{--art-x:50%;--art-y:100%}
+button[data-pi-control][data-pi-art=ledger]::before{--art-x:100%;--art-y:100%}
+
+button[data-pi-control][data-pi-kind=object]:is([data-pi-art=seed],[data-pi-art=book],[data-pi-art=pot])::before,button[data-pi-control][data-pi-kind=material][data-pi-art=dust]::before{background-image:url('assets/inner-0110/workshop-objects.webp');background-size:200% 200%;background-position:var(--art-x) var(--art-y)}
+
+button[data-pi-control][data-pi-art=seed]::before{--art-x:0%;--art-y:0%}
+button[data-pi-control][data-pi-art=dust]::before{--art-x:100%;--art-y:0%}
+button[data-pi-control][data-pi-art=book]::before{--art-x:0%;--art-y:100%}
+button[data-pi-control][data-pi-art=pot]::before{--art-x:100%;--art-y:100%}
+
+button[data-pi-control][data-pi-kind=npc]::before{background-image:url('assets/living-0100/people.webp');background-size:400% 300%;background-position:0% var(--art-y)}
+
+button[data-pi-control][data-pi-kind=npc]:is([data-pi-art=courier],[data-pi-art="0"])::before{--art-y:0%}
+button[data-pi-control][data-pi-kind=npc]:is([data-pi-art=medic],[data-pi-art="1"])::before{--art-y:50%}
+button[data-pi-control][data-pi-kind=npc]:is([data-pi-art=merchant],[data-pi-art="2"])::before{--art-y:100%}
+
+button[data-pi-control][data-pi-kind=companion]::before{background-image:url('assets/bonds-070/companions-v2.webp');background-size:300% 300%;background-position:var(--art-x) var(--art-y)}
+
+button[data-pi-control][data-pi-kind=relic]::before{background-image:url('assets/camp-060/relics.webp');background-size:300% 500%;background-position:var(--art-x) var(--art-y)}
+
+button[data-pi-control][data-pi-kind=rarity]::before{background-image:url('assets/bonds-070/rarities.webp');background-size:300% 500%;background-position:var(--art-x) var(--art-y)}
+
+button[data-pi-control]:is([data-pi-kind=companion],[data-pi-kind=relic],[data-pi-kind=rarity]):is([data-pi-art="1"],[data-pi-art="4"],[data-pi-art="7"],[data-pi-art="10"],[data-pi-art="13"])::before{--art-x:50%}
+button[data-pi-control]:is([data-pi-kind=companion],[data-pi-kind=relic],[data-pi-kind=rarity]):is([data-pi-art="2"],[data-pi-art="5"],[data-pi-art="8"],[data-pi-art="11"],[data-pi-art="14"])::before{--art-x:100%}
+
+button[data-pi-control][data-pi-kind=companion]:is([data-pi-art="3"],[data-pi-art="4"],[data-pi-art="5"])::before{--art-y:50%}
+button[data-pi-control][data-pi-kind=companion]:is([data-pi-art="6"],[data-pi-art="7"],[data-pi-art="8"])::before{--art-y:100%}
+
+button[data-pi-control]:is([data-pi-kind=relic],[data-pi-kind=rarity]):is([data-pi-art="3"],[data-pi-art="4"],[data-pi-art="5"])::before{--art-y:25%}
+button[data-pi-control]:is([data-pi-kind=relic],[data-pi-kind=rarity]):is([data-pi-art="6"],[data-pi-art="7"],[data-pi-art="8"])::before{--art-y:50%}
+button[data-pi-control]:is([data-pi-kind=relic],[data-pi-kind=rarity]):is([data-pi-art="9"],[data-pi-art="10"],[data-pi-art="11"])::before{--art-y:75%}
+button[data-pi-control]:is([data-pi-kind=relic],[data-pi-kind=rarity]):is([data-pi-art="12"],[data-pi-art="13"],[data-pi-art="14"])::before{--art-y:100%}
+
+button[data-pi-control][data-pi-kind=building]::before{background-image:url('assets/living-0100/camp-empty.webp');background-size:300% 200%;background-position:var(--art-x) 0%;}
+button[data-pi-control][data-pi-art=lodge]::before{--art-x:0%}
+button[data-pi-control][data-pi-art=workshop]::before{--art-x:50%}
+button[data-pi-control][data-pi-art=archive]::before{--art-x:100%}
+
+button[data-pi-control][data-pi-kind=facility]::before{background-image:url('assets/living-0100/supply-room.webp');background-size:330% 190%;background-position:var(--art-x) var(--art-y)}
+button[data-pi-control][data-pi-art=oven]::before{--art-x:100%;--art-y:60%}
+button[data-pi-control][data-pi-art=counter]::before{--art-x:35%;--art-y:85%}
+button[data-pi-control][data-pi-art=shelves]::before{--art-x:75%;--art-y:0%}
+button[data-pi-control][data-pi-art=workbench]::before{--art-x:55%;--art-y:85%}
+button[data-pi-control][data-pi-kind=facility][data-pi-art=still]::before{background-image:url('assets/living-0100/alchemy-room.webp');--art-x:100%;--art-y:30%}
+
+/* Keep short action labels intact beside large products at the narrow desktop size. */
+.trade-workspace .ls-recipe-actions>button[data-pi-control=object]{flex-direction:column;min-height:112px;gap:5px}
+.life-ui .life-queue>.inner-art{display:inline-block;width:54px;height:54px;padding:0;border:0;box-shadow:none;background-color:transparent}
+.b-workspace .b-paths>button::after{content:"↗";position:absolute;top:6px;right:7px;font-size:18px;color:#e8d49b;pointer-events:none}
+
+.life-ui .life-mini-queue:not(:has(> :not([hidden]))){display:none}
+
+[data-pi-kind="good"][data-pi-art="herbal-bandage"]::before{background-image:url("assets/adventure-0190/candidate-bandage.png");background-size:contain;background-position:center;background-repeat:no-repeat}
+
+[data-pi-kind="good"][data-pi-art="mining-tonic"]::before{background-image:url("assets/adventure-0190/candidate-potion.png");background-size:contain;background-position:center;background-repeat:no-repeat}

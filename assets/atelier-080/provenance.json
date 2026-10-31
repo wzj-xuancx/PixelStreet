@@ -1,0 +1,47 @@
+{
+  "tool": "built-in image_gen",
+  "assets": [
+    {
+      "id": "supply",
+      "file": "assets/atelier-080/supply.png",
+      "source": "[local-source-redacted]",
+      "sha256": "428498f265a5e001623e7b148e7661594870697d02ec89a1ee0ad66bf72ef197",
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "id": "alchemy",
+      "file": "assets/atelier-080/alchemy.png",
+      "source": "[local-source-redacted]",
+      "sha256": "89e40e4709f384f1fb4f6a7c48e5b2c4c315bbf1339c5070bcb6481447fd9467",
+      "dimensions": [
+        1801,
+        873
+      ]
+    },
+    {
+      "id": "goods",
+      "file": "assets/atelier-080/goods.png",
+      "source": "[local-source-redacted]",
+      "sha256": "49b863bf9be5a7a38d6fcf9596e3b9ed6bc0722e83266bccc5c15a7d92f30648",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "goods-v2",
+      "file": "assets/atelier-080/goods-v2.png",
+      "source": "[local-source-redacted]",
+      "sha256": "5c9c6061f218dd5d9889ae004b788ed5ceee8841dfe90c4ba1d04fa10b43d7fa",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "selected_runtime": true
+    }
+  ],
+  "source_metadata_scope": "Original PNG provenance before Beta repository optimization, not current WebP byte hashes. See assets/optimization-manifest.json for the runtime file mapping and hashes. Original PNGs are retained outside this repository."
+}

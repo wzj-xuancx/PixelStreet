@@ -1,0 +1,717 @@
+{
+  "version": 7,
+  "business": {
+    "seed": 1000,
+    "pending": [],
+    "managed": false,
+    "shelves": {
+      "ration": {
+        "stock": 0,
+        "tier": "normal",
+        "due": 0
+      },
+      "crystal": {
+        "stock": 0,
+        "tier": "normal",
+        "due": 0
+      }
+    },
+    "till": 0,
+    "reputation": 0,
+    "completed": 0,
+    "upgrades": {
+      "oven": 0,
+      "shelves": 0,
+      "workbench": 0
+    },
+    "orders": [
+      {
+        "revision": 0,
+        "recipe": "ration",
+        "count": 5,
+        "accepted": false
+      },
+      {
+        "revision": 0,
+        "recipe": "crystal",
+        "count": 3,
+        "accepted": false
+      },
+      {
+        "revision": 0,
+        "recipe": "crystal",
+        "count": 2,
+        "accepted": false
+      }
+    ]
+  },
+  "leisure": {
+    "journal": {
+      "buildings": {
+        "lodge": 0,
+        "workshop": 0,
+        "archive": 0
+      },
+      "relics": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dust": 0,
+      "contracts": [
+        0,
+        0,
+        0
+      ],
+      "deliveries": 0
+    },
+    "materials": {
+      "herb": 6,
+      "berry": 0,
+      "mushroom": 0,
+      "ore": 0,
+      "tea": 0,
+      "biscuit": 0,
+      "soup": 0,
+      "pumpkin": 0,
+      "snowflower": 0,
+      "pie": 0,
+      "snowtea": 0
+    },
+    "plots": [
+      null,
+      null,
+      null
+    ],
+    "gardenLevel": 0,
+    "companions": {
+      "slime": 0,
+      "guide": null,
+      "guard": null
+    },
+    "active": "slime",
+    "run": null,
+    "cargo": {
+      "coins": 0,
+      "xp": 0,
+      "gel": 0,
+      "ore": 0
+    },
+    "clears": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "rooms": 0,
+    "harvests": 0,
+    "cooked": 0,
+    "claimed": []
+  },
+  "tick": 0,
+  "wallAt": 1000,
+  "carryMs": 0,
+  "sequence": 6,
+  "receipt": {
+    "sequence": 6,
+    "requestId": "fixture-old-chapter",
+    "fingerprint": "{\"type\":\"chapter-skip\"}"
+  },
+  "job": "keeper",
+  "coins": 117,
+  "xp": 0,
+  "actionClaim": 0,
+  "roomClaims": [],
+  "rewardRemainders": {
+    "coins": 0,
+    "xp": 0,
+    "gel": 0
+  },
+  "bag": {
+    "flour": 22,
+    "ration": 0,
+    "crystal": 2,
+    "gel": 20
+  },
+  "queue": null,
+  "retail": false,
+  "nextSale": 0,
+  "upgraded": false,
+  "totals": {
+    "crafted": 0,
+    "sold": 0,
+    "earned": 0,
+    "wins": 0
+  },
+  "cleared": [],
+  "run": {
+    "id": "run-3",
+    "wave": 0,
+    "region": 0,
+    "budget": 9,
+    "remaining": 9,
+    "spent": 0,
+    "loot": 0,
+    "defeated": [],
+    "phase": "travel",
+    "due": 10,
+    "hp": 70,
+    "enemyHP": 0,
+    "enemyMax": 0,
+    "nextAttack": 0,
+    "enemyAttack": 0,
+    "frostReady": 0,
+    "shatterReady": 0,
+    "markedUntil": 0,
+    "auto": false,
+    "log": "穿越传送门，正在寻找魔物。",
+    "field": {
+      "version": 1,
+      "legacyEnemyMax": null,
+      "moveRemainder": 0,
+      "floor": 0,
+      "x": 40,
+      "mode": "manual",
+      "target": null,
+      "farmTarget": null,
+      "active": null,
+      "miningDue": 0,
+      "recoverUntil": 0,
+      "safe": null,
+      "floors": [
+        {
+          "encounters": [
+            {
+              "cleared": false,
+              "readyAt": 0,
+              "monsters": [
+                {
+                  "id": "f0-e0-m0",
+                  "kind": "melee",
+                  "x": 320,
+                  "hp": 8,
+                  "max": 8,
+                  "stage": "idle",
+                  "due": 0,
+                  "aimX": 320
+                },
+                {
+                  "id": "f0-e0-m1",
+                  "kind": "melee",
+                  "x": 356,
+                  "hp": 8,
+                  "max": 8,
+                  "stage": "idle",
+                  "due": 0,
+                  "aimX": 320
+                }
+              ]
+            },
+            {
+              "cleared": false,
+              "readyAt": 0,
+              "monsters": [
+                {
+                  "id": "f0-e1-m0",
+                  "kind": "ranged",
+                  "x": 700,
+                  "hp": 10,
+                  "max": 10,
+                  "stage": "idle",
+                  "due": 0,
+                  "aimX": 700
+                },
+                {
+                  "id": "f0-e1-m1",
+                  "kind": "ranged",
+                  "x": 736,
+                  "hp": 10,
+                  "max": 10,
+                  "stage": "idle",
+                  "due": 0,
+                  "aimX": 700
+                }
+              ]
+            },
+            {
+              "cleared": false,
+              "readyAt": 0,
+              "monsters": [
+                {
+                  "id": "f0-e2-m0",
+                  "kind": "charge",
+                  "x": 1080,
+                  "hp": 12,
+                  "max": 12,
+                  "stage": "idle",
+                  "due": 0,
+                  "aimX": 1080
+                },
+                {
+                  "id": "f0-e2-m1",
+                  "kind": "charge",
+                  "x": 1116,
+                  "hp": 12,
+                  "max": 12,
+                  "stage": "idle",
+                  "due": 0,
+                  "aimX": 1080
+                }
+              ]
+            }
+          ],
+          "oreReadyAt": 0,
+          "revealed": 400
+        },
+        {
+          "encounters": [
+            {
+              "cleared": false,
+              "readyAt": 0,
+              "monsters": [
+                {
+                  "id": "f1-e0-m0",
+                  "kind": "melee",
+                  "x": 320,
+                  "hp": 10,
+                  "max": 10,
+                  "stage": "idle",
+                  "due": 0,
+                  "aimX": 320
+                },
+                {
+                  "id": "f1-e0-m1",
+                  "kind": "melee",
+                  "x": 356,
+                  "hp": 10,
+                  "max": 10,
+                  "stage": "idle",
+                  "due": 0,
+                  "aimX": 320
+                }
+              ]
+            },
+            {
+              "cleared": false,
+              "readyAt": 0,
+              "monsters": [
+                {
+                  "id": "f1-e1-m0",
+                  "kind": "ranged",
+                  "x": 700,
+                  "hp": 12,
+                  "max": 12,
+                  "stage": "idle",
+                  "due": 0,
+                  "aimX": 700
+                },
+                {
+                  "id": "f1-e1-m1",
+                  "kind": "ranged",
+                  "x": 736,
+                  "hp": 12,
+                  "max": 12,
+                  "stage": "idle",
+                  "due": 0,
+                  "aimX": 700
+                }
+              ]
+            },
+            {
+              "cleared": false,
+              "readyAt": 0,
+              "monsters": [
+                {
+                  "id": "f1-e2-m0",
+                  "kind": "charge",
+                  "x": 1080,
+                  "hp": 14,
+                  "max": 14,
+                  "stage": "idle",
+                  "due": 0,
+                  "aimX": 1080
+                },
+                {
+                  "id": "f1-e2-m1",
+                  "kind": "charge",
+                  "x": 1116,
+                  "hp": 14,
+                  "max": 14,
+                  "stage": "idle",
+                  "due": 0,
+                  "aimX": 1080
+                }
+              ]
+            }
+          ],
+          "oreReadyAt": 0,
+          "revealed": 400
+        }
+      ]
+    }
+  },
+  "rng": 1000,
+  "lastTrip": "尚未远征。",
+  "notice": "精通已开启，今后的实际成交与远征会留下纪念。",
+  "atelier": {
+    "version": 1,
+    "stock": {
+      "picnic": 0,
+      "stew": 0,
+      "gift": 0,
+      "dew": 3,
+      "ink": 0,
+      "ingot": 0,
+      "nectar": 0,
+      "incense": 0,
+      "frost": 0
+    },
+    "queues": {
+      "supply": [],
+      "alchemy": []
+    },
+    "shelves": {
+      "picnic": {
+        "stock": 0,
+        "quote": "normal",
+        "due": 0
+      },
+      "stew": {
+        "stock": 0,
+        "quote": "normal",
+        "due": 0
+      },
+      "gift": {
+        "stock": 0,
+        "quote": "normal",
+        "due": 0
+      },
+      "dew": {
+        "stock": 0,
+        "quote": "normal",
+        "due": 0
+      },
+      "ink": {
+        "stock": 2,
+        "quote": "premium",
+        "due": 800
+      },
+      "ingot": {
+        "stock": 0,
+        "quote": "normal",
+        "due": 0
+      },
+      "nectar": {
+        "stock": 0,
+        "quote": "normal",
+        "due": 0
+      },
+      "incense": {
+        "stock": 0,
+        "quote": "normal",
+        "due": 0
+      },
+      "frost": {
+        "stock": 0,
+        "quote": "normal",
+        "due": 0
+      }
+    },
+    "open": {
+      "supply": false,
+      "alchemy": false
+    },
+    "till": 0,
+    "facilities": {
+      "kitchen": 0,
+      "still": 0,
+      "counter": 0
+    },
+    "made": {
+      "picnic": 0,
+      "stew": 0,
+      "gift": 0,
+      "dew": 20,
+      "ink": 0,
+      "ingot": 0,
+      "nectar": 0,
+      "incense": 0,
+      "frost": 0
+    },
+    "claimed": {
+      "picnic": 0,
+      "stew": 0,
+      "gift": 0,
+      "dew": 1,
+      "ink": 0,
+      "ingot": 0,
+      "nectar": 0,
+      "incense": 0,
+      "frost": 0
+    },
+    "orders": {
+      "supply": [
+        {
+          "revision": 0,
+          "accepted": false
+        },
+        {
+          "revision": 0,
+          "accepted": false
+        },
+        {
+          "revision": 0,
+          "accepted": false
+        }
+      ],
+      "alchemy": [
+        {
+          "revision": 0,
+          "accepted": false
+        },
+        {
+          "revision": 0,
+          "accepted": false
+        },
+        {
+          "revision": 0,
+          "accepted": false
+        }
+      ]
+    }
+  },
+  "camp": {
+    "version": 1,
+    "cooking": [],
+    "claimed": 0,
+    "jobs": {
+      "counter": null,
+      "workshop": null,
+      "garden": null
+    },
+    "quests": [],
+    "last": {},
+    "presets": [
+      null,
+      null,
+      null
+    ],
+    "lastJourney": null,
+    "stockPlans": {
+      "supply": null,
+      "alchemy": null
+    }
+  },
+  "village": {
+    "version": 1,
+    "projects": {
+      "teahouse": 0,
+      "greenhouse": 0,
+      "market": 0
+    },
+    "regulars": {
+      "miner": {
+        "served": 0,
+        "nextAt": 0,
+        "gifts": 0
+      },
+      "herbalist": {
+        "served": 0,
+        "nextAt": 0,
+        "gifts": 0
+      },
+      "merchant": {
+        "served": 0,
+        "nextAt": 0,
+        "gifts": 0
+      }
+    },
+    "life": {
+      "slime": {
+        "visits": 0,
+        "nextAt": 0
+      },
+      "guide": {
+        "visits": 0,
+        "nextAt": 0
+      },
+      "guard": {
+        "visits": 0,
+        "nextAt": 0
+      },
+      "fox": {
+        "visits": 0,
+        "nextAt": 0
+      },
+      "deer": {
+        "visits": 0,
+        "nextAt": 0
+      },
+      "otter": {
+        "visits": 0,
+        "nextAt": 0
+      },
+      "owl": {
+        "visits": 0,
+        "nextAt": 0
+      },
+      "bear": {
+        "visits": 0,
+        "nextAt": 0
+      },
+      "bird": {
+        "visits": 0,
+        "nextAt": 0
+      }
+    },
+    "plans": {
+      "kitchen": null,
+      "supply": null,
+      "alchemy": null
+    }
+  },
+  "expedition": {
+    "version": 1,
+    "marks": 0,
+    "upgrades": {
+      "charts": 0,
+      "tents": 0,
+      "wagon": 0
+    },
+    "credits": [
+      0,
+      0,
+      0
+    ],
+    "wins": [
+      0,
+      0,
+      0
+    ],
+    "orders": [
+      0,
+      0,
+      0
+    ],
+    "trips": 0,
+    "resolved": 0,
+    "carry": {
+      "ore": 0,
+      "herb": 0,
+      "berry": 0,
+      "mushroom": 0
+    },
+    "cargo": {
+      "ore": 0,
+      "herb": 0,
+      "berry": 0,
+      "mushroom": 0,
+      "marks": 0
+    },
+    "events": [],
+    "active": null,
+    "last": null
+  },
+  "pets": {
+    "version": 1,
+    "petId": "slime",
+    "role": "leisure",
+    "ownedGearIDs": [
+      "moss-collar"
+    ],
+    "slots": {
+      "collar": "moss-collar",
+      "guard": null,
+      "charm": null
+    },
+    "active": null
+  },
+  "equipment": {
+    "version": 1,
+    "ownedIDs": [
+      "trail-hood"
+    ],
+    "slots": {
+      "head": "trail-hood",
+      "body": null,
+      "hands": null,
+      "mainhand": null,
+      "accessory": null,
+      "feet": null
+    },
+    "active": {
+      "runId": "run-3",
+      "slots": {
+        "head": "trail-hood",
+        "body": null,
+        "hands": null,
+        "mainhand": null,
+        "accessory": null,
+        "feet": null
+      }
+    }
+  },
+  "tower": {
+    "version": 1,
+    "claimed": 1,
+    "progress": [
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "mastery": {
+    "version": 1,
+    "startedTick": 0,
+    "startedSequence": 5,
+    "shelves": 0,
+    "quick": 0,
+    "premium": 0,
+    "orders": 0,
+    "proofs": [],
+    "comboRun": null,
+    "claimed": [],
+    "worn": null
+  },
+  "chapter": {
+    "version": 1,
+    "skipped": true,
+    "startedTick": 0,
+    "prepared": false,
+    "eligibleRunId": null,
+    "wonRunId": null,
+    "returned": false,
+    "sold": false,
+    "collected": false
+  }
+}

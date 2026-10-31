@@ -1,0 +1,11 @@
+import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import os from 'node:os';import path from 'node:path';
+import {initialProfile,parseProfile,grantActionReward,parseEnvelope} from '../packages/solo-core';import {GameStore} from '../apps/desktop/game-store';
+test('v1 migration preserves every old field, stock and pending idle run; raw original preserved',()=>{
+ const p=initialProfile(1000);p.job='keeper';p.coins=73;p.bag={flour:8,ration:5,crystal:2,gel:7};p.upgraded=true;p.cleared=[0,1];
+ const {leisure:ll,business:bb,xp,actionClaim,roomClaims,rewardRemainders,...old}=p;const v1={...old,version:1};const before=structuredClone(v1);const migrated=parseProfile(v1);assert.deepEqual(v1,before);assert.equal(migrated.version,8);assert.equal(migrated.xp,0);assert.equal(migrated.actionClaim,0);assert.deepEqual(migrated.roomClaims,[]);const {leisure:lll,business:bbb,xp:xx,actionClaim:aa,roomClaims:rc,rewardRemainders:rr,...rest}=migrated;assert.deepEqual(rr,{coins:0,xp:0,gel:0});assert.deepEqual({...rest,version:1},v1);
+ const folder=fs.mkdtempSync(path.join(os.tmpdir(),'pixelstreet-migrate-'));try{const text=JSON.stringify(v1);fs.writeFileSync(path.join(folder,'profile.json'),text);const store=new GameStore(folder);store.save(store.value);assert.equal(fs.readFileSync(path.join(folder,'profile.v1-before-migration.json'),'utf8'),text);assert.deepEqual(new GameStore(folder).value,migrated);}finally{fs.rmSync(folder,{recursive:true,force:true});}
+ assert.throws(()=>parseProfile({...v1,coins:-1}));assert.throws(()=>parseProfile({...v1,extra:1}));
+});
+test('trusted action reward is durable-cursor idempotent, never an economic renderer command',()=>{
+ const p=initialProfile(1000),first=grantActionReward(p,1,25,80);assert.equal(first.coins,45);assert.equal(first.xp,80);assert.equal(p.coins,20);assert.deepEqual(grantActionReward(first,1,25,80),first);const next=grantActionReward(first,3,10,20);assert.deepEqual(grantActionReward(next,2,500,500),next);assert.equal(next.coins,55);assert.equal(next.actionClaim,3);assert.throws(()=>grantActionReward(next,4,Infinity,0));assert.throws(()=>grantActionReward(next,4,10001,0));assert.throws(()=>parseEnvelope({sequence:1,requestId:'spoof-claim',action:{type:'action-reward',coins:100}}));
+});

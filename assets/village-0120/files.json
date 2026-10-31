@@ -1,0 +1,96 @@
+{
+  "generator": "Built-in image_gen",
+  "authorization": "User 0.6.0 art authorization continued by 0.12.0 picture-led UI request",
+  "sourcePreserved": true,
+  "pixelEdits": "None; atlas frames sampled by CSS",
+  "files": {
+    "keepsakes-prompt.txt": {
+      "sha256": "f3a5ea136ef8c5c1b51b83ac3ba244571fe2087852b61ff29b2aee07ce8bca49",
+      "bytes": 1529
+    },
+    "keepsakes.png": {
+      "sha256": "384264252034518e8c458bee909043691e3a9901024ab75174a96beddcced783",
+      "bytes": 2175533,
+      "width": 1254,
+      "height": 1254,
+      "pngColorType": 6,
+      "source": "[local-source-redacted]",
+      "used": true
+    },
+    "life-objects-prompt.txt": {
+      "sha256": "0b38fe6bee3d9e886d1b3eff835f300d212e45b0a0c51b1f07f60198e7d7cd21",
+      "bytes": 1582
+    },
+    "life-objects.png": {
+      "sha256": "99e5b072582c0420e0121a22fa314b88ffdf6634606389e478abf10a511a9b84",
+      "bytes": 2193184,
+      "width": 1254,
+      "height": 1254,
+      "pngColorType": 6,
+      "source": "[local-source-redacted]",
+      "used": true
+    },
+    "projects-prompt.txt": {
+      "sha256": "7e1f0d10af021071224d3c78e2bda24eab808abc26831254e424bcbec6f72828",
+      "bytes": 1860
+    },
+    "projects.png": {
+      "sha256": "ba784a2d570b0b28522ef24fe95dff86f5911c7e430e12fc43595ea09d8ca0f6",
+      "bytes": 2820829,
+      "width": 1254,
+      "height": 1254,
+      "pngColorType": 6,
+      "source": "[local-source-redacted]",
+      "used": true
+    },
+    "regulars-cutout-attempt-prompt.txt": {
+      "sha256": "fd90d50240e658e7e4b7908967464653c0085d66ecb56864afa3fbbe074c3f6c",
+      "bytes": 686
+    },
+    "regulars-cutout-attempt.png": {
+      "sha256": "96932f7f524009f95da65cec3ab812d075df1dd189e62c51ebc232164c33fbb0",
+      "bytes": 2689285,
+      "width": 1536,
+      "height": 1024,
+      "pngColorType": 6,
+      "source": "[local-source-redacted]",
+      "used": false
+    },
+    "regulars-prompt.txt": {
+      "sha256": "d756c2f2f8c169188e745c577ffafb95ce0d69395328fd543d12eb5003f87f5e",
+      "bytes": 1648
+    },
+    "regulars-source.png": {
+      "sha256": "485e54a93dd16c6139b7c8242790ce398e21f1274674743a772ffb4eae550f95",
+      "bytes": 2756460,
+      "width": 1536,
+      "height": 1024,
+      "pngColorType": 6,
+      "source": "[local-source-redacted]",
+      "used": false
+    },
+    "regulars.png": {
+      "sha256": "485e54a93dd16c6139b7c8242790ce398e21f1274674743a772ffb4eae550f95",
+      "bytes": 2756460,
+      "width": 1536,
+      "height": 1024,
+      "pngColorType": 6,
+      "source": "[local-source-redacted]",
+      "used": true
+    },
+    "village-square-prompt.txt": {
+      "sha256": "d2ce30df29266981092c3139be10488ca4296ffcbdc1deb78d7a97accafdedd0",
+      "bytes": 1458
+    },
+    "village-square.png": {
+      "sha256": "d165467ee8dc5b07792ebd69a4187b91ff74f7bc94626bcae69fba288e5cbe4a",
+      "bytes": 3904697,
+      "width": 1536,
+      "height": 1024,
+      "pngColorType": 2,
+      "source": "[local-source-redacted]",
+      "used": true
+    }
+  },
+  "source_metadata_scope": "Original PNG provenance before Beta repository optimization, not current WebP byte hashes. See assets/optimization-manifest.json for the runtime file mapping and hashes. Original PNGs are retained outside this repository."
+}

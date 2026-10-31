@@ -1,0 +1,261 @@
+{
+  "source": "[local-source-redacted]",
+  "sha256": "df82eab5cc0c573c2afef5a89d7274d1fd174b6b7234711c209809b387550850",
+  "imageSize": [
+    1254,
+    1254
+  ],
+  "status": "per-item nonuniform frames, pending renderer 48/64px check; do not use naive 5x5 crop",
+  "frames": [
+    {
+      "id": "bag:flour",
+      "name": "面粉",
+      "frame": [
+        29,
+        43,
+        214,
+        222
+      ]
+    },
+    {
+      "id": "bag:gel",
+      "name": "凝胶",
+      "frame": [
+        282,
+        53,
+        183,
+        213
+      ]
+    },
+    {
+      "id": "bag:ration",
+      "name": "旅行口粮",
+      "frame": [
+        503,
+        73,
+        231,
+        195
+      ]
+    },
+    {
+      "id": "bag:crystal",
+      "name": "魔晶餐",
+      "frame": [
+        748,
+        74,
+        251,
+        187
+      ]
+    },
+    {
+      "id": "materials:herb",
+      "name": "晨露草",
+      "frame": [
+        1019,
+        55,
+        207,
+        214
+      ]
+    },
+    {
+      "id": "materials:berry",
+      "name": "甜莓",
+      "frame": [
+        27,
+        293,
+        224,
+        206
+      ]
+    },
+    {
+      "id": "materials:mushroom",
+      "name": "萤光菇",
+      "frame": [
+        293,
+        298,
+        184,
+        201
+      ]
+    },
+    {
+      "id": "materials:ore",
+      "name": "月纹石",
+      "frame": [
+        514,
+        286,
+        219,
+        219
+      ]
+    },
+    {
+      "id": "materials:tea",
+      "name": "花草茶",
+      "frame": [
+        754,
+        301,
+        247,
+        194
+      ]
+    },
+    {
+      "id": "materials:biscuit",
+      "name": "莓果饼",
+      "frame": [
+        1009,
+        321,
+        220,
+        173
+      ]
+    },
+    {
+      "id": "materials:soup",
+      "name": "菌菇汤",
+      "frame": [
+        13,
+        538,
+        256,
+        195
+      ]
+    },
+    {
+      "id": "materials:pumpkin",
+      "name": "蜜糖南瓜",
+      "frame": [
+        270,
+        522,
+        220,
+        213
+      ]
+    },
+    {
+      "id": "materials:snowflower",
+      "name": "雪绒花",
+      "frame": [
+        513,
+        528,
+        228,
+        205
+      ]
+    },
+    {
+      "id": "materials:pie",
+      "name": "南瓜派",
+      "frame": [
+        747,
+        528,
+        254,
+        208
+      ]
+    },
+    {
+      "id": "materials:snowtea",
+      "name": "雪绒暖茶",
+      "frame": [
+        1012,
+        531,
+        229,
+        191
+      ]
+    },
+    {
+      "id": "journal:dust",
+      "name": "星尘",
+      "frame": [
+        21,
+        792,
+        229,
+        168
+      ]
+    },
+    {
+      "id": "atelier:picnic",
+      "name": "旅人野餐篮",
+      "frame": [
+        266,
+        746,
+        245,
+        237
+      ]
+    },
+    {
+      "id": "atelier:stew",
+      "name": "菌香补给盒",
+      "frame": [
+        519,
+        762,
+        227,
+        226
+      ]
+    },
+    {
+      "id": "atelier:gift",
+      "name": "星糖礼盒",
+      "frame": [
+        763,
+        762,
+        232,
+        225
+      ]
+    },
+    {
+      "id": "atelier:dew",
+      "name": "萤露药剂",
+      "frame": [
+        1030,
+        736,
+        189,
+        250
+      ]
+    },
+    {
+      "id": "atelier:ink",
+      "name": "星尘墨",
+      "frame": [
+        45,
+        970,
+        201,
+        245
+      ]
+    },
+    {
+      "id": "atelier:ingot",
+      "name": "精炼晶",
+      "frame": [
+        271,
+        1025,
+        232,
+        193
+      ]
+    },
+    {
+      "id": "atelier:nectar",
+      "name": "伙伴蜜酿",
+      "frame": [
+        539,
+        986,
+        185,
+        239
+      ]
+    },
+    {
+      "id": "atelier:incense",
+      "name": "古木香氛",
+      "frame": [
+        810,
+        987,
+        145,
+        238
+      ]
+    },
+    {
+      "id": "atelier:frost",
+      "name": "霜花晶瓶",
+      "frame": [
+        1043,
+        988,
+        170,
+        231
+      ]
+    }
+  ]
+}

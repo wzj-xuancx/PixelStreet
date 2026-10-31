@@ -1,0 +1,6 @@
+Use case: stylized-concept.
+Asset type: transparent item sprite atlas for a cozy fantasy shop game, 3 columns by 2 rows.
+Primary request: exactly six separate full objects in equal square cells on a true transparent background, landscape 1536x1024. Each cell 512x512. Every object centered and fully inside its cell, with at least 90px transparent padding. No floor, scene, labels, letters, frame, grid lines, or watermark.
+Top row from left to right: (1) a tied cream canvas sack of flour with a tiny wheat emblem, (2) a round glass jar of luminous mint-green slime gel with cork stopper, (3) a travel ration wicker basket holding bread and a wrapped roll.
+Bottom row from left to right: (4) a shallow ceramic meal bowl with a small violet-blue magical crystal and roasted vegetables, (5) an open little wooden cashbox with brass hinges and a few gold coins, (6) a closed brown leather ledger book with a quill resting across it.
+Style: finely crafted richly detailed pixel-art, crisp pixel clusters, warm amber edges, charming cozy fantasy game illustrations, strong readable silhouettes and modest three-quarter view, matching an inviting sunlit wooden bakery. Objects should be attractive and dimensional, not flat vector icons or photorealistic. Preserve actual transparency between all six objects. Objects are used as independent clickable item layers.

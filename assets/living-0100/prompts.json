@@ -1,0 +1,72 @@
+{
+  "tool": "built-in image_gen",
+  "assets": [
+    {
+      "name": "supply-room.png",
+      "prompt": "Use case: precise-object-edit.\nAsset type: a layered pixel-art game room background plate for the existing PixelStreet supply shop.\nInput image: the existing supply.png is the edit target. Preserve its beautiful warm sunlit mountain-window bakery, perspective, stone oven on the right, hanging plants, wood/stone material language, and rich handcrafted pixel-art style.\nPrimary request: prepare this room for real interactive foreground objects and independent characters. Simplify and REMOVE the large foreground breads, bowls, cakes, loose ingredients and many tiny tabletop objects. Replace the lower left and central foreground with two clear, mostly empty wooden counter surfaces. Leave the center-right floor open for characters. Keep the right oven, but make its firebox dark and unlit so the game can turn its glow on only during real production. Leave an empty wall shelf near the center for real inventory icons. Composition stays wide landscape, 16:9, with all important room objects safely inset. Keep plants, window landscape, architectural detail and cozy light. No people, creatures, text, letters, labels, UI, borders or watermark. This is the environment layer only, not a finished screenshot; deliberate quiet spaces for interactive elements are essential.\n",
+      "generatedSource": "[local-source-redacted]",
+      "sourcePaths": [
+        "assets/atelier-080/supply.png"
+      ],
+      "transparent": false
+    },
+    {
+      "name": "people.png",
+      "prompt": "Use case: stylized-concept.\nAsset type: production-ready transparent pixel-art character walk sprite sheet for a cozy fantasy shop game.\nPrimary request: one sprite sheet with EXACTLY 4 columns and 3 rows of evenly sized cells, 1536 by 1152 pixels. Each cell 384 by 384. All background truly transparent. 12 full-body sprites total, aligned to the same baseline in every cell and with at least 55 pixels padding to every cell edge. No borders, ground, labels or text.\nRow 1 (4 walk-cycle frames): a friendly young forest courier in a moss-green hood, brown trousers and boots, small satchel.\nRow 2 (4 walk-cycle frames): a kind camp medic in a muted plum cloak and cream tunic, medicine satchel, brown boots.\nRow 3 (4 walk-cycle frames): a cheerful traveling merchant in a warm brown vest, cream shirt and cap, leather shoulder bag.\nEach row is the SAME character in four distinct, consistent successive walking poses: left foot forward, passing pose, right foot forward, passing pose. All characters three-quarter side view facing left. Keep head, torso, costume, scale, face and position stable through the four frames; movement is in legs and arms. Characters approximately 260 pixels tall. Polished densely detailed handcrafted pixel-art, crisp deliberate clusters, warm gentle outlines, charming faces, matching a richly painted pixel bakery; not crude low-resolution stick sprites, not photorealism or 3D. Transparent around every silhouette; no panels or backdrop. Intended to animate in steps(4), no scene illustration.\n",
+      "generatedSource": "[local-source-redacted]",
+      "sourcePaths": [],
+      "transparent": true
+    },
+    {
+      "name": "props.png",
+      "prompt": "Use case: stylized-concept.\nAsset type: transparent item sprite atlas for a cozy fantasy shop game, 3 columns by 2 rows.\nPrimary request: exactly six separate full objects in equal square cells on a true transparent background, landscape 1536x1024. Each cell 512x512. Every object centered and fully inside its cell, with at least 90px transparent padding. No floor, scene, labels, letters, frame, grid lines, or watermark.\nTop row from left to right: (1) a tied cream canvas sack of flour with a tiny wheat emblem, (2) a round glass jar of luminous mint-green slime gel with cork stopper, (3) a travel ration wicker basket holding bread and a wrapped roll.\nBottom row from left to right: (4) a shallow ceramic meal bowl with a small violet-blue magical crystal and roasted vegetables, (5) an open little wooden cashbox with brass hinges and a few gold coins, (6) a closed brown leather ledger book with a quill resting across it.\nStyle: finely crafted richly detailed pixel-art, crisp pixel clusters, warm amber edges, charming cozy fantasy game illustrations, strong readable silhouettes and modest three-quarter view, matching an inviting sunlit wooden bakery. Objects should be attractive and dimensional, not flat vector icons or photorealistic. Preserve actual transparency between all six objects. Objects are used as independent clickable item layers.\n",
+      "generatedSource": "[local-source-redacted]",
+      "sourcePaths": [],
+      "transparent": true
+    },
+    {
+      "name": "alchemy-room.png",
+      "prompt": "Use case: precise-object-edit\nAsset type: PixelStreet 0.10.0 interactive alchemy shop room background.\nInput image 1 is the original alchemy mood/reference. Input image 2 is the supply shop room background showing the desired camera, pixel illustration quality, and usable game composition.\nCreate a beautiful matching empty alchemy shop INTERIOR ROOM as a background for separately rendered interactive sprites. Landscape 16:9, cozy richly detailed pixel art, crisp painterly pixel clusters, no UI. Keep original alchemy's warm bronze and emerald glow, hanging herbs, moonlit blue arched window with mountain river, wooden walls and lanterns. Match supply image's wider room composition with visible wood floor and open space for customer sprites.\nComposition: wide U-shaped shop interior; left back has moonlit arched window, left low raw ingredient cabinet/counter with clear empty tabletop; center back a large EMPTY two-tier wooden display shelf, right back a copper-and-glass green distillation apparatus with NO active flame, smoke, liquid glow or steam; long front-left counter is CLEAR and EMPTY to later overlay a clerk and cashbox; lower right open wooden floor for 3 small customer sprites. Lower left desk area clear for a book sprite; upper left by window space for a small companion.\nRemove all people, animals, cats, books, potion bottles, crystals, cashboxes and loose tabletop products from the room. Structural fixed distillation equipment, hanging herb bundles, plants, curtains and wall lanterns are allowed. Empty display shelf and worktop remain empty so live goods can later appear. No words, text, signage, interface panels, glyph labels, icons or watermark. No large foreground foliage obscuring interactive zones. Exact pixel-art beauty and polished cohesive lighting comparable to reference 2.",
+      "sourcePaths": [
+        "assets/atelier-080/alchemy.png",
+        "assets/living-0100/supply-room.png"
+      ],
+      "generatedSource": "[local-source-redacted]",
+      "transparent": false
+    },
+    {
+      "name": "alchemy-goods.png",
+      "prompt": "Use case: background-extraction. Edit target: attached PixelStreet goods-v2 atlas. Preserve all nine exact item illustrations in exact 3 by 3 grid, their exact positions, proportions, spacing, colors, pixel-cluster details and canvas dimensions. Remove only all dark teal background completely, replace with actual alpha transparency. Preserve bottle glass, crystal, steam, leaves, feathers and shadows within illustrations. Each of the nine square cells must remain an isolated transparent sprite with generous transparent margin. No new objects, no text, no boxes, no grid, no color backdrop, no checkerboard baked in. Asset type: transparent game object atlas used over a wooden shop scene.",
+      "sourcePaths": [
+        "assets/atelier-080/goods-v2.png"
+      ],
+      "generatedSource": "[local-source-redacted]",
+      "transparent": true
+    },
+    {
+      "name": "camp-empty.png",
+      "prompt": "Use case: precise-object-edit. Asset type: local pixel-art game camp scene background. Edit target: attached PixelStreet camp.png. Preserve the exact camera, 3:2 landscape composition, all three buildings, trees, mountains, paths, lanterns, tent, table, and illustration-level pixel art texture. Only change the three front vegetable beds near image center (x 25–68%, y 54–68%): remove every cabbage, tomato vine, trellis and carrot plant from these three beds and leave three separate attractive empty rich dark brown soil beds with wooden plank edging. No living people, creatures, crops, lettering, UI, buttons or labels. Keep the existing foreground path clear for separate character sprites. The empty beds must remain exactly where the three existing beds are. No other redesign. This is a clean game background for overlaying real stateful crop sprites.\n",
+      "generatedSource": "[local-source-redacted]",
+      "sourcePaths": [
+        "assets/camp-060/camp.png"
+      ],
+      "transparent": false
+    },
+    {
+      "name": "crops-transparent.png",
+      "prompt": "Use case: background-extraction. Edit target: the attached six-cell crop sheet. Remove ALL dark green, blue and brown gradient background, backdrop and glow between and around the six plants. Replace it with TRUE fully transparent alpha 0 pixels, including each of the image corners and all gaps between plants. Preserve exactly all six plant objects, their detailed pixel-art edges, identical placement in the precise 3 columns x 2 rows grid, and the existing 1536x1024 canvas. Do not draw a background or shadows or colored halos. No labels. Actual transparent cutouts needed as game sprites.\n",
+      "generatedSource": "[local-source-redacted]",
+      "sourcePaths": [
+        "work/living-0100/camp-stage/assets/crops.png"
+      ],
+      "transparent": true
+    }
+  ],
+  "frameInspection": {
+    "room": "Viewed full-size generated output and hidden native wide/small compositions; no people/products baked into shelf, counters or floor. Fixed distillation apparatus is decorative structure; animated bubbles only when real queue nonempty.",
+    "goods": "Viewed full atlas and hidden native crop. Exact 3 columns ×3 rows; nine distinct icons, six alchemy cells at row2/row3; transparent background checked numerically. Previous atlas crop ratios intentionally not inherited since extracted atlas is regularly spaced.",
+    "people": "Shared 1448×1086 transparent four columns ×three rows walking atlas; CSS inherited ls-walk-frames and ls-visit; each of three actual order NPCs occupies corresponding row.",
+    "companions": "Shared 1254×1254 nine-companion transparent atlas; same exact per-id ls-buddy mapping as supply. Only actual camp.jobs.workshop assignment rendered."
+  },
+  "source_metadata_scope": "Original PNG provenance before Beta repository optimization, not current WebP byte hashes. See assets/optimization-manifest.json for the runtime file mapping and hashes. Original PNGs are retained outside this repository."
+}

@@ -1,0 +1,86 @@
+{
+  "source": "assets/equipment-0160/gear-atlas-4x2.png",
+  "sourceSha256": "e573dee34e2122c7250ac7ba2cfbf85ac110de2ad8f9a66c0e34a0c718432cdd",
+  "sourceWidth": 1774,
+  "sourceHeight": 887,
+  "coordinateConvention": "Zero-based pixel bounds [left, top, rightExclusive, bottomExclusive]. Measured from the rendered alpha mask with alpha > 1; the items are not in equal-sized crop rectangles.",
+  "frames": [
+    {
+      "id": "trail-hood",
+      "slot": "head",
+      "bounds": [
+        51,
+        105,
+        435,
+        446
+      ]
+    },
+    {
+      "id": "trail-coat",
+      "slot": "body",
+      "bounds": [
+        470,
+        49,
+        895,
+        458
+      ]
+    },
+    {
+      "id": "trail-gloves",
+      "slot": "hands",
+      "bounds": [
+        939,
+        135,
+        1309,
+        434
+      ]
+    },
+    {
+      "id": "trail-boots",
+      "slot": "feet",
+      "bounds": [
+        1355,
+        93,
+        1718,
+        449
+      ]
+    },
+    {
+      "id": "trail-sword",
+      "slot": "mainhand",
+      "bounds": [
+        57,
+        498,
+        426,
+        832
+      ]
+    },
+    {
+      "id": "blue-pendant",
+      "slot": "accessory",
+      "bounds": [
+        556,
+        483,
+        791,
+        845
+      ]
+    },
+    {
+      "id": "leaf-brooch",
+      "slot": "accessory",
+      "role": "alternative",
+      "bounds": [
+        965,
+        517,
+        1260,
+        828
+      ]
+    }
+  ],
+  "emptyBottomRight": {
+    "frame": null,
+    "maxAlpha": 1,
+    "note": "The visual field is empty. Isolated alpha=1 pixels remain in the generated raster; they were preserved rather than edited."
+  },
+  "source_metadata_scope": "Original PNG provenance before Beta repository optimization, not current WebP byte hashes. See assets/optimization-manifest.json for the runtime file mapping and hashes. Original PNGs are retained outside this repository."
+}

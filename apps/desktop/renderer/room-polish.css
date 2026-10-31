@@ -1,0 +1,411 @@
+/* 0.12.1 — quieter room furniture, a compact illustrated wayfinding row,
+   and working surfaces that leave the actual product in the foreground.
+   Presentation only: existing targets, native scrolling and hidden states stay authoritative. */
+body:is([data-popup=shop],[data-popup=alchemy]) .popover-content {
+  background: #20271f;
+  color: #eee4ca;
+  padding: 14px 18px;
+  border-color: #a88b58;
+}
+body:is([data-popup=shop],[data-popup=alchemy]) .popover-content > header {
+  min-height: 44px;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-color: #b99b6540;
+}
+body:is([data-popup=shop],[data-popup=alchemy]) .popover-content > header h1 {
+  gap: 10px;
+  font-size: 22px;
+}
+body:is([data-popup=shop],[data-popup=alchemy]) .popover-content > header .icon-button {
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  border-color: #a88b5866;
+  background: #363426;
+}
+body:is([data-popup=shop],[data-popup=alchemy]) .inner-room-mark {
+  width: 34px;
+  height: 34px;
+  background: #3c3b28;
+  border-color: #a88b5880;
+}
+body:is([data-popup=shop],[data-popup=alchemy]) .ls-workspace-head {
+  position: static;
+  min-height: 44px;
+  padding: 0 0 9px;
+  margin: 0 0 10px;
+  gap: 12px;
+  background: none;
+  border-color: #b99b6533;
+  box-shadow: none;
+}
+body:is([data-popup=shop],[data-popup=alchemy]) .ls-workspace-head strong {
+  font-size: 18px;
+  color: #d1c5a5;
+  font-weight: 500;
+}
+body:is([data-popup=shop],[data-popup=alchemy]) .ls-workspace-head #roomBack {
+  min-height: 44px;
+  padding: 7px 12px;
+  background: #363a2c;
+  border-color: #8e8d625c;
+  color: #ecddba;
+}
+
+/* Navigation is a shelf of small picture signs. Arrows and double frames
+   previously competed with products, and made every surface look selected. */
+:is(.trade-workspace,.b-workspace,.life-ui) button[data-pi-control] {
+  border-color: #a38c5d80 !important;
+  border-radius: 7px;
+  box-shadow: 0 2px 0 #111b1640;
+  min-height: 64px;
+  gap: 8px;
+  padding: 7px 10px !important;
+}
+:is(.trade-workspace,.b-workspace,.life-ui) button[data-pi-control]::after,
+.b-workspace .b-paths > button::after {
+  content: none !important;
+}
+:is(.trade-workspace,.b-workspace,.life-ui) button[data-pi-control]::before {
+  width: 48px;
+  height: 48px;
+  filter: drop-shadow(0 3px 1px #11251b66);
+}
+:is(.trade-workspace,.b-workspace,.life-ui) button[data-pi-control]:enabled:hover {
+  outline: 0;
+  filter: none;
+  border-color: #e7cb86 !important;
+  background-color: #4c563c;
+  box-shadow: inset 0 0 0 1px #e7cb8666, 0 2px 0 #111b1640;
+}
+:is(.trade-workspace,.b-workspace,.life-ui) button[data-pi-control]:enabled:active {
+  transform: translateY(1px);
+  box-shadow: inset 0 2px 3px #101b164d;
+}
+:is(.trade-workspace,.b-workspace,.life-ui) button[data-pi-control]:focus-visible {
+  outline: 3px solid #f4dc9e;
+  outline-offset: 2px;
+}
+:is(.trade-workspace,.b-workspace,.life-ui) button[data-pi-control]:is([aria-selected=true],[aria-pressed=true]) {
+  border: 1px solid #e8cc86 !important;
+  background-color: #526347 !important;
+  color: #fff0c9 !important;
+  box-shadow: inset 0 -3px #dfbf76, 0 2px 0 #111b1640;
+}
+:is(.trade-workspace,.b-workspace,.life-ui) button[data-pi-control]:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+  filter: saturate(.4);
+  box-shadow: none;
+}
+:is(.trade-workspace,.b-workspace,.life-ui) button[data-pi-control=place] {
+  flex-direction: row;
+  min-height: 66px;
+  padding: 7px 8px !important;
+  gap: 7px;
+  background: #303d2e;
+  text-align: left;
+  font-weight: 500;
+}
+:is(.trade-workspace,.b-workspace,.life-ui) button[data-pi-control=place]::before {
+  width: 46px;
+  height: 46px;
+  max-width: none;
+  border: 0;
+  border-radius: 4px;
+  background-color: transparent;
+}
+.trade-workspace :is(.shop-tabs,.a-tabs),
+.b-workspace .b-detail-tabs,
+.life-ui .life-tabs {
+  gap: 7px;
+  margin: 10px 0 16px !important;
+}
+.trade-workspace .tw-wallet {
+  font-size: 16px;
+  padding: 6px 2px 9px;
+  border-color: #b99b6533;
+  color: #e3cd97;
+}
+.trade-workspace .tw-wallet svg { width: 20px; height: 20px; }
+.trade-workspace .game-button,
+.life-ui .game-button,
+.b-workspace .game-button { min-height: 44px; }
+
+/* Product shelves and parchment price tickets — one structural edge per tray. */
+.trade-workspace {
+  --tw-ink: #eee4ca;
+  --tw-muted: #c5bea5;
+  --tw-edge: #a38c5d;
+  color: var(--tw-ink);
+}
+.trade-workspace :is(.tw-market-good,.ls-recipe-card,.tw-facility,.tw-ordinary-shelf) {
+  border-color: #a38c5d66 !important;
+  background: #363b2b !important;
+  box-shadow: none !important;
+  border-radius: 8px;
+}
+.trade-workspace .tw-market-good { padding: 12px !important; }
+.trade-workspace .tw-goods-plinth {
+  border-bottom: 4px solid #8b6943;
+  box-shadow: 0 2px #1b251c66;
+  background: radial-gradient(ellipse at center, #d3b77724, transparent 70%);
+}
+.trade-workspace .tw-goods-plinth > .ls-item-art { width: 124px; height: 124px; }
+.trade-workspace .tw-price-tag {
+  border: 0;
+  background: #dfcfaa;
+  color: #493b27;
+  box-shadow: none;
+}
+.trade-workspace .tw-market-good .business-actions { gap: 6px; }
+.trade-workspace .tw-market-good button[data-pi-control=object] {
+  flex-direction: row;
+  gap: 5px;
+  min-height: 56px;
+  padding: 5px 7px !important;
+}
+.trade-workspace .tw-market-good button[data-pi-control=object]::before {
+  width: 38px;
+  height: 38px;
+}
+.trade-workspace .ls-recipe-grid { gap: 14px; }
+.trade-workspace .ls-recipe-card { padding: 14px; }
+.trade-workspace .ls-recipe-title {
+  flex-direction: row;
+  justify-content: center;
+  gap: 12px;
+  text-align: left;
+  margin: 0 0 10px;
+  background: none;
+}
+.trade-workspace .ls-recipe-title .ls-item-art { width: 112px; height: 112px; }
+.trade-workspace .ls-recipe-material {
+  min-height: 72px;
+  padding: 9px 0;
+  gap: 8px;
+  border-color: #a38c5d40;
+}
+.trade-workspace .tw-ingredient {
+  background: #243226;
+  border-color: #9aa07850;
+  border-radius: 5px;
+}
+.trade-workspace .tw-ingredient.is-missing,
+.trade-workspace .tw-ingredient.a-lack {
+  background: #4a3129;
+  border-color: #d18c7466;
+}
+.trade-workspace .ls-recipe-actions > button[data-pi-control=object] {
+  flex-direction: row;
+  min-height: 64px;
+}
+.trade-workspace .tw-production-desk { margin-top: 18px; padding-top: 16px; }
+.trade-workspace :is(.tw-batch-workbench,.tw-workbench,.tw-shelf-display,.tw-signboard) {
+  background: #343d2c;
+  border: 1px solid #a38c5d80;
+  box-shadow: none;
+  border-radius: 8px;
+}
+.trade-workspace .tw-queue-card {
+  background: #2b382a;
+  border-color: #8e967059;
+  box-shadow: inset 3px 0 #b59a61;
+}
+.trade-workspace .tw-empty-tray {
+  border: 1px dashed #a38c5d66;
+  background: #293326;
+}
+.trade-workspace .tw-cashdesk {
+  margin: 10px 0 16px;
+  padding: 9px 12px;
+  background: #424631 !important;
+  border-color: #a38c5d80 !important;
+  box-shadow: none;
+}
+.trade-workspace .tw-cashdesk > button[data-pi-control] { min-height: 60px; }
+.trade-workspace .tw-ordinary-shelf { padding: 14px !important; }
+.trade-workspace .tw-shelf-item { border-bottom-width: 4px; }
+.trade-workspace .tw-ordinary-shelf .business-actions > button,
+.trade-workspace :is(.shelf-prices,.a-prices) button[data-pi-control] {
+  flex-direction: row;
+  min-height: 64px;
+  gap: 6px;
+}
+.trade-workspace .tw-ordinary-shelf .business-actions > button::before,
+.trade-workspace :is(.shelf-prices,.a-prices) button[data-pi-control]::before {
+  width: 40px;
+  height: 40px;
+}
+
+/* The selected recipe gets a real work area beside its illustrated catalogue. */
+.trade-workspace .tw-recipe-catalog { gap: 7px; padding-right: 10px; }
+.trade-workspace .tw-recipe-catalog > .game-button {
+  min-height: 80px;
+  background: #2c382b;
+  border-color: #8e967059;
+  box-shadow: none;
+}
+.trade-workspace .tw-recipe-catalog > .game-button:is([aria-selected=true],[aria-pressed=true]) {
+  background: #dec99a !important;
+  color: #3a3b28 !important;
+  border-color: #ebd7a9 !important;
+  box-shadow: inset 3px 0 #879460;
+}
+.trade-workspace .tw-selected { margin-bottom: 12px !important; }
+.trade-workspace .tw-selected h2 { font-size: 23px !important; }
+.trade-workspace .tw-workbench { padding: 14px; gap: 14px; }
+.trade-workspace .tw-platter { padding-top: 6px; }
+.trade-workspace .tw-platter > .tw-hero-art {
+  background-color: transparent !important;
+  box-shadow: none;
+  border-radius: 0;
+  width: 164px;
+  height: 164px;
+}
+.trade-workspace .tw-platter-label { margin-top: 8px; color: #c9c1a2; }
+.trade-workspace .tw-recipe-tools .a-actions > button[data-pi-control] {
+  min-height: 64px;
+  padding: 6px 9px !important;
+}
+.trade-workspace .tw-time-board { margin-top: 9px; padding-top: 9px; }
+.trade-workspace .tw-facility > button[data-pi-control] {
+  min-height: 136px;
+  background: #2d392a;
+}
+.trade-workspace .tw-price-board { background: #283326; border-color: #a38c5d50; }
+.trade-workspace .tw-dialogue {
+  border-color: #a38c5d66 !important;
+  background: #30392a !important;
+  box-shadow: none;
+}
+.trade-workspace .tw-dialogue-body { background: #e5d7b7; border: 0; }
+.trade-workspace .tw-open-book { border-width: 4px; box-shadow: 0 3px #16251d55; }
+
+/* Companion book: characters and exhibits keep the largest images. */
+.b-workspace .b-roster {
+  border: 1px solid #9b835966;
+  padding: 9px;
+  background: #23362b;
+  box-shadow: none;
+}
+.casual .b-workspace .b-buddy-pick { border-color: #9aa07850; background: #2a3d2e; }
+.b-workspace .b-buddy-detail,
+.b-workspace .b-rarity-detail { border-color: #9b987066; background: #293d2e; }
+.b-workspace .b-rarity-detail { position: static; }
+.b-workspace .b-detail-tabs > button[data-pi-control=place] {
+  min-height: 66px;
+  gap: 6px;
+}
+.b-workspace .b-detail-tabs > button[data-pi-control=place]::before { width: 44px; height: 44px; }
+.b-workspace .b-detail-tabs { margin: 14px 0 !important; }
+.b-workspace .b-buddy-actions { gap: 8px; }
+.b-workspace .b-rarity-detail > .b-buddy-actions > button[data-pi-control] {
+  flex: 0 0 auto;
+  min-height: 68px;
+  white-space: normal;
+}
+.b-workspace .b-rarity-grid {
+  align-content: start;
+  padding: 10px;
+  gap: 9px;
+  border: 1px solid #9b835980;
+  background: #3b392b;
+}
+.casual .b-workspace .b-rarity-pick {
+  background: #243a2d;
+  border-color: #a28c5c66;
+}
+.b-workspace .b-exhibit {
+  border-bottom: 3px solid #92764e;
+  background: radial-gradient(ellipse at bottom, #b4bf7924, transparent 75%);
+}
+.b-workspace .b-relic-focus { border-bottom-width: 2px; }
+.b-workspace .b-rarity-art.b-large { border: 0; background-color: transparent; }
+.casual .b-workspace .b-loadout > button {
+  min-height: 86px;
+  border: 1px solid #a38c5d99;
+  background: #3a4431;
+}
+.b-workspace .b-loadout .b-rarity-art { border: 0; background-color: transparent; }
+.b-workspace .b-paths > button { box-shadow: none; }
+.b-workspace .b-rank-pips > i { border-style: solid; border-color: #9b98704d; }
+.b-workspace .b-next-training { border-color: #a38c5d66; }
+.b-workspace .b-dialogue { box-shadow: none; border: 1px solid #bca578; }
+
+/* Camp operating pages use the same small signs and calm furniture. */
+.life-ui .life-tabs > button[data-pi-control=place] { min-height: 66px; }
+.life-ui .life-tabs > button[data-pi-control=place]::before { width: 44px; height: 44px; }
+.life-ui :is(.life-gift-counter,.life-till-counter,.life-journey-card) {
+  border-width: 1px;
+  border-color: #a38c5d80;
+  background: #3a4431;
+  box-shadow: none;
+}
+.life-ui :is(.life-recipe-book,.life-plan,.life-current-crew,.life-preset) {
+  border-width: 1px;
+  border-color: #a38c5d80;
+  background: #2d402f;
+  box-shadow: none;
+}
+.life-ui .life-workplace-tabs > button[data-pi-control=place] { min-height: 100px; }
+.life-ui .life-workplace-tabs > button[data-pi-control=place]::before { width: 92px; height: 78px; }
+.life-ui .life-material-tray > span { border-color: #9aa07866; background: #23372a; }
+.life-ui .life-recipe-detail > .life-actions > button { flex-direction: row; min-height: 76px; }
+.life-ui .life-recipe-detail > .life-actions > button::before { width: 56px; height: 56px; }
+.life-ui .life-dish-large.inner-art { border: 0; border-radius: 0; }
+
+@media (max-width: 900px) {
+  :is(.trade-workspace,.b-workspace,.life-ui) button[data-pi-control=place] {
+    gap: 5px;
+    padding: 6px !important;
+  }
+  :is(.trade-workspace,.b-workspace,.life-ui) button[data-pi-control=place]::before {
+    width: 40px;
+    height: 44px;
+  }
+  .trade-workspace .shop-tabs > button[data-pi-control=place],
+  .life-ui .life-tabs > button[data-pi-control=place] { min-height: 66px; }
+  .trade-workspace .shop-tabs > button[data-pi-control=place]::before,
+  .life-ui .life-tabs > button[data-pi-control=place]::before { width: 40px; height: 44px; }
+  .trade-workspace .tw-workbench { grid-template-columns: 112px minmax(0,1fr); }
+  .trade-workspace .tw-platter .tw-hero-art { width: 112px; height: 112px; }
+  .trade-workspace .tw-market-good button[data-pi-control=object] { flex-direction: column; gap: 2px; }
+  .b-workspace .b-detail-tabs > button[data-pi-control=place] { flex-direction: column; gap: 2px; min-height: 86px; }
+  .life-ui .life-workplace-tabs > button[data-pi-control=place] { flex-direction: column; min-height: 124px; }
+  .life-ui .life-workplace-tabs > button[data-pi-control=place]::before { width: 100px; height: 76px; }
+}
+@media (max-height: 760px) {
+  /* A sticky article taller than the viewport traps its lower actions.
+     Let both columns participate in the window's normal native scrolling. */
+  .b-workspace .b-rarity-detail,
+  .b-workspace .b-roster { position: static; }
+  .b-workspace .b-relic-focus { padding-top: 15px; padding-bottom: 12px; }
+  .b-workspace .b-rarity-art.b-large { width: 138px; height: 138px; margin-bottom: 8px; }
+}
+@media (max-width: 620px) {
+  .trade-workspace .shop-tabs, .life-ui .life-tabs { grid-template-columns: repeat(3,minmax(0,1fr)); }
+  .trade-workspace .tw-workbench { grid-template-columns: 1fr; }
+  .trade-workspace .tw-platter { flex-direction: row; gap: 12px; }
+  .trade-workspace .tw-platter-label { margin: 0; }
+  .trade-workspace .tw-platter .tw-hero-art { width: 110px; height: 110px; }
+  .trade-workspace .ls-recipe-title { flex-direction: column; gap: 3px; text-align: center; }
+  .trade-workspace .ls-recipe-actions > button[data-pi-control=object] { flex-direction: column; }
+  .b-workspace .b-rarity-detail { position: static; }
+  .life-ui .life-recipe-detail > .life-actions > button { flex-direction: column; }
+}
+
+/* Shop pointer feedback stays visible after the late interior polish cascade. */
+:is(.trade-workspace,.b-workspace,.life-ui) button[data-pi-control]:enabled:hover:not(:active):not(.is-pressed):not(:focus-visible):not([aria-disabled="true"]) {
+  outline: 2px solid #ffe1a0;
+  outline-offset: 2px;
+  filter: brightness(1.11) saturate(1.06);
+  border-color: #ffe1a0 !important;
+  box-shadow: 0 0 0 2px #f2d68e55, 0 0 10px #eac87866, 0 3px 0 #111b1640;
+}
+:is(.trade-workspace,.b-workspace,.life-ui) button[data-pi-control]:is([aria-selected="true"],[aria-pressed="true"]):enabled:hover:not(:active):not(.is-pressed):not(:focus-visible):not([aria-disabled="true"]) {
+  box-shadow: inset 0 -3px #dfbf76, 0 0 0 2px #f2d68e55, 0 0 10px #eac87866, 0 3px 0 #111b1640;
+}
+
+.room-chats{max-height:150px;overflow:auto;overflow-wrap:anywhere}.room-chats p{font-size:16px;line-height:1.5;margin:8px 0}.room-chat-form{display:flex;gap:8px}.room-chat-form input{min-width:0;flex:1;font:inherit;font-size:16px}#roomSocial>summary{cursor:pointer;font-size:16px;padding:10px 0}#roomSocial>summary:hover{color:#ffdc9e}

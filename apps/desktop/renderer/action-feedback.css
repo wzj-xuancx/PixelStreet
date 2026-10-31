@@ -1,0 +1,15 @@
+/* Finite visual acknowledgements. No layout/label/disabled changes to targets. */
+.ps-action-feedback-host .ps-action-pending{outline:2px solid #c7aa6c!important;outline-offset:2px}
+.ps-action-feedback-host .ps-action-success{outline:3px solid #9cb377!important;outline-offset:2px}
+.ps-action-feedback-host .ps-action-error{outline:3px solid #b87763!important;outline-offset:2px}
+.ps-action-notice{position:fixed;right:20px;bottom:64px;z-index:90;display:flex;align-items:center;gap:10px;width:max-content;max-width:min(320px,calc(100vw - 32px));box-sizing:border-box;padding:12px 16px 12px 12px;background:#fff0cf;color:#493b2d;border:1px solid #a88b62;border-left:5px solid #7c9667;border-radius:6px;box-shadow:0 4px 0 #6c51372b,0 9px 24px #192b2633;font:400 16px/1.5 system-ui,sans-serif;pointer-events:none;user-select:none;overflow-wrap:anywhere}
+.ps-action-notice[hidden],.ps-action-notice [hidden]{display:none!important}
+.ps-action-notice[data-result=error]{border-left-color:#af715c;background:#f9e6d2}
+.ps-action-notice-picture{width:48px;height:48px;flex:0 0 48px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.ps-action-notice-art{display:block;flex-shrink:0;image-rendering:pixelated;transform-origin:center}
+.ps-action-notice-text{min-width:0}
+.ps-action-feedback-host[data-motion=running] .ps-action-notice:not([hidden]){animation:ps-action-arrive .18s ease-out 1 both}
+.ps-action-feedback-host[data-motion=paused] .ps-action-notice{animation:none!important}
+@keyframes ps-action-arrive{from{opacity:0;translate:0 5px}to{opacity:1;translate:0 0}}
+@media(prefers-reduced-motion:reduce){.ps-action-notice{animation:none!important}}
+@media(max-width:600px){.ps-action-notice{right:12px;bottom:56px}}

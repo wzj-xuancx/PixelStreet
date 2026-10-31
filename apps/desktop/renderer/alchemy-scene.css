@@ -1,0 +1,36 @@
+/* Load after living-scene.css. No inline styles, scripts or asset network access. */
+.alchemy-scene .al-room{background-image:url('assets/living-0100/alchemy-room.webp')}
+.alchemy-scene .al-stage{aspect-ratio:1672/941;min-height:390px;border-color:#8b9871;background:#20352c}
+.alchemy-scene .ls-light{background:linear-gradient(0deg,#14282235,transparent 55%)}
+.alchemy-scene .ls-object:focus-visible,.alchemy-scene .ls-buddy-target:focus-visible{outline:2px solid #e9f8c1!important;outline-offset:4px;background:#9fc47f19!important}
+.alchemy-scene .ls-tag{border-color:#9b9e6e;background:#253a30ed;color:#f6e6bc}
+.alchemy-scene .ls-object:not(:disabled):hover .ls-tag{background:#415941;border-color:#e9e5a5}
+.alchemy-scene .al-counter{left:31%;top:27%;width:14%;height:42%}
+.alchemy-scene .al-counter .ls-clerk{width:110px;height:110px}
+.alchemy-scene .al-supplies{left:2%;top:45%;width:16%;height:39%}
+.alchemy-scene .al-study{left:16%;top:58%;width:17%;height:36%}
+.alchemy-scene .al-cashbox{left:36%;top:57%;width:17%;height:36%}
+.alchemy-scene .al-still{left:76%;top:12%;width:21%;height:40%;justify-content:flex-end;padding-bottom:0}
+.alchemy-scene .al-still .ls-tag{min-width:110px}
+.alchemy-scene .al-shelf{left:42%;top:16%;width:30%;height:30%;justify-content:flex-end}
+.al-shelf-goods{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,1fr);width:100%;height:calc(100% - 48px);align-items:end;justify-items:center}
+.al-shelf-unit{display:block;width:49px;height:49px;pointer-events:none}
+.al-shelf-unit[data-shelf-good=dew]{grid-column:1;grid-row:1}.al-shelf-unit[data-shelf-good=ink]{grid-column:2;grid-row:1}.al-shelf-unit[data-shelf-good=ingot]{grid-column:3;grid-row:1}.al-shelf-unit[data-shelf-good=nectar]{grid-column:1;grid-row:2}.al-shelf-unit[data-shelf-good=incense]{grid-column:2;grid-row:2}.al-shelf-unit[data-shelf-good=frost]{grid-column:3;grid-row:2}
+.al-good{display:block;width:100%;height:100%;background:url('assets/living-0100/alchemy-goods.webp') no-repeat;background-size:300% 300%;image-rendering:pixelated;filter:drop-shadow(0 2px 2px #14201980);pointer-events:none}
+.al-good[data-good=dew]{background-position:0 50%}.al-good[data-good=ink]{background-position:50% 50%}.al-good[data-good=ingot]{background-position:100% 50%}.al-good[data-good=nectar]{background-position:0 100%}.al-good[data-good=incense]{background-position:50% 100%}.al-good[data-good=frost]{background-position:100% 100%}
+.alchemy-scene .al-buddy{left:17%;top:24%}
+.alchemy-scene .al-guest-0{left:54%;top:54%;width:16%;height:32%;z-index:6}
+.alchemy-scene .al-guest-1{left:69%;top:62%;width:16%;height:32%;z-index:7}
+.alchemy-scene .al-guest-2{left:83%;top:68%;width:16%;height:31%;z-index:8}
+.alchemy-scene .al-guest-2 .ls-guest-request{left:auto;right:0;transform:none}
+.alchemy-scene .ls-guest[data-ready=true] .ls-guest-request{background:#d7e9b4;border-color:#e3d37e}
+.al-bubbles{position:absolute;left:79%;top:28%;width:10%;height:17%;pointer-events:none;z-index:2;opacity:0;background:radial-gradient(ellipse,#9bf7c03d,transparent 70%)}
+.al-bubbles i{position:absolute;left:25%;top:70%;display:block;width:6px;height:6px;border:1px solid #d6ffd0;border-radius:50%;animation:al-bubble 2.6s ease-out infinite;animation-play-state:paused}
+.al-bubbles i:nth-child(2){left:48%;top:80%;animation-delay:-.8s;width:4px;height:4px}.al-bubbles i:nth-child(3){left:68%;top:58%;animation-delay:-1.7s;width:7px;height:7px}
+.alchemy-scene[data-working=true] .al-bubbles{opacity:1}.alchemy-scene[data-working=false] .al-bubbles i{animation:none}
+.alchemy-scene[data-motion=running] .al-bubbles i{animation-play-state:running}
+@keyframes al-bubble{0%{transform:translateY(0) scale(.5);opacity:0}20%{opacity:.75}100%{transform:translateY(-23px) scale(1.1);opacity:0}}
+@media(max-width:680px){.alchemy-scene .al-stage{min-height:390px}.alchemy-scene .al-counter{left:28%;top:27%;width:17%}.alchemy-scene .al-counter .ls-clerk{width:98px;height:98px}.alchemy-scene .al-supplies{left:0;width:18%}.alchemy-scene .al-study{left:16%;width:19%}.alchemy-scene .al-cashbox{left:36%;width:20%}.alchemy-scene .al-shelf{left:40%;width:33%}.al-shelf-unit{width:40px;height:40px}.alchemy-scene .al-buddy{left:12%;top:23%}.alchemy-scene .al-still{left:76%;width:23%}.alchemy-scene .al-still .ls-tag{min-width:96px}.alchemy-scene .ls-guest .ls-person{width:72px;height:72px}.alchemy-scene .al-guest-0{left:55%;top:55%}.alchemy-scene .al-guest-1{left:70%;top:63%}.alchemy-scene .al-guest-2{left:84%;top:68%;width:15%}.alchemy-scene .ls-guest-request{max-width:280px;white-space:normal}}
+@media(prefers-reduced-motion:reduce){.alchemy-scene .al-bubbles i{animation:none!important}}
+
+.al-good>.adventure-art{width:100%;height:100%;display:block}.al-good[data-good="herbal-bandage"],.al-good[data-good="mining-tonic"]{background:none}.al-shelf-goods{grid-template-columns:repeat(4,1fr)}

@@ -1,0 +1,110 @@
+{
+  "source": "assets/mastery-0160/medal-sheet.png",
+  "sourceSha256": "f8978d6e122f830ca1a3a4adb71e6223cb589a9c433f5708ba90227e21a5c576",
+  "sourceWidth": 1536,
+  "sourceHeight": 1024,
+  "coordinateConvention": "Zero-based pixel bounds [left, top, rightExclusive, bottomExclusive]. Measured independently from the rendered alpha mask with alpha > 1.",
+  "frames": [
+    {
+      "id": "paired-shelves",
+      "line": "business",
+      "name": "双麦徽记",
+      "bounds": [
+        74,
+        19,
+        482,
+        485
+      ],
+      "containFit64px": [
+        56,
+        64
+      ]
+    },
+    {
+      "id": "price-choice",
+      "line": "business",
+      "name": "天平徽记",
+      "bounds": [
+        555,
+        34,
+        987,
+        487
+      ],
+      "containFit64px": [
+        61,
+        64
+      ]
+    },
+    {
+      "id": "two-recipes",
+      "line": "business",
+      "name": "商会印章",
+      "bounds": [
+        1050,
+        41,
+        1487,
+        481
+      ],
+      "containFit64px": [
+        64,
+        64
+      ]
+    },
+    {
+      "id": "ready-six",
+      "line": "idle",
+      "name": "行路者徽记",
+      "bounds": [
+        70,
+        530,
+        486,
+        974
+      ],
+      "containFit64px": [
+        60,
+        64
+      ]
+    },
+    {
+      "id": "two-builds",
+      "line": "idle",
+      "name": "双途徽记",
+      "bounds": [
+        545,
+        528,
+        988,
+        964
+      ],
+      "containFit64px": [
+        64,
+        63
+      ]
+    },
+    {
+      "id": "moss-guardian",
+      "line": "idle",
+      "name": "苔光守护徽记",
+      "bounds": [
+        1052,
+        524,
+        1476,
+        980
+      ],
+      "containFit64px": [
+        59,
+        64
+      ]
+    }
+  ],
+  "alphaNotes": {
+    "alphaExtrema": [
+      0,
+      254
+    ],
+    "nonzeroPixelsOutsideMeasuredBounds": 3431,
+    "maxAlphaOutsideMeasuredBounds": 1,
+    "note": "Transparent separation is preserved. Residual alpha outside the six frames is alpha=1/255 only; no background or visible residue was detected."
+  },
+  "64pxAssessment": "containFit64px records calculated aspect-fit sizes. The six silhouettes and dominant colors are distinct in visual review; no downsampled preview was saved.",
+  "source_metadata_scope": "Original PNG provenance before Beta repository optimization, not current WebP byte hashes. See assets/optimization-manifest.json for the runtime file mapping and hashes. Original PNGs are retained outside this repository."
+}

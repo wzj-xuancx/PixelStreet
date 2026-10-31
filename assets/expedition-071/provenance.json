@@ -1,0 +1,65 @@
+[
+  {
+    "file": "frontier-map.png",
+    "source": "[local-source-redacted]",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "8a5bcd6ec94f0c104463241356cbfa426ff4d2033a0bb435776abfa315045866",
+    "creator": "built-in imagegen",
+    "date": "2026-10-23"
+  },
+  {
+    "file": "glow-trail.png",
+    "source": "[local-source-redacted]",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "494335522e9ef0a212116f8987ba17005302298a4cfc075f13ddd7c2a4004747",
+    "creator": "built-in imagegen",
+    "date": "2026-10-23"
+  },
+  {
+    "file": "crystal-ravine.png",
+    "source": "[local-source-redacted]",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "666cd16c15a255e1df2b3eef45a10851e511a61e86d90c770d7932a2a48bc967",
+    "creator": "built-in imagegen",
+    "date": "2026-10-23"
+  },
+  {
+    "file": "old-sanctuary.png",
+    "source": "[local-source-redacted]",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "ebaaee88c5d750bb72fab625ebe3d7e1b7b4819f8d4ad536d39f8b187c5bae3c",
+    "creator": "built-in imagegen",
+    "date": "2026-10-23"
+  },
+  {
+    "file": "event-cache.png",
+    "source": "[local-source-redacted]",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "ac9f52a0dcd2fa847af21e7f47dbfa3a8e0aa847655a79693a475bbc26ac6647",
+    "creator": "built-in imagegen",
+    "date": "2026-10-23"
+  },
+  {
+    "file": "event-caravan.png",
+    "source": "[local-source-redacted]",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "a423c271345187387a5971fb009560975846a0f20024697f8e10b1ef4c08a1c5",
+    "creator": "built-in imagegen",
+    "date": "2026-10-23"
+  },
+  {
+    "file": "outpost.png",
+    "source": "[local-source-redacted]",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "fad72be6eeab24f5c5193b58f250e1f2d748cdb029f9c001c6b20b3524b8655d",
+    "creator": "built-in imagegen",
+    "date": "2026-10-23"
+  }
+]

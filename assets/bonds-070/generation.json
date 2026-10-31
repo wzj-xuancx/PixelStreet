@@ -1,0 +1,118 @@
+{
+  "assets": [
+    {
+      "id": "companions",
+      "file": "assets/bonds-070/companions.png",
+      "source": "[local-source-redacted]",
+      "transparent_requested": true,
+      "sha256": "b25b401e92bdd0bc85fc129d0454d67143bf3afe9e43b6b118c224c5b155a07e",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "png_color_type": 6,
+      "runtime_selected": false
+    },
+    {
+      "id": "rarities",
+      "file": "assets/bonds-070/rarities.png",
+      "source": "[local-source-redacted]",
+      "transparent_requested": false,
+      "sha256": "f009931e9ee7c769e9c0382533e5fe5c47e7e2ae8eaf412778841a15afd78a73",
+      "dimensions": [
+        971,
+        1619
+      ],
+      "png_color_type": 2
+    },
+    {
+      "id": "training",
+      "file": "assets/bonds-070/training.png",
+      "source": "[local-source-redacted]",
+      "transparent_requested": false,
+      "sha256": "5f79af91c56a2545a58e5a4b01005d779330b988d41fb4da3b13cfb8ba94aff1",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "png_color_type": 2
+    },
+    {
+      "id": "heartwood",
+      "file": "assets/bonds-070/heartwood.png",
+      "source": "[local-source-redacted]",
+      "transparent_requested": false,
+      "sha256": "a5054b6a0321e4feaedc694653f4296460aebd8f9076aa188ff0cacb8e9e696a",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "png_color_type": 2
+    },
+    {
+      "id": "tidevault",
+      "file": "assets/bonds-070/tidevault.png",
+      "source": "[local-source-redacted]",
+      "transparent_requested": false,
+      "sha256": "c5aee0f8f8ca567fccd967611c20f388baefe838b284a93ec80f44046987d49d",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "png_color_type": 2
+    },
+    {
+      "id": "starbell",
+      "file": "assets/bonds-070/starbell.png",
+      "source": "[local-source-redacted]",
+      "transparent_requested": false,
+      "sha256": "7a61e730a128809a181b16b771fd9090eafb68183470b853cfa65ea4b8d62d36",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "png_color_type": 2
+    },
+    {
+      "id": "honeyglass",
+      "file": "assets/bonds-070/honeyglass.png",
+      "source": "[local-source-redacted]",
+      "transparent_requested": false,
+      "sha256": "19e21b2ed298d20d2a50146cb1b490f307a1075e7210fee3aaf4991496028601",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "png_color_type": 2
+    },
+    {
+      "id": "auroranest",
+      "file": "assets/bonds-070/auroranest.png",
+      "source": "[local-source-redacted]",
+      "transparent_requested": false,
+      "sha256": "da2886a5effe201a8291c5eb81a81806fc2ab3b20dd4a09e2a19162084084cc5",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "png_color_type": 2
+    },
+    {
+      "id": "companions-v2",
+      "file": "assets/bonds-070/companions-v2.png",
+      "source": "[local-source-redacted]",
+      "transparent_requested": true,
+      "sha256": "a3f6380e52e018113a46214a43a85832c6795d3e9db955bf65ca589e50a17368",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "png_color_type": 6,
+      "runtime_selected": true,
+      "edit_manifest": "assets/bonds-070/companions-refinement.json"
+    }
+  ],
+  "tool": "built-in image_gen",
+  "authorization": "2026-10-23 user requests more beautiful pixel art, companions, relics and dungeon-door content",
+  "source_metadata_scope": "Original PNG provenance before Beta repository optimization, not current WebP byte hashes. See assets/optimization-manifest.json for the runtime file mapping and hashes. Original PNGs are retained outside this repository."
+}

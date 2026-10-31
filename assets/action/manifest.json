@@ -1,0 +1,1030 @@
+{
+  "schemaVersion": 1,
+  "title": "PixelStreet Active Dungeon Pixel Art",
+  "originality": "All artwork is authored in this generator as original vector pixel art; no third-party image, icon, font, or texture is used.",
+  "generator": "scripts/generate-action-art.mjs",
+  "rebuild": "node scripts/generate-action-art.mjs",
+  "render": {
+    "world": [
+      960,
+      540
+    ],
+    "tileSize": 32,
+    "imageSmoothing": false,
+    "svgShapeRendering": "crispEdges"
+  },
+  "atlas": {
+    "file": "sprites.svg",
+    "width": 576,
+    "height": 360,
+    "columns": 8,
+    "rows": 5,
+    "cellSize": [
+      72,
+      72
+    ],
+    "frames": {
+      "player-down-idle": {
+        "x": 0,
+        "y": 0,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          38,
+          48
+        ],
+        "anchor": [
+          0.5,
+          0.88
+        ],
+        "tags": [
+          "player",
+          "idle",
+          "down"
+        ]
+      },
+      "player-down-walk": {
+        "x": 72,
+        "y": 0,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          38,
+          48
+        ],
+        "anchor": [
+          0.5,
+          0.88
+        ],
+        "tags": [
+          "player",
+          "walk",
+          "down"
+        ]
+      },
+      "player-up-idle": {
+        "x": 144,
+        "y": 0,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          38,
+          48
+        ],
+        "anchor": [
+          0.5,
+          0.88
+        ],
+        "tags": [
+          "player",
+          "idle",
+          "up"
+        ]
+      },
+      "player-up-walk": {
+        "x": 216,
+        "y": 0,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          38,
+          48
+        ],
+        "anchor": [
+          0.5,
+          0.88
+        ],
+        "tags": [
+          "player",
+          "walk",
+          "up"
+        ]
+      },
+      "player-left-idle": {
+        "x": 288,
+        "y": 0,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          38,
+          48
+        ],
+        "anchor": [
+          0.5,
+          0.88
+        ],
+        "tags": [
+          "player",
+          "idle",
+          "left"
+        ]
+      },
+      "player-left-walk": {
+        "x": 360,
+        "y": 0,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          38,
+          48
+        ],
+        "anchor": [
+          0.5,
+          0.88
+        ],
+        "tags": [
+          "player",
+          "walk",
+          "left"
+        ]
+      },
+      "player-right-idle": {
+        "x": 432,
+        "y": 0,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          38,
+          48
+        ],
+        "anchor": [
+          0.5,
+          0.88
+        ],
+        "tags": [
+          "player",
+          "idle",
+          "right"
+        ]
+      },
+      "player-right-walk": {
+        "x": 504,
+        "y": 0,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          38,
+          48
+        ],
+        "anchor": [
+          0.5,
+          0.88
+        ],
+        "tags": [
+          "player",
+          "walk",
+          "right"
+        ]
+      },
+      "weapon-wand": {
+        "x": 0,
+        "y": 72,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          28,
+          34
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "tags": [
+          "weapon",
+          "wand"
+        ]
+      },
+      "weapon-bow": {
+        "x": 72,
+        "y": 72,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          30,
+          34
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "tags": [
+          "weapon",
+          "bow"
+        ]
+      },
+      "weapon-scatter": {
+        "x": 144,
+        "y": 72,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          34,
+          26
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "tags": [
+          "weapon",
+          "scatter"
+        ]
+      },
+      "projectile-wand": {
+        "x": 216,
+        "y": 72,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          18,
+          18
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "tags": [
+          "projectile",
+          "wand"
+        ]
+      },
+      "projectile-arrow": {
+        "x": 288,
+        "y": 72,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          30,
+          10
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "tags": [
+          "projectile",
+          "bow"
+        ]
+      },
+      "projectile-scatter": {
+        "x": 360,
+        "y": 72,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          18,
+          18
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "tags": [
+          "projectile",
+          "scatter"
+        ]
+      },
+      "effect-roll-echo": {
+        "x": 432,
+        "y": 72,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          36,
+          42
+        ],
+        "anchor": [
+          0.5,
+          0.88
+        ],
+        "tags": [
+          "effect",
+          "roll"
+        ]
+      },
+      "effect-impact": {
+        "x": 504,
+        "y": 72,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          30,
+          30
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "tags": [
+          "effect",
+          "hit"
+        ]
+      },
+      "enemy-slime-idle": {
+        "x": 0,
+        "y": 144,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          30,
+          25
+        ],
+        "anchor": [
+          0.5,
+          0.9
+        ],
+        "tags": [
+          "enemy",
+          "chaser",
+          "slime"
+        ]
+      },
+      "enemy-slime-squash": {
+        "x": 72,
+        "y": 144,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          30,
+          25
+        ],
+        "anchor": [
+          0.5,
+          0.9
+        ],
+        "tags": [
+          "enemy",
+          "chaser",
+          "slime"
+        ]
+      },
+      "enemy-mage": {
+        "x": 144,
+        "y": 144,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          31,
+          40
+        ],
+        "anchor": [
+          0.5,
+          0.9
+        ],
+        "tags": [
+          "enemy",
+          "ranged",
+          "mage"
+        ]
+      },
+      "enemy-beast-idle": {
+        "x": 216,
+        "y": 144,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          42,
+          32
+        ],
+        "anchor": [
+          0.5,
+          0.9
+        ],
+        "tags": [
+          "enemy",
+          "charger",
+          "beast"
+        ]
+      },
+      "enemy-beast-charge": {
+        "x": 288,
+        "y": 144,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          48,
+          32
+        ],
+        "anchor": [
+          0.5,
+          0.9
+        ],
+        "tags": [
+          "enemy",
+          "charger",
+          "beast",
+          "telegraph"
+        ]
+      },
+      "boss-idle": {
+        "x": 360,
+        "y": 144,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          72,
+          68
+        ],
+        "anchor": [
+          0.5,
+          0.9
+        ],
+        "tags": [
+          "boss",
+          "idle"
+        ]
+      },
+      "boss-telegraph": {
+        "x": 432,
+        "y": 144,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          78,
+          74
+        ],
+        "anchor": [
+          0.5,
+          0.88
+        ],
+        "tags": [
+          "boss",
+          "telegraph",
+          "warning"
+        ]
+      },
+      "boss-hit": {
+        "x": 504,
+        "y": 144,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          72,
+          68
+        ],
+        "anchor": [
+          0.5,
+          0.9
+        ],
+        "tags": [
+          "boss",
+          "hit"
+        ]
+      },
+      "obstacle-chest-closed": {
+        "x": 0,
+        "y": 216,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          38,
+          31
+        ],
+        "anchor": [
+          0.5,
+          0.9
+        ],
+        "tags": [
+          "obstacle",
+          "chest",
+          "occludes"
+        ],
+        "occludes": true,
+        "sortBy": "feetY"
+      },
+      "obstacle-chest-open": {
+        "x": 72,
+        "y": 216,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          38,
+          35
+        ],
+        "anchor": [
+          0.5,
+          0.9
+        ],
+        "tags": [
+          "obstacle",
+          "chest",
+          "occludes"
+        ],
+        "occludes": true,
+        "sortBy": "feetY"
+      },
+      "obstacle-column": {
+        "x": 144,
+        "y": 216,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          40,
+          50
+        ],
+        "anchor": [
+          0.5,
+          0.92
+        ],
+        "tags": [
+          "obstacle",
+          "column",
+          "occludes"
+        ],
+        "occludes": true,
+        "sortBy": "feetY"
+      },
+      "obstacle-column-cracked": {
+        "x": 216,
+        "y": 216,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          40,
+          50
+        ],
+        "anchor": [
+          0.5,
+          0.92
+        ],
+        "tags": [
+          "obstacle",
+          "column",
+          "occludes"
+        ],
+        "occludes": true,
+        "sortBy": "feetY"
+      },
+      "portal-arch": {
+        "x": 288,
+        "y": 216,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          56,
+          66
+        ],
+        "anchor": [
+          0.5,
+          0.94
+        ],
+        "tags": [
+          "portal",
+          "interaction",
+          "glow"
+        ]
+      },
+      "upgrade-crystal": {
+        "x": 360,
+        "y": 216,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          30,
+          36
+        ],
+        "anchor": [
+          0.5,
+          0.88
+        ],
+        "tags": [
+          "upgrade",
+          "pickup",
+          "glow"
+        ]
+      },
+      "coin-a": {
+        "x": 432,
+        "y": 216,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          20,
+          22
+        ],
+        "anchor": [
+          0.5,
+          0.82
+        ],
+        "tags": [
+          "coin",
+          "pickup",
+          "animation"
+        ]
+      },
+      "coin-b": {
+        "x": 504,
+        "y": 216,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          20,
+          22
+        ],
+        "anchor": [
+          0.5,
+          0.82
+        ],
+        "tags": [
+          "coin",
+          "pickup",
+          "animation"
+        ]
+      },
+      "potion-health": {
+        "x": 0,
+        "y": 288,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          26,
+          30
+        ],
+        "anchor": [
+          0.5,
+          0.9
+        ],
+        "tags": [
+          "potion",
+          "health",
+          "pickup"
+        ]
+      },
+      "objective-target-ring": {
+        "x": 72,
+        "y": 288,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          54,
+          54
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "tags": [
+          "objective",
+          "target",
+          "glow"
+        ]
+      },
+      "player-aura": {
+        "x": 144,
+        "y": 288,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          50,
+          18
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "tags": [
+          "effect",
+          "aura",
+          "glow"
+        ]
+      },
+      "objective-impact": {
+        "x": 216,
+        "y": 288,
+        "width": 72,
+        "height": 72,
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 72,
+          "height": 72
+        },
+        "worldSize": [
+          48,
+          48
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "tags": [
+          "objective",
+          "effect",
+          "glow"
+        ]
+      }
+    }
+  },
+  "animations": {
+    "player": {
+      "down": {
+        "idle": [
+          "player-down-idle"
+        ],
+        "walk": [
+          "player-down-walk"
+        ]
+      },
+      "up": {
+        "idle": [
+          "player-up-idle"
+        ],
+        "walk": [
+          "player-up-walk"
+        ]
+      },
+      "left": {
+        "idle": [
+          "player-left-idle"
+        ],
+        "walk": [
+          "player-left-walk"
+        ]
+      },
+      "right": {
+        "idle": [
+          "player-right-idle"
+        ],
+        "walk": [
+          "player-right-walk"
+        ]
+      }
+    },
+    "slime": {
+      "idle": [
+        "enemy-slime-idle",
+        "enemy-slime-squash"
+      ]
+    },
+    "beast": {
+      "idle": [
+        "enemy-beast-idle"
+      ],
+      "charge": [
+        "enemy-beast-charge"
+      ]
+    },
+    "boss": {
+      "idle": [
+        "boss-idle"
+      ],
+      "telegraph": [
+        "boss-telegraph"
+      ],
+      "hit": [
+        "boss-hit"
+      ]
+    },
+    "coin": {
+      "spin": [
+        "coin-a",
+        "coin-b"
+      ]
+    }
+  },
+  "levels": [
+    {
+      "id": "fluorite-path",
+      "title": "萤石荒径",
+      "palette": "teal",
+      "background": "backgrounds/fluorite-path.svg",
+      "width": 960,
+      "height": 540,
+      "tileSize": 32
+    },
+    {
+      "id": "fractured-grotto",
+      "title": "裂晶洞",
+      "palette": "violet",
+      "background": "backgrounds/fractured-grotto.svg",
+      "width": 960,
+      "height": 540,
+      "tileSize": 32
+    },
+    {
+      "id": "relic-deep-hall",
+      "title": "遗迹深廊",
+      "palette": "gold",
+      "background": "backgrounds/relic-deep-hall.svg",
+      "width": 960,
+      "height": 540,
+      "tileSize": 32
+    }
+  ],
+  "integration": {
+    "canvas": "Load SVGs as local image sources; draw atlas frames using atlas.frames[id].x/y/width/height as the source rectangle.",
+    "pixi": "Create textures with frame crop metadata; set scaleMode to nearest for hard pixel edges.",
+    "placement": "worldSize is the suggested on-screen draw size in world pixels; anchor is normalized within the frame.",
+    "occlusion": "Sort player and props by world Y for stable depth; props with occludes=true may draw after the player when their feetY is greater."
+  }
+}

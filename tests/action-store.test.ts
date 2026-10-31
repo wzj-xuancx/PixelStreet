@@ -1,0 +1,13 @@
+import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import os from 'node:os';import path from 'node:path';
+import {createActionRun,stepAction} from '../packages/action-core';import {ActionStore,parseActionSave} from '../apps/desktop/action-store';
+function folder(t:any){const f=fs.mkdtempSync(path.join(os.tmpdir(),'pixelstreet-action-save-'));t.after(()=>fs.rmSync(f,{recursive:true,force:true}));return f;}
+test('active run persists exact progress but always resumes paused; save never pauses live simulation',t=>{
+ const f=folder(t),store=new ActionStore(f),run=createActionRun(831,'bow',['local']);stepAction(run,1000);const tick=run.tick,coins=run.reward.coins;store.save({version:1,claim:1,settled:false,run});assert.equal(run.paused,false);const restored=new ActionStore(f).value;assert.equal(restored.run!.tick,tick);assert.equal(restored.run!.reward.coins,coins);assert.equal(restored.run!.paused,true);assert.equal(restored.claim,1);assert.equal(restored.settled,false);
+ const before=structuredClone(restored.run!);assert.throws(()=>stepAction(restored.run!,8*3600*1000));for(let n=0;n<100;n++)stepAction(restored.run!,1000);assert.deepEqual(restored.run,before);
+});
+test('action backup recovery keeps invalid main bytes and both-invalid fails closed',t=>{
+ const f=folder(t),store=new ActionStore(f);const run=createActionRun(22,'wand',['local']);store.save({version:1,claim:1,settled:false,run});store.save({version:1,claim:1,settled:false,run});fs.writeFileSync(store.file,'broken-action-main');const recovered=new ActionStore(f);assert.equal(recovered.value.claim,1);assert.equal(fs.readFileSync(store.file,'utf8'),'broken-action-main');recovered.save(recovered.value);const evidence=fs.readdirSync(f).find(n=>n.startsWith('action-run.json.corrupt-'));assert.ok(evidence);assert.equal(fs.readFileSync(path.join(f,evidence),'utf8'),'broken-action-main');fs.writeFileSync(store.file,'still-broken');fs.writeFileSync(store.file+'.bak','bad-backup');assert.throws(()=>new ActionStore(f));assert.equal(fs.readFileSync(store.file,'utf8'),'still-broken');
+});
+test('action save rejects unknown metadata and invalid receipt; disk failure keeps last good state',t=>{
+ const f=folder(t),store=new ActionStore(f),before=structuredClone(store.value);assert.throws(()=>parseActionSave({...before,coins:999}));assert.throws(()=>parseActionSave({...before,claim:-1}));fs.unlinkSync(store.file);fs.mkdirSync(store.file);assert.throws(()=>store.save({version:1,claim:1,settled:false,run:createActionRun(19,'scatter',['local'])}));assert.deepEqual(store.value,before);
+});

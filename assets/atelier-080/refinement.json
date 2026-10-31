@@ -1,0 +1,7 @@
+{
+  "prompt": "Use case: precise-object-edit. Edit target: this nine-item game icon atlas. Preserve all nine exact objects, their designs, colors and original row order. Change ONLY scale and placement. Make a PERFECT regular 3 by 3 square atlas. Each object must fit inside the central 65 percent width and 65 percent height of its own equal square cell, leaving at least 17.5 percent EMPTY forest-teal background margin on ALL sides, including stems, corks, feathers, leaves and ribbons. Nothing can touch or cross a cell boundary. Cell center positions must be precisely at 1/6, 1/2, 5/6 of the full image width AND height. Row1 picnic basket, mushroom lunchbox, purple sweets gift. Row2 green dew flask, blue ink bottle with quill, refined turquoise ingot. Row3 amber nectar bottle, green mushroom perfume, ice snowflower bottle. Keep crisp exquisite pixel art and the plain deep teal background. No new objects, no grid, no text, no shadows extending outside the icon area. Main purpose: when cropped into nine equal square tiles, each tile shows exactly ONE full object with empty margin and absolutely NO neighboring fragment.",
+  "mode": "built-in image_gen",
+  "input": "assets/atelier-080/goods.png",
+  "output": "assets/atelier-080/goods-v2.png",
+  "source_metadata_scope": "Original PNG provenance before Beta repository optimization, not current WebP byte hashes. See assets/optimization-manifest.json for the runtime file mapping and hashes. Original PNGs are retained outside this repository."
+}
