@@ -39,4 +39,4 @@ npm test
 
 `check-repository` 检查资源映射、当前哈希、静态／动态远征图片引用、明显本机目录和大文件；它不是完整秘密扫描或法律许可审查。
 
-远程仓库名称、可见性与准确协作者账户必须由维护者确认后再创建。`UNLICENSED` 在项目许可证另行决定前保持原样。创建仓库、上传内容和发送协作者邀请分别记录真实结果，不能把计划写成已经发布。
+维护者已于 2026-11-01 确认并完成 Public 仓库 [wzj-xuancx/PixelStreet](https://github.com/wzj-xuancx/PixelStreet) 的创建与初次上传，默认分支为 `main`；协作者 `d3ac` 已收到 write 权限邀请，核验时等待接受。`UNLICENSED` 在项目许可证另行决定前保持原样。创建仓库、上传内容与邀请接受是不同状态，实际核验见 [verification.md](verification.md)。

@@ -2,6 +2,13 @@
 
 本文件区分已实现的内容、仓库整理和未来计划。**当前为 Beta，未正式发布。**
 
+## [0.19.0-beta-source] · GitHub 源码开放 — 2026-11-01
+
+- 公开 Beta 源码仓库：[wzj-xuancx/PixelStreet](https://github.com/wzj-xuancx/PixelStreet)，默认分支 `main`。
+- 上传代码、测试、必要美术与许可；未上传依赖、构建产物、安装包、玩家存档或内部验收记录。
+- 图像压缩、文档和后续开发需求已纳入仓库，游戏版本仍为 `0.19.0`；此处是源码开放记录，不是正式游戏发行或 GitHub Release。
+- 项目代码继续使用现有 `UNLICENSED` 标记，公开可见不等于已选择开源许可证。
+
 ## [Unreleased] · Beta 共建仓库整理 — 2026-10-31
 
 ### 文档

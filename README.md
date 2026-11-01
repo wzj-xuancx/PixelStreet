@@ -32,9 +32,11 @@
 - 首选开发／试玩平台：**macOS Apple Silicon**。Windows、Intel Mac 与其他系统未完成发行验收。
 - 依赖使用 `package-lock.json` 中的精确版本，不提交 `node_modules/`。
 
-在全新克隆的目录中：
+公开 Beta 源码仓库：[wzj-xuancx/PixelStreet](https://github.com/wzj-xuancx/PixelStreet)，默认分支为 `main`。
 
 ```bash
+git clone https://github.com/wzj-xuancx/PixelStreet.git
+cd PixelStreet
 npm ci
 npm run typecheck
 npm run build
