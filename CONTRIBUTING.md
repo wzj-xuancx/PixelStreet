@@ -9,7 +9,7 @@
 3. 运行 `npm run typecheck`、`npm run build`、`npm test`。
 4. macOS 试玩用 `node scripts/launch-isolated.mjs`，不要把自己的重要进度拿来做自动测试。
 
-仓库权限由维护者在 GitHub Settings → Collaborators 中授予。私有仓库邀请需要对方接受；发送邀请不等于已经加入。
+仓库权限由维护者在 GitHub Settings → Collaborators 中授予。协作者 `write` 权限邀请需要对方接受；发送邀请不等于已经加入。
 
 ## 分支与 PR
 
